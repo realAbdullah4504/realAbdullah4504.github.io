@@ -1,171 +1,124 @@
-# CopyFlow — School Submission & Print Workflow System
+# CopyFlow — School Submission & Print Workflow Management System
 
-## 1. Overview
+## Overview
 
-CopyFlow is a role-based document workflow system designed to manage lesson submissions, structured review processes, and print lifecycle operations within a single-school environment.
+CopyFlow is a role-based school workflow system designed to manage academic submissions, reviews, and printing in a structured and controlled lifecycle.
 
-It centralizes academic coordination by enforcing a deterministic workflow where teacher submissions enter a controlled pending state and progress through secretary-managed review and print execution, ending in automated archival.
+It replaces manual submission handling with a state-driven document workflow engine where teachers submit academic work, secretaries process and approve it, and principals monitor daily academic activity.
 
-The system replaces fragmented manual submission and printing processes with a unified execution model for academic document lifecycle management.
+The system ensures strict transitions between submission stages, enabling controlled document governance across the school.
 
-## 2. Problem Statement
+## Problem Statement
 
-School administrative workflows suffer from fragmentation due to:
+Schools handling academic submissions face:
 
-- Manual submission of lesson materials through informal channels
-- Lack of structured print instruction handling
-- Uncoordinated review and approval processes
-- No unified visibility into submission status or lesson schedules
-- Inefficient handling of print execution and document tracking
-- Lack of role-based workflow enforcement
+- Manual and inconsistent submission handling processes
+- No structured review and approval system
+- Lack of centralized tracking of submission status
+- Inefficient coordination between teachers, secretaries, and principals
+- Risk of misplaced or untracked printed documents
+- No formal lifecycle for submission progression
 
-Existing systems fail to unify submission creation, structured review, print execution, and archival into a single controlled workflow pipeline.
+Existing systems rely heavily on manual communication, making workflow control unreliable.
 
-## 3. System Design
+## Core System Capabilities
 
-CopyFlow is a deterministic workflow execution system that manages academic submissions through a state-driven lifecycle with role-based control.
+- Role-based workflow system (Admin, Teacher, Secretary, Principal)
+- State-driven submission lifecycle with enforced transitions
+- Auto-generated print instruction documents from submission metadata
+- Conditional approval paths (direct print or censored review)
+- Weekly calendar-based lesson visibility for principals
+- Print queue management with automatic archival
+- Single-school account model with manual user registration
 
-All submissions begin in a Pending state after teacher creation. The Secretary acts as the primary workflow controller responsible for advancing submissions through review and print execution stages.
+## System Architecture
 
-The system enforces strict role separation:
+### Architecture Diagram
 
-- **Admin** → system setup, user creation, class configuration
-- **Teacher** → submission creation and document upload
-- **Secretary** → workflow transitions, review, and print control
-- **Principal** → read-only monitoring of academic activity
+```mermaid
+flowchart LR
 
-At its core, CopyFlow functions as a conditional state machine with branching approval paths, ensuring controlled progression from submission to archival.
+    Admin[Admin] --> CreateUsers[Create Users & Assign Roles]
 
-### Submission State Machine
+    CreateUsers --> Teacher[Teacher]
+    CreateUsers --> Secretary[Secretary]
+    CreateUsers --> Principal
 
+    %% SHARED SYSTEM STATE
+    Teacher --> SubmissionPool[(Submission System)]
+
+    %% TEACHER ACTIONS
+    Teacher --> Create[Create Submission]
+    Create --> Upload[Upload Documents]
+    Upload --> Generate[Generate Instructions]
+    Generate --> SubmissionPool
+
+    %% SECRETARY ACTIONS (SEPARATE FLOW)
+    Secretary --> ReviewPanel[View Pending Submissions]
+    SubmissionPool --> ReviewPanel
+
+    ReviewPanel --> Censored[Censored / Needs Fix]
+    ReviewPanel --> Approved[Approved for Print]
+
+    Approved --> Print[Print Execution]
+    Print --> Archive[Archived State]
+
+    %% PRINCIPAL ACTIONS (READ ONLY FLOW)
+    Principal --> ScheduleView[Weekly Schedule View]
+    SubmissionPool --> ScheduleView
+    ScheduleView --> Details[View Submissions]
 ```
-Pending → Censored → Print → Archived
-   ↘────────────→ Print → Archived
-```
 
-### Key Rule
+### Core System Flows
 
-- Teacher-created submissions always start in Pending
-- Secretary determines next state:
-  - Pending → Censored (for review)
-  - Pending → Print (direct approval)
-- Print → Archived is fully automatic after execution
+#### 1. Teacher Submission Flow
+Create Submission → Fill Form → Upload Documents → Generate Instructions → Submit → Status = Pending
 
-## 4. Core Modules
+#### 2. Secretary Processing Flow
+Pending Submission → Review → Either: Move to Censored (needs revision) OR Move to Printed → Automatically Archived
 
-- **Role Engine** — enforces role-based access and permissions
-- **Workflow Engine** — manages submission state transitions
-- **Submission Engine** — handles creation and update of lesson submissions
-- **Instruction Engine** — generates structured print instruction documents
-- **Print Engine** — executes print workflow and queue processing
-- **Scheduling Engine** — manages class assignments and lesson planning
-- **Archive Engine** — handles immutable storage of completed submissions
+#### 3. Principal Monitoring Flow
+View Weekly Calendar → Select Day → View Lessons → Open Submission Details
 
-## 5. Key Flows
+#### 4. Print Lifecycle Flow
+Submission Approved → Printed State → Auto Archive → Stored Record
 
-### A) Teacher Flow
+### Data Model (High-Level)
 
-Teacher creates lesson submission → system sets status to Pending → uploads documents → configures print details → submission enters workflow queue
+- **Users** → authentication identity with role context
+- **Schools** → single-school containers
+- **Employees** → school staff with assigned roles
+- **Submissions** → lesson submissions with print metadata and state
+- **Instructions** → auto-generated print instruction documents
+- **Print Queue** → censored submissions awaiting print execution
+- **Archive** → completed printed submissions (immutable)
+- **Classes** → assigned class containers for scheduling
+- **Calendar Events** → daily lesson scheduling entries
 
-### B) Secretary Flow
+## Key Features
 
-Secretary reviews Pending submissions → decides path:
-- Move to Censored (review required)
-- Or directly approve to Print
+- Four-role permission system (Admin, Secretary, Principal, Teacher)
+- Direct account creation by administrator without email invites
+- Submission state machine with Pending, Censored, Print, and Archived states
+- Secretary-controlled workflow transitions with branching approval paths
+- Auto-generated instruction documents from submission forms
+- Weekly calendar view with daily lesson tracking for principals
+- Clickable lesson cards linking to related submissions
+- Print queue with automatic archival upon completion
+- Immutable archive for finalized academic records
 
-From Censored → Print after review completion
+## Outcome / Impact
 
-System automatically archives submission after print execution
+- Standardized submission processing across all school roles
+- Controlled review and approval system replacing manual communication
+- Automated state transitions for printed documents
+- Improved coordination between teachers, secretaries, and principals
+- Full visibility into academic document lifecycle
 
-### C) Principal Flow
+## Live Demo
 
-Principal views daily lesson sheet → toggles weekly calendar → opens submission details → monitors academic progress across classes
+**https://copyflow-main.netlify.app**
 
-### D) Admin Flow
+## Final Notes
 
-Admin creates school workspace → registers users (Teacher, Secretary, Principal) → assigns roles → configures class structure and lesson schedules → oversees system setup
-
-## 6. System Execution Model
-
-### Role Responsibility Model
-
-CopyFlow enforces strict role boundaries:
-
-- **Teacher** → creates submissions (entry point only)
-- **Secretary** → controls all workflow transitions
-- **Principal** → monitors system (read-only access)
-- **Admin** → manages system structure only
-
-No role can bypass or override another role's workflow authority.
-
-### State Transition Rules
-
-Submissions follow a controlled conditional workflow:
-
-- `Pending → Censored` → Secretary review path
-- `Pending → Print` → direct approval path
-- `Censored → Print` → post-review approval
-- `Print → Archived` → automatic system finalization
-
-### Invariants
-
-- All submissions must originate in Pending state
-- Backward transitions are strictly prohibited
-- Archived submissions are immutable
-- Print execution automatically triggers archival
-- Secretary is the only workflow transition authority
-
-### Workflow Execution Logic
-
-1. Teacher creates submission → system assigns Pending state
-2. Secretary receives pending queue
-3. Secretary selects action path:
-   - Review → Censored
-   - Direct approve → Print
-4. System validates role permissions and executes state transition
-5. Print engine executes job when state = Print
-6. System automatically transitions submission → Archived
-7. Audit event is recorded at every step
-
-### Print Instruction Generation
-
-When a teacher submits content, the system generates a structured print instruction package, including:
-
-- print format specifications
-- quantity and material settings
-- attached documents
-- formatting rules for printing
-
-This instruction package is mandatory before entering the Print state.
-
-## 7. System Boundaries
-
-### System Controls
-
-- submission lifecycle management
-- conditional workflow transitions
-- print instruction generation
-- scheduling and class assignment
-- print execution and archival
-
-### System Does NOT Control
-
-- external communication tools (WhatsApp, email, etc.)
-- third-party academic/grading systems
-- external printing hardware beyond job dispatch
-- manual file exports outside workflow rules
-
-## 8. Outcome / Impact
-
-CopyFlow replaces fragmented school administration with a deterministic workflow system where academic submissions follow a controlled conditional lifecycle.
-
-It enables:
-
-- structured submission processing starting from a Pending state
-- flexible approval paths controlled by Secretary
-- automated generation of print instruction documents
-- reliable print execution with automatic archival
-- role-based governance of academic workflows
-- complete traceability of every submission state change
-
-This transforms school operations from manual coordination into a rule-driven execution system with conditional state transitions and full auditability across all academic workflows.
+CopyFlow demonstrates the ability to design and implement a role-based document lifecycle workflow system with state-driven execution, conditional approval paths, and automated archival — simulating production-grade academic administration infrastructure.
