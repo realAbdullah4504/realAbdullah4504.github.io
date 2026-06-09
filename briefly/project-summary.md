@@ -1,7 +1,9 @@
-# Multi-Tenant Workspace Briefing & Accountability System for Remote Teams
+# Briefly
 
-A multi-tenant workspace system that improves daily team communication, progress tracking, and accountability across distributed organizations. Replaces fragmented standups and scattered updates with structured daily briefings and real-time completion visibility. Admins assign questions, employees submit time-bound reports, and teams gain instant oversight into blockers and priorities.
+## Multi-Tenant Team Briefing and Daily Accountability Management System
 
-## 🔗 Links
+A multi-tenant workspace system that centralizes daily team reporting into structured, time-bound briefings. Admins configure daily questions while employees submit progress reports before deadlines, replacing fragmented standups and manual follow-ups. The system delivers real-time submission visibility, automated reminders, and workspace-level monitoring across distributed teams.
+
+## Links
 
 - Live Demo: https://my.brieflyapp.co
