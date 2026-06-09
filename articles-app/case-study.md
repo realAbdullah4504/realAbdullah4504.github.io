@@ -1,14 +1,14 @@
 # Multi-Source AI News Aggregator (Categories + Unified Timeline)
 
-## Project Overview
+## 1. Positioning Statement
 
-Built an AI-powered news aggregation platform that collects articles from multiple sources, classifies them into meaningful categories, and presents them in a unified, structured timeline. The goal was to reduce fragmentation in news consumption and improve content discovery speed.
+An AI-powered multi-source news aggregation platform that automatically classifies content into categories and presents a unified timeline for faster discovery and consumption.
 
-Live Demo: https://news-consolidater.vercel.app/
+This is an intelligent content consolidation system — not a generic RSS reader or manual news clipper.
 
-## Problem Statement
+## 2. Problem Statement
 
-Users typically consume news from multiple independent platforms, leading to:
+Users typically consume news from multiple independent platforms, which leads to:
 
 - Fragmented information across different sources
 - Time-consuming manual browsing
@@ -17,69 +17,93 @@ Users typically consume news from multiple independent platforms, leading to:
 
 The objective was to build a centralized system that aggregates, classifies, and organizes news into a single intelligent interface.
 
-## Solution
+## 3. Objective
 
-Developed a full-stack AI-driven news aggregation system that:
+Build a centralized platform that:
 
-- Scrapes and collects news articles from multiple sources
-- Uses AI-based classification to categorize content
-- Displays all articles in a unified timeline view
+- Aggregates news articles from multiple sources
+- Uses AI-based classification to categorize content (General, Sports, Lifestyle)
+- Presents all articles in a unified timeline view
 - Enables filtering by category and source
 - Allows users to save articles for later reading
 
-## System Architecture
+## 4. System Overview
 
-### Data Collection Layer
+A full-stack AI-driven news aggregation platform.
+
+**Inputs:** Multiple external news sources collected via web scraping.
+**Processing:** AI-based classification model normalizing content into consistent categories.
+**Outputs:** A unified, filterable timeline interface with bookmark capabilities.
+
+## 5. Architecture
+
+The system follows a layered architecture:
+
+### Input Layer
 - Web scraping from multiple news sources
 - Structured extraction of article title, content, and metadata
 
-### AI Classification Layer
-- AI-based model to classify articles into:
+### Processing Layer
+- REST APIs for article ingestion and retrieval
+- Filtering logic for category and source-based queries
+
+### Intelligence Layer
+- AI-based model classifies articles into standardized categories:
   - General
   - Sports
   - Lifestyle
 - Normalization of content into consistent categories
 
-### Backend Layer
-- REST APIs for article ingestion and retrieval
-- Filtering logic for category and source-based queries
-
-### Frontend Layer
-- React-based UI for timeline visualization
+### Output Layer
+- React-based timeline visualization
 - Dynamic filtering and saved articles management
 - Responsive design for multi-device support
 
-## Key Features
+## 6. Key Features
 
-- Multi-source news aggregation system
+- Multi-source news aggregation
 - AI-based category classification
 - Unified timeline view for all articles
 - Source and category filtering
-- Save/bookmark functionality
-- Clean and responsive UI for fast consumption
+- Save/bookmark functionality for later reading
+- Clean and responsive UI
 
-## Tech Stack
+## 7. Outputs / Proof
 
-- React (Frontend UI)
-- Python (Backend / scraping / AI logic)
-- REST APIs
-- AI-based classification model
-- Web scraping tools
+- **Unified Timeline UI:** All articles from multiple sources displayed in a single chronological view.
+- **Category Filtering:** Content organized into General, Sports, and Lifestyle categories.
+- **Source-based Filtering:** Filter articles by their originating publisher.
+- **Saved Articles:** Persistent bookmarks for later consumption.
 
-## Results
+## 8. Engineering Highlights
+
+- AI-based content normalization into consistent categories
+- REST API design for scalable article ingestion and retrieval
+- Dynamic filtering architecture supporting category and source queries
+- Responsive React UI optimized for multi-device consumption
+- Web scraping pipeline built for structured metadata extraction
+
+## 9. Integration Use Cases
+
+- Personal news dashboards
+- Content discovery platforms
+- Research and trend monitoring systems
+- Editorial workflow tools
+
+## 10. Results
 
 - Reduced effort required to browse multiple news platforms
 - Improved content discoverability through AI-based categorization
 - Unified experience for tracking and saving articles
 - Faster access to relevant news through filtering and timeline structure
 
-## Screenshots Included (Recommended)
+## 11. Future Improvements
 
-- Unified Timeline UI (main view)
-- Category filtering (General / Sports / Lifestyle)
-- Source-based filtering view
-- Backend scraping / pipeline (if available)
+- Expand category taxonomy for more granular classification
+- Implement personalized recommendation engine
+- Add offline reading and export capabilities
+- Mobile application for on-the-go access
 
-## Outcome
+## 12. Final Summary
 
-Delivered a centralized AI-powered news system that simplifies news consumption by merging multiple sources into a single intelligent, filterable timeline interface.
+A centralized AI-powered news system that simplifies news consumption by merging multiple sources into a single intelligent, filterable timeline interface — reducing fragmentation and improving content discovery speed.
