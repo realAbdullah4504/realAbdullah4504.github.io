@@ -4,4 +4,4 @@ A multi-tenant workspace system that improves daily team communication, progress
 
 ## 🔗 Links
 
-- Live Demo: https://my.brieflyapp.co/admin
+- Live Demo: https://my.brieflyapp.co
