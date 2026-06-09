@@ -1,75 +1,118 @@
-# 🧠 Project Summary Rule (≤600 Characters)
+# 🧠 Project Title + Summary + Links Rule (≤600 Characters)
 
 ---
 
 ## 🟥 Purpose
 
-The project summary is a **short, high-impact description** used for:
+This format is used for:
 - Portfolio cards
-- Upwork project listings
+- Upwork projects
 - CV highlights
-- Quick client understanding
+- Quick client evaluation
 
-It is NOT a case study and NOT documentation.
-
----
-
-## 🟦 Core Rule
-
-A good project summary MUST answer in one short paragraph:
-
-> What it is + What problem it solves + What key capability it provides
+It is NOT a case study.
 
 ---
 
-## 🟨 Structure Formula
+## 🟦 1. TITLE RULE
 
-Use this pattern:
+### 🎯 Goal:
+Instantly communicate system value in one line.
 
-**System + Purpose + Key capabilities + (optional tech hint)**
+### 🧠 Formula:
+System Type + Core Function + Domain (optional)
 
 ---
 
-## 🟩 Writing Rules
+### 🟨 Rules:
+- 10–14 words max
+- Outcome-focused (not tools)
+- No technology stacking
+- Must sound like a system
 
-- Max 600 characters (strict)
+---
+
+### ❌ Bad:
+- “Jenkins Docker SonarQube Pipeline Project”
+
+### ✅ Good:
+- “Automated DevSecOps CI/CD and Deployment Pipeline System”
+
+---
+
+## 🟩 2. PROJECT SUMMARY RULE (≤600 chars)
+
+### 🎯 Goal:
+Explain what the system does and why it exists.
+
+---
+
+### 🧠 Formula:
+System + Problem + Core Capabilities + Output
+
+---
+
+### 🟨 Rules:
+- Max 600 characters
 - 2–4 sentences only
-- No deep architecture explanation
-- No long lists
-- Focus on outcome, not implementation
-- Avoid repeating case study content
-- Use strong action verbs (built, designed, automated, implemented)
+- No deep architecture details
+- No tool-by-tool breakdown
+- Focus on system outcome
+- Must be readable in 5–10 seconds
 
 ---
 
-## 🟥 What to Include
-
-- System name (optional but preferred)
-- Problem it solves
-- Core functionality
+### 🟥 Must Include:
+- What the system is
+- What problem it solves
+- What it does
 - Output/result
 
 ---
 
-## 🟨 What to Avoid
-
-- Architecture details
-- Layer descriptions
-- Tool-by-tool breakdown
-- Technical deep dive
-- Screenshots explanation
+### ❌ Avoid:
+- Architecture explanation
+- Tool listing overload
+- Code details
+- Logs or execution steps
 
 ---
 
-## 🟦 Example Pattern
+## 🔗 3. LINKS RULE (IMPORTANT)
 
-“A system that automates X by doing Y, enabling Z.”
+### 🎯 Purpose:
+Provide access, NOT explanation.
 
 ---
 
-## 🟩 Quality Check
+### 🟨 Rules:
 
-A good summary should:
-- Be understood in 5–10 seconds
-- Make client immediately interested
-- Lead naturally into reading the case study
+- Always keep links OUTSIDE the summary
+- Never embed links inside summary text
+- Only include links if they are valid and useful
+- Must not break project clarity
+
+---
+
+### 🟩 Allowed Links:
+- Live Demo (ONLY if deployed and stable)
+- GitHub Repository
+- Documentation (optional)
+
+---
+
+### 🟥 Conditions for Live Demo:
+Include ONLY if:
+- Fully working
+- Publicly accessible
+- Demonstrates real system behavior
+- Not localhost or partial build
+
+---
+
+### 🟦 Format:
+
+```md
+## 🔗 Links
+- Live Demo: <url>
+- GitHub: <url>

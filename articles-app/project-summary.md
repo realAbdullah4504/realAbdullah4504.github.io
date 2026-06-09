@@ -1,11 +1,7 @@
-# Multi-Source AI News Aggregator (Categories + Unified Timeline)
+# AI-Powered Multi-Source News Aggregation & Classification Platform
 
-Built an AI-powered news aggregation platform that collects articles from multiple sources, classifies them into categories (General, Sports, Lifestyle), and presents them in a unified timeline for faster discovery and consumption.
+An intelligent news aggregation system that collects articles from multiple sources and uses AI to classify content into unified categories. Presents all content in a single timeline with filtering and bookmarking for personalized consumption.
 
-Users can filter by source or category and save articles for later reading, creating a personalized and organized news experience across multiple publishers.
+## 🔗 Links
 
-**Tech:** React, python, AI-based classification, web scraping, REST APIs
-
-**Result:** A centralized platform that simplifies news discovery by unifying multiple sources into one structured, filterable timeline.
-
-Live Demo: https://news-consolidater.vercel.app/
+- Live Demo: https://news-consolidater.vercel.app/

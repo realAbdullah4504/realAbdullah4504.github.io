@@ -1,9 +1,7 @@
-# StockClubs – Figma to React Pixel-Perfect Landing Page
+# Figma to React Pixel-Perfect Landing Page Implementation
 
-Converted a high-fidelity Figma design into a fully responsive React.js landing page with pixel-accurate layout, spacing, and typography. Focused on clean UI structure and consistent design implementation across all screen sizes.
+A pixel-perfect responsive landing page converted from high-fidelity Figma designs with clean UI structure and smooth micro-interactions. Delivers consistent visual experience across all screen sizes with lightweight performance.
 
-Added smooth micro-interactions using CSS transitions to improve visual feedback and user experience while keeping performance lightweight.
+## 🔗 Links
 
-Built using React.js, JavaScript, and CSS/SCSS.
-
-Live Demo: https://stockclubs-react-app-web.vercel.app/
+- Live Demo: https://stockclubs-react-app-web.vercel.app/
