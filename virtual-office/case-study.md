@@ -31,31 +31,21 @@ Existing tools manage tasks and communication separately, but fail to model a re
 ### Architecture Diagram
 
 ```mermaid
-    flowchart LR
-        Admin[Admin] --> App[Virtual Office]
-        Employee[Employee] --> App
+flowchart LR
+    Admin[Admin] --> System[Virtual Office System]
+    Employee[Employee] --> System
 
-        App --> Auth[Auth & Role System]
-        App --> Presence[Presence Engine]
-        App --> Rooms[Virtual Room System]
-        App --> Tasks[Task System]
-        App --> Comm[Communication Layer]
+    System --> Auth[Auth & Role System]
+    System --> Presence[Presence System]
+    System --> Tasks[Task System]
+    System --> Comm[Communication System]
 
-        Presence --> Status[Status Manager]
-        Rooms --> Access[Access Controller]
-        Tasks --> Kanban[Kanban Workflow]
-        Comm --> Chat[Chat]
-        Comm --> Video[Video Calls]
-        Comm --> Announce[Announcements]
+    Presence --> RoomLogic[Room Access Logic]
+    Tasks --> Workflow[Kanban Workflow]
+    Comm --> Realtime[Chat / Video / Announcements]
 
-        App --> Notify[Notification Engine]
-        App --> Activity[Activity Logger]
-
-        Auth --> DB[(Database)]
-        Presence --> DB
-        Tasks --> DB
-        Comm --> DB
-        Activity --> DB
+    System --> Notify[Notification Engine]
+    System --> Activity[Activity Logger]
 ```
 
 ### Core System Flows

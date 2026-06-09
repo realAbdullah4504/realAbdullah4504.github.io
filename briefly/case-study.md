@@ -33,19 +33,21 @@ Briefly solves this by centralizing daily reporting into a structured, time-boun
 ### Architecture Diagram
 
 ```mermaid
-flowchart LR
+    flowchart LR
+        Admin[Admin] --> App[Briefly]
+        Employee[Employee] --> App
 
-    Admin[Admin] --> App[Briefly System]
-    Employee[Employee] --> App
+        App --> Auth[Role-Based Auth]
+        App --> Workspace[Multi-Tenant Workspaces]
+        App --> Briefs[Daily Brief Engine]
+        App --> Submissions[Submission Tracker]
+        App --> Realtime[Realtime Dashboard]
+        App --> Email[Email & Notifications]
 
-    App --> DB[(Database)]
-    App --> Email[Email Notifications]
-    App --> Realtime[Real-time Updates]
-
-    DB --> App
-    Realtime --> Admin
-    Realtime --> Employee
-    Email --> Employee
+        Auth --> DB[(Database)]
+        Workspace --> DB
+        Briefs --> DB
+        Submissions --> DB
 ```
 
 ### Core System Flows
