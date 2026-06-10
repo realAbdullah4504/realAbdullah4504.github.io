@@ -102,4 +102,4 @@ The system standardizes daily team reporting, improves visibility into team prog
 
 ## Links
 
-- Live Demo: https://my.brieflyapp.co
+- Live Demo: [https://my.brieflyapp.co](https://my.brieflyapp.co)

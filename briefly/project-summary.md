@@ -6,4 +6,4 @@ A multi-tenant workspace system that centralizes daily team reporting into struc
 
 ## Links
 
-- Live Demo: https://my.brieflyapp.co
+- Live Demo: [https://my.brieflyapp.co](https://my.brieflyapp.co)

@@ -4,4 +4,4 @@ A multi-actor service marketplace that manages service demand and supply through
 
 ## Links
 
-- Live Demo: https://handyman-service-esp.vercel.app/
+- Live Demo: [https://handyman-service-esp.vercel.app/](https://handyman-service-esp.vercel.app/)

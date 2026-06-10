@@ -4,4 +4,4 @@ A pixel-perfect responsive landing page for an investment group platform, conver
 
 ## Links
 
-- Live Demo: https://stockclubs-react-app-web.vercel.app/
+- Live Demo: [https://stockclubs-react-app-web.vercel.app/](https://stockclubs-react-app-web.vercel.app/)

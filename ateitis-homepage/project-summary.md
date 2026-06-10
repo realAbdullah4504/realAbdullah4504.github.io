@@ -4,4 +4,4 @@ A developer-independent SEO landing page system that enables business owners to 
 
 ## Links
 
-- Live Demo: https://ateitis-homepage.netlify.app/
+- Live Demo: [https://ateitiscorp.com/](https://ateitiscorp.com/)

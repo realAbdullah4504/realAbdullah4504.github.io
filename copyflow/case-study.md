@@ -117,4 +117,4 @@ The system standardizes submission processing across all school roles, replaces 
 
 ## Links
 
-- Live Demo: https://copyflow-main.netlify.app
+- Live Demo: [https://copyflow-main.netlify.app](https://copyflow-main.netlify.app)

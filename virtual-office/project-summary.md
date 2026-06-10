@@ -4,4 +4,4 @@ A real-time workspace management system that simulates an office environment thr
 
 ## Links
 
-- Live Demo: https://virtual-office-main.netlify.app
+- Live Demo: [https://virtual-office-main.netlify.app](https://virtual-office-main.netlify.app)

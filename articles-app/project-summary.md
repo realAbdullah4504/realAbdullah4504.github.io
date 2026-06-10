@@ -4,4 +4,4 @@ An intelligent news aggregation system that collects articles from multiple sour
 
 ## 🔗 Links
 
-- Live Demo: https://news-consolidater.vercel.app/
+- Live Demo: [https://news-consolidater.vercel.app/](https://news-consolidater.vercel.app/)

@@ -95,4 +95,4 @@ The system reduces effort required to browse multiple news platforms, improves c
 
 ## Links
 
-- Live Demo: https://news-consolidater.vercel.app/
+- Live Demo: [https://news-consolidater.vercel.app/](https://news-consolidater.vercel.app/)
