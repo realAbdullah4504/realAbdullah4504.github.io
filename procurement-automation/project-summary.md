@@ -1,0 +1,3 @@
+# Tender Discovery & Procurement Intelligence Platform
+
+A distributed procurement intelligence system that continuously discovers, monitors, extracts, and enriches tender opportunities from heterogeneous government and institutional procurement portals. Transforms unstructured procurement data into structured, searchable intelligence using a horizontally scalable, state-driven worker-based processing pipeline.
