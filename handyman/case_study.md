@@ -1,180 +1,100 @@
-# Handyman Marketplace System (State-Driven Service Marketplace Engine)
+# Handyman Marketplace System
 
-A multi-actor service marketplace that manages demand and supply through structured state transitions of jobs, offers, trust signals, and subscriptions. It solves the core marketplace failures of unstructured discovery, weak trust, and manual negotiation by enforcing verified craftsman participation, subscription-gated visibility, and state-controlled workflows for service fulfillment.
+## Overview
 
-## System Goal
+A multi-actor service marketplace that manages demand and supply through structured state transitions of jobs, offers, trust signals, and subscriptions. The system solves core marketplace failures of unstructured discovery, weak trust, and manual negotiation by enforcing verified craftsman participation, subscription-gated visibility, and state-controlled workflows for service fulfillment. It is designed as a workflow engine for service fulfillment, not a listing platform.
 
-A multi-actor service marketplace that manages service demand and supply through structured state transitions of jobs, offers, trust signals, and subscriptions.
+## System Problem
 
-The system is designed as a workflow engine for service fulfillment, not a listing platform.
+Service marketplaces fail when service discovery is unstructured, hiring decisions are manual with weak trust, job negotiation is not state-controlled, provider quality is not enforced, and there is no lifecycle for service execution. This introduces friction in matching service demand with verified service providers, leading to inconsistent outcomes, trust degradation, and poor customer experience.
 
-## Core System Problem
+## System Architecture
 
-Service marketplaces fail when:
+The marketplace operates as a multi-actor workflow engine with four interacting roles:
 
-- service discovery is unstructured
-- hiring decisions are manual and trust is weak
-- job negotiation is not state-controlled
-- provider quality is not enforced
-- there is no lifecycle for service execution
+- **Client** — creates demand (jobs)
+- **Craftsman** — responds with offers
+- **Admin** — controls trust and access
+- **System** — enforces state transitions and visibility rules
 
-This system solves this by introducing:
+The marketplace is not a CRUD system — it is a state transition engine over jobs and offers.
 
-A controlled lifecycle system for matching service demand with verified service providers.
-
-## Actors in the System
-
-The system is driven by four interacting actors:
-
-- **Client** → creates demand (jobs)
-- **Craftsman** → responds with offers
-- **Admin** → controls trust and access
-- **System** → enforces state transitions and visibility rules
-
-## System State Model (CORE OF DESIGN)
-
-This is the most important part.
+## State Model
 
 ### Job State
+
 Created → Open → Negotiating → Locked (accepted offer) → Completed → Archived
 
 ### Offer State
+
 Created → Pending → Accepted / Rejected → Withdrawn
 
 ### Craftsman State
+
 Unverified → Verified → Blocked / Declined
 
 ### Subscription State
+
 Inactive → Pending → Active → Expired
 
-### Key Insight
+The marketplace's core complexity is maintaining consistent state transitions across distributed user interactions under trust constraints.
 
-The marketplace is not a CRUD system — it is a state transition engine over jobs and offers
+## System Flow
 
-## Core System Flow (Behavioral View)
+### Demand Creation
 
-### Demand Creation Flow
+Client creates job → system validates → job enters OPEN state → job becomes discoverable to eligible craftsmen.
 
-Client creates job → system validates → job enters OPEN state → job becomes discoverable to eligible craftsmen
+### Supply Response
 
-### Supply Response Flow
+Craftsmen observe open jobs → submit offers → system attaches offers to job → job enters NEGOTIATING state.
 
-Craftsmen observe open jobs → submit offers → system attaches offers to job → job enters NEGOTIATING state
+### Matching Decision
 
-### Matching Decision Flow
+Client evaluates offers → selects one offer → system locks job → all other offers become inactive.
 
-Client evaluates offers → selects one offer → system locks job → all other offers become inactive
+### Execution
 
-### Execution Flow
+Accepted offer becomes active contract → job transitions to COMPLETED after execution → review phase begins.
 
-Accepted offer becomes active contract → job transitions to COMPLETED after execution → review phase begins
+### Trust Update
 
-### Trust Flow
+After completion, client submits review, system updates craftsman trust score, and future job visibility is affected by trust state.
 
-After completion:
-- client submits review
-- system updates craftsman trust score
-- future job visibility is affected by trust state
+## Core Components
 
-## Trust as a System Constraint
+### Matching System
 
-A key design decision:
+The system matches jobs across geo constraints, service category, craftsman verification state, rating history, and subscription eligibility. Matching is not search — it is a filtered state evaluation over supply and demand graphs.
 
-Not all craftsmen are equal participants in the system
+### Communication System
 
-The system enforces constraints:
+Messaging is a negotiation channel bound to job state. Messages only exist within job or offer context. Message visibility depends on job state. Communication is invalid after job closure.
 
-- only VERIFIED craftsmen can participate in job bidding
-- subscription state affects visibility and opportunity access
-- reviews modify future matching probability
+### Subscription System
 
-This makes trust a first-class system state, not a UI feature.
+Subscription is a gating mechanism that controls marketplace visibility. It unlocks job access priority, influences listing visibility, and affects matching exposure rather than acting as payment logic.
 
-## Matching System Logic (Core Behavior)
+### Trust System
 
-The system matches:
+Trust is a first-class system state, not a UI feature. Only verified craftsmen can participate in job bidding. Subscription state affects visibility and opportunity access. Reviews modify future matching probability.
 
-- job location (geo constraint)
-- service category
-- craftsman verification state
-- rating history
-- subscription eligibility
+## Engineering Decisions
 
-So matching is not search — it is:
+The marketplace's core complexity is not UI or APIs — it is maintaining consistent state transitions across distributed user interactions under trust constraints. The system is designed as a state machine where jobs represent demand states, offers represent negotiation states, craftsmen represent supply states, and reviews and subscriptions modify future system behavior.
 
-a filtered state evaluation over supply and demand graphs
+## Outcome
 
-## Communication System Behavior
+The system delivers a multi-actor state machine marketplace where state transitions across jobs, offers, craftsmen, reviews, and subscriptions continuously reshape platform behavior. Service execution becomes verifiable and traceable, reducing negotiation friction, enforcing quality standards, and building systemic trust through state-driven constraints rather than manual enforcement.
 
-Messaging is not just chat.
+## Technologies
 
-It is:
+- Next.js
+- TypeScript
+- Redux
+- Socket.io (Node.js)
+- MongoDB
 
-a negotiation channel bound to job state
-
-### Rules
-
-- messages only exist within job or offer context
-- message visibility depends on job state
-- communication is invalid after job closure
-
-## Subscription System Behavior
-
-Subscription is not payment logic.
-
-It is:
-
-a gating mechanism that controls marketplace visibility
-
-### Effects
-
-- unlocks job access priority
-- influences listing visibility
-- affects matching exposure
-
-## System Lifecycle Summary
-
-The entire marketplace behaves as:
-
-Demand Creation  
-↓  
-Supply Discovery  
-↓  
-Offer Negotiation  
-↓  
-State Lock (Contract)  
-↓  
-Execution  
-↓  
-Trust Update  
-↓  
-Future Matching Influence
-
-## Core System Insight
-
-This system is not:
-
-- a job board
-- a listing platform
-- a CRUD marketplace
-
-It is:
-
-a state-driven marketplace engine where trust, availability, and negotiation continuously reshape system behavior
-
-## Final System Design Summary
-
-The Handyman Marketplace operates as a multi-actor state machine system where:
-
-- Jobs represent demand states
-- Offers represent negotiation states
-- Craftsmen represent supply states
-- Reviews and subscriptions modify future system behavior
-
-The system's core complexity is not UI or APIs — it is:
-
-maintaining consistent state transitions across distributed user interactions under trust constraints
-
-## 🔗 Links
+## Links
 
 - Live Demo: https://handyman-service-esp.vercel.app/

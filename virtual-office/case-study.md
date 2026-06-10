@@ -2,33 +2,15 @@
 
 ## Overview
 
-Virtual Office is a real-time workspace management system that simulates an internal office environment where teams collaborate through structured presence, task execution, and communication flows.
+Virtual Office is a real-time workspace management system that simulates an internal office environment where teams collaborate through structured presence, task execution, and communication flows. It extends traditional task systems by introducing a live workplace layer, where employee availability, room access, and interaction states directly influence collaboration.
 
-It extends traditional task systems by introducing a live workplace layer, where employee availability, room access, and interaction states directly influence collaboration.
+## System Problem
 
-## Problem Statement
-
-Remote teams face fragmentation in daily operations due to:
-
-- No real-time visibility of employee availability or focus state
-- Disconnected tools for chat, tasks, and meetings
-- Lack of structured workplace presence signals
-- Poor context around "who is working, available, or engaged"
-- Inefficient coordination between managers and employees
-
-Existing tools manage tasks and communication separately, but fail to model a real working environment flow.
-
-## Core System Capabilities
-
-- State-driven virtual workspace engine governed by real-time presence and role context
-- Real-time presence tracking with status-based interaction rules
-- Virtual room-based interaction model with access control
-- Task lifecycle management with structured workflows
-- Real-time communication layer with chat, video, and announcements
+Remote teams face fragmentation in daily operations due to no real-time visibility of employee availability or focus state, disconnected tools for chat, tasks, and meetings, lack of structured workplace presence signals, poor context around who is working, available, or engaged, and inefficient coordination between managers and employees. Existing tools manage tasks and communication separately, but fail to model a real working environment flow.
 
 ## System Architecture
 
-### Architecture Diagram
+The system operates as a real-time workflow engine with role-based access and presence-driven interaction rules.
 
 ```mermaid
 flowchart LR
@@ -48,48 +30,85 @@ flowchart LR
     System --> Activity[Activity Logger]
 ```
 
-### Core System Flows
+## State Model
 
-#### 1. Employee Workflow Flow
+### Employee Presence States
+
+- At Desk — actively working, available for interaction
+- Focus Time — working, limited interruptions
+- On Break — temporarily unavailable
+- Offline — not present in workspace
+
+### Task Lifecycle
+
+Task Assigned → In Progress → Review → Completed
+
+### Room Interaction States
+
+Access Request → Check Presence State → Enter Room (if available) or Knock Event → Employee responds
+
+## System Flow
+
+### Employee Workflow
+
 Login → Join Workspace → Set Presence State → Access Room → View Tasks → Update Task Status → Join Meetings → Activity Logged
 
-#### 2. Admin Workflow Flow
+### Admin Workflow
+
 Create Workspace → Invite Employees → Assign Tasks → Monitor Desk Panel → Enter Rooms → Broadcast Announcements → Track Activity
 
-#### 3. Room Interaction Flow
+### Room Interaction
+
 Access Request → Check Employee Presence State → If available → Enter Room / If unavailable → Trigger Knock Event → Employee receives notification → responds accordingly
 
-#### 4. Task Lifecycle Flow
+### Task Lifecycle
+
 Task Assigned → Visible in Employee Panel → Progress Updated → Moved via Kanban → Marked Complete → Attachments Uploaded → Logged in Activity System
 
-### Data Model (High-Level)
+## Core Components
 
-- **Users** → authentication identity
-- **Workspaces** → team containers
-- **Rooms** → virtual room environments
-- **Presence States** → availability and focus status
-- **Tasks** → assigned work with lifecycle states
-- **Messages** → communication records
-- **Activity Logs** → system event tracking
+### Presence Engine
 
-## Key Features
+Real-time presence tracking with status-based interaction rules. Employee availability state directly governs room access eligibility, notification delivery, and collaboration permissions.
 
-- Real-time presence engine (At Desk, Focus Time, On Break, Offline)
-- Virtual room system with enter/knock interaction model
-- Admin desk panel with room visibility and access controls
-- Task execution system with assignment and status tracking
-- Kanban workflow with drag-and-drop task progression
-- Real-time chat and video calling rooms
-- Announcement broadcasting system
-- Activity logging and real-time notifications
+### Virtual Room System
 
-## Outcome / Impact
+Room-based interaction model with enter/knock mechanics. Room access is gated by employee presence state rather than simple permission checks, creating an office-like interaction model.
 
-This system demonstrates a real-time collaborative workspace model where employee presence directly affects system interactions, tasks are embedded into live operational flow, communication is context-aware and state-driven, and workspace behavior mimics a real office environment.
+### Task Execution System
 
-It strengthens portfolio positioning as a real-time SaaS collaboration system with presence-driven workflow architecture.
+Kanban workflow with assignment, status tracking, and progression. Tasks are embedded into the live operational flow with state-driven visibility and updates.
 
-## Live Demo
+### Communication Layer
 
-https://virtual-office-main.netlify.app
+Real-time chat, video calling, and announcement broadcasting within room contexts. Communication is context-aware and state-driven rather than open-channel.
 
+### Admin Desk Panel
+
+Room visibility, access controls, employee monitoring, and announcement broadcasting from a unified admin interface.
+
+### Notification Engine
+
+Real-time notifications triggered by presence changes, task assignments, room access requests, and system events.
+
+### Activity Logger
+
+System event tracking for audit, analytics, and operational visibility.
+
+## Engineering Decisions
+
+The system was designed around presence-driven workflow architecture. Employee presence state is not metadata — it is a first-class system input that governs all interaction rules. The real-time layer was chosen over polling to maintain sub-second presence fidelity. Room access logic was designed to mimic physical office interaction patterns rather than traditional permission-based access.
+
+## Outcome
+
+The system delivers a real-time collaborative workspace model where employee presence directly affects system interactions, tasks are embedded into live operational flow, communication is context-aware and state-driven, and workspace behavior mimics a real office environment. It demonstrates presence-driven workflow architecture suitable for distributed team operations.
+
+## Technologies
+
+- React
+- TypeScript
+- Supabase (Authentication & Database & Realtime & Storage)
+
+## Links
+
+- Live Demo: https://virtual-office-main.netlify.app

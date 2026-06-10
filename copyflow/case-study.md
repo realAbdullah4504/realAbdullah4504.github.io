@@ -2,123 +2,119 @@
 
 ## Overview
 
-CopyFlow is a role-based school workflow system designed to manage academic submissions, reviews, and printing in a structured and controlled lifecycle.
+CopyFlow is a role-based school workflow system designed to manage academic submissions, reviews, and printing in a structured and controlled lifecycle. It replaces manual submission handling with a state-driven document workflow engine where teachers submit academic work, secretaries process and approve it, and principals monitor daily academic activity. The system ensures strict transitions between submission stages, enabling controlled document governance across the school.
 
-It replaces manual submission handling with a state-driven document workflow engine where teachers submit academic work, secretaries process and approve it, and principals monitor daily academic activity.
+## System Problem
 
-The system ensures strict transitions between submission stages, enabling controlled document governance across the school.
-
-## Problem Statement
-
-Schools handling academic submissions face:
-
-- Manual and inconsistent submission handling processes
-- No structured review and approval system
-- Lack of centralized tracking of submission status
-- Inefficient coordination between teachers, secretaries, and principals
-- Risk of misplaced or untracked printed documents
-- No formal lifecycle for submission progression
-
-Existing systems rely heavily on manual communication, making workflow control unreliable.
-
-## Core System Capabilities
-
-- Role-based workflow system (Admin, Teacher, Secretary, Principal)
-- State-driven submission lifecycle with enforced transitions
-- Auto-generated print instruction documents from submission metadata
-- Conditional approval paths (direct print or censored review)
-- Weekly calendar-based lesson visibility for principals
-- Print queue management with automatic archival
-- Single-school account model with manual user registration
+Schools handling academic submissions face manual and inconsistent submission handling processes, no structured review and approval system, lack of centralized tracking of submission status, inefficient coordination between teachers, secretaries, and principals, risk of misplaced or untracked printed documents, and no formal lifecycle for submission progression. Existing systems rely heavily on manual communication, making workflow control unreliable.
 
 ## System Architecture
+
+The system operates as a role-based document lifecycle engine with four actor types: Admin, Teacher, Secretary, and Principal. State transitions are controlled by role permissions rather than open access.
 
 ### Architecture Diagram
 
 ```mermaid
 flowchart LR
-
+    
     Admin[Admin] --> CreateUsers[Create Users & Assign Roles]
-
+    
     CreateUsers --> Teacher[Teacher]
     CreateUsers --> Secretary[Secretary]
     CreateUsers --> Principal
-
+    
     %% SHARED SYSTEM STATE
     Teacher --> SubmissionPool[(Submission System)]
-
+    
     %% TEACHER ACTIONS
     Teacher --> Create[Create Submission]
     Create --> Upload[Upload Documents]
     Upload --> Generate[Generate Instructions]
     Generate --> SubmissionPool
-
+    
     %% SECRETARY ACTIONS (SEPARATE FLOW)
     Secretary --> ReviewPanel[View Pending Submissions]
     SubmissionPool --> ReviewPanel
-
+    
     ReviewPanel --> Censored[Censored / Needs Fix]
     ReviewPanel --> Approved[Approved for Print]
-
+    
     Approved --> Print[Print Execution]
     Print --> Archive[Archived State]
-
+    
     %% PRINCIPAL ACTIONS (READ ONLY FLOW)
     Principal --> ScheduleView[Weekly Schedule View]
     SubmissionPool --> ScheduleView
     ScheduleView --> Details[View Submissions]
 ```
 
-### Core System Flows
+## State Model
 
-#### 1. Teacher Submission Flow
+### Submission States
+
+Pending → Approved (print) or Censored (needs revision) → Printed → Archived
+
+### Role States
+
+- **Admin** — creates users and assigns roles
+- **Teacher** — creates and submits academic work
+- **Secretary** — reviews and transitions submission states
+- **Principal** — monitors weekly schedule and submission details (read-only)
+
+## System Flow
+
+### Teacher Submission Flow
+
 Create Submission → Fill Form → Upload Documents → Generate Instructions → Submit → Status = Pending
 
-#### 2. Secretary Processing Flow
+### Secretary Processing Flow
+
 Pending Submission → Review → Either: Move to Censored (needs revision) OR Move to Printed → Automatically Archived
 
-#### 3. Principal Monitoring Flow
+### Principal Monitoring Flow
+
 View Weekly Calendar → Select Day → View Lessons → Open Submission Details
 
-#### 4. Print Lifecycle Flow
+### Print Lifecycle
+
 Submission Approved → Printed State → Auto Archive → Stored Record
 
-### Data Model (High-Level)
+## Core Components
 
-- **Users** → authentication identity with role context
-- **Schools** → single-school containers
-- **Employees** → school staff with assigned roles
-- **Submissions** → lesson submissions with print metadata and state
-- **Instructions** → auto-generated print instruction documents
-- **Print Queue** → censored submissions awaiting print execution
-- **Archive** → completed printed submissions (immutable)
-- **Classes** → assigned class containers for scheduling
-- **Calendar Events** → daily lesson scheduling entries
+### Submission State Machine
 
-## Key Features
+The submission lifecycle enforces strict state transitions: Pending, Approved for Print, Censored (revision required), Printed, and Archived. State transitions are controlled by role permissions rather than open access.
 
-- Four-role permission system (Admin, Secretary, Principal, Teacher)
-- Direct account creation by administrator without email invites
-- Submission state machine with Pending, Censored, Print, and Archived states
-- Secretary-controlled workflow transitions with branching approval paths
-- Auto-generated instruction documents from submission forms
-- Weekly calendar view with daily lesson tracking for principals
-- Clickable lesson cards linking to related submissions
-- Print queue with automatic archival upon completion
-- Immutable archive for finalized academic records
+### Auto-Generated Instructions
 
-## Outcome / Impact
+Print instruction documents are generated automatically from submission metadata, eliminating manual document preparation.
 
-- Standardized submission processing across all school roles
-- Controlled review and approval system replacing manual communication
-- Automated state transitions for printed documents
-- Improved coordination between teachers, secretaries, and principals
-- Full visibility into academic document lifecycle
+### Print Queue Management
 
-## Live Demo
+Censored submissions enter a print queue awaiting execution. Approved submissions proceed directly to print. Both paths terminate in the immutable Archive.
 
-**https://copyflow-main.netlify.app**
+### Weekly Calendar View
 
-## Final Notes
+Principals access a weekly calendar-based lesson visibility system. Daily lesson scheduling entries link to related submissions, creating traceability between schedule and document state.
 
-CopyFlow demonstrates the ability to design and implement a role-based document lifecycle workflow system with state-driven execution, conditional approval paths, and automated archival — simulating production-grade academic administration infrastructure.
+### Immutable Archive
+
+Completed printed submissions are stored in an archived state. Archived records are immutable, preserving academic record integrity.
+
+## Engineering Decisions
+
+The system was designed around role-based state enforcement rather than feature-based access control. This ensures that submission workflows cannot be circumvented through UI manipulation. State transitions are guaranteed by the system rather than requested by users.
+
+## Outcome
+
+The system standardizes submission processing across all school roles, replaces manual communication with controlled review and approval, automates state transitions for printed documents, and improves coordination between teachers, secretaries, and principals. Full visibility into academic document lifecycle is maintained through role-appropriate interfaces.
+
+## Technologies
+
+- React
+- TypeScript
+- Supabase (Authentication & Database storage)
+
+## Links
+
+- Live Demo: https://copyflow-main.netlify.app
