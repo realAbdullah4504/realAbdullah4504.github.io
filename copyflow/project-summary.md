@@ -6,4 +6,4 @@ CopyFlow is a role-based school administration platform digitizing lesson submis
 
 ## Links
 
-- Live Demo: [https://copyflow-main.netlify.app](https://copyflow-main.netlify.app)
+- Live Demo: [https://copyflowusa.com/](https://copyflowusa.com/)
