@@ -1,4 +1,4 @@
-# Google Apps Scripts Automation
+# Email Workflow Automation System
 
 ## Project Summary
 

@@ -1,4 +1,4 @@
-# Tax Rebate Processing Platform
+# Tax Rebate Processing & Refund Management Platform
 
 ## Project Summary
 

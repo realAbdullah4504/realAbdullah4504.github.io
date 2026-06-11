@@ -1,4 +1,4 @@
-# Security Report Distribution Automation System
+# Email Workflow Automation System
 
 ## Positioning Statement
 
