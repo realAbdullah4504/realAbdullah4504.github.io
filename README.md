@@ -6,7 +6,7 @@ A collection of full-stack systems, automation platforms, and developer tools sp
 
 ## Engineering Capabilities
 
-See [skills.md](skills.md) for a detailed overview of technologies, methodologies, and demonstrated projects across backend engineering, distributed systems, DevOps, frontend, database design, workflow automation, and security engineering.
+See [engineering-capabilities.md](engineering-capabilities.md) for a detailed overview of technologies, methodologies, and demonstrated projects across backend engineering, distributed systems, DevOps, frontend, database design, workflow automation, and security engineering.
 
 ---
 
