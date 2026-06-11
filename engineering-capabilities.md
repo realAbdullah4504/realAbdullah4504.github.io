@@ -160,7 +160,7 @@ Design of CI/CD pipelines, infrastructure automation, and cloud-native applicati
 ### Technologies
 
 - Docker, Docker Compose
-- Kubernetes
+- Kubernetes (cluster setup and workload deployment experience)
 - AWS ecosystem
 - Jenkins, GitLab CI/CD
 - Nginx
