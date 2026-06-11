@@ -4,6 +4,12 @@ A collection of full-stack systems, automation platforms, and developer tools sp
 
 ---
 
+## Engineering Capabilities
+
+See [skills.md](skills.md) for a detailed overview of technologies, methodologies, and demonstrated projects across backend engineering, distributed systems, DevOps, frontend, database design, workflow automation, and security engineering.
+
+---
+
 ## Projects
 
 ### Procurement Automation
@@ -150,4 +156,10 @@ A developer-independent landing page system that enables business owners to upda
 A pixel-perfect responsive landing page for an investment group platform, converted from high-fidelity Figma designs with clean UI structure and smooth micro-interactions. Delivers consistent visual experience across all screen sizes with lightweight performance.
 
 - Live Demo: https://stockclubs-react-app-web.vercel.app/
+
+---
+
+## Engineering Capabilities
+
+See [skills.md](skills.md) for a detailed overview of technologies, methodologies, and demonstrated projects across backend engineering, distributed systems, DevOps, frontend, database design, workflow automation, and security engineering.
 
