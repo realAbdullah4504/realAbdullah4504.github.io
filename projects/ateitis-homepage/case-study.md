@@ -2,7 +2,7 @@
 
 ## Overview
 
-A developer-independent landing page system that enables business owners to update website content without engineering support. It uses a headless WordPress CMS for content management, Gatsby for static site generation, and Netlify for automated CI/CD deployment triggered by content changes.
+A developer-independent landing page system that enables business owners to update website content without engineering support. It uses a headless WordPress CMS for content management, Gatsby for static site generation, and Netlify for automated deployment triggered by content changes.
 
 The system is designed to eliminate developer dependency for marketing/landing page updates while maintaining SEO performance, scalability, and deployment automation.
 
@@ -30,7 +30,7 @@ flowchart LR
     WP --> API[GraphQL API Layer]
     API --> Gatsby[Gatsby Build System]
     Gatsby --> Site[Static Site Generation]
-    Site --> CDN[Netlify CDN Distribution]
+    Site --> Netlify[Netlify Deployment]
 ```
 
 ### State Model
@@ -41,7 +41,7 @@ Draft → Published → Build Triggered → Static Pages Generated → Deployed
 
 **Deployment State**
 
-Webhook Triggered → Build Queued → Build Executing → Build Successful → CDN Updated
+Webhook Triggered → Build Queued → Build Executing → Build Successful → Deployment Complete
 
 ### Core Components
 
@@ -65,24 +65,13 @@ It enables:
 - Landing page content updates without developer involvement
 - Centralized media and content management
 
-**Deployment Infrastructure (Netlify CI/CD)**
-
-Netlify manages the build and deployment pipeline through webhook triggers.
-
-It provides:
-
-- Automated builds on content updates
-- Zero-infrastructure deployment management
-- Global CDN distribution of static assets
-
 ### System Flow
 
 1. Business owner updates content in WordPress CMS
-2. WordPress triggers webhook on content publish/update
-3. Netlify initiates Gatsby build process
-4. Gatsby fetches latest content via GraphQL during build
-5. Static site is generated and deployed to CDN
-6. Users access fast, SEO-optimized landing pages
+2. Content change triggers automated build process
+3. Gatsby fetches latest content via GraphQL during build
+4. Static site is generated and deployed
+5. Users access fast, SEO-optimized landing pages
 
 ---
 
@@ -104,9 +93,9 @@ Pre-renders pages at build time to ensure:
 
 Content is resolved during build instead of runtime, reducing API dependency and improving performance consistency.
 
-**CI/CD via Netlify**
+**Deployment via Netlify**
 
-Webhook-driven automated deployment removes manual intervention and ensures continuous content delivery.
+Webhook-driven automated deployment via Netlify removes manual intervention and ensures continuous content delivery.
 
 ---
 
@@ -117,7 +106,7 @@ The system delivers a fully automated, SEO-optimized landing page infrastructure
 - Business owners can independently manage content
 - Developers are removed from routine content update cycles
 - Pages are statically generated for performance and SEO
-- Deployment is fully automated via CI/CD pipeline
+- Deployment is fully automated via Netlify
 
 This significantly improves content iteration speed and operational efficiency.
 
@@ -129,7 +118,7 @@ This significantly improves content iteration speed and operational efficiency.
 - React
 - WordPress (Headless CMS)
 - GraphQL
-- Netlify (CI/CD & Hosting)
+- Netlify (Deployment)
 - Figma (UI Design System)
 
 ## Links
