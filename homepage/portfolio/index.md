@@ -1,6 +1,6 @@
 # Portfolio — Backend Systems, Automation & Product Engineering
 
-## 🧠 Positioning Statement
+## Positioning Statement
 
 I design and build **production-grade software systems** that solve real business problems through:
 
@@ -11,26 +11,26 @@ I design and build **production-grade software systems** that solve real busines
 * DevOps and CI/CD infrastructure
 * AI-assisted processing layers
 
-Rather than building isolated features or scripts, I focus on **end-to-end systems with state-driven workflows, scalability, and operational reliability** .
+Rather than building isolated features or scripts, I focus on **end-to-end systems that operate reliably under real-world constraints such as scale, failures, and evolving business logic.**
 
 ---
 
-# 🧩 Core Engineering Philosophy
+# Core Engineering Philosophy
 
 All systems I build follow these principles:
 
-* **State-driven design over ad-hoc logic**
-* **Separation of execution, processing, and data layers**
-* **Event-driven or workflow-driven architecture**
-* **Fault tolerance through checkpointing or state recovery**
-* **Scalability through modular components**
-* **Real-world operational constraints over theoretical design**
+* State-driven design over ad-hoc logic
+* Separation of execution, processing, and data layers
+* Event-driven or workflow-driven architecture
+* Fault tolerance through checkpointing and recovery mechanisms
+* Scalability through modular system design
+* Engineering for real operational constraints, not theoretical simplicity
 
 ---
 
-# 🏗 System Portfolio (Proof of Work)
+# System Portfolio (Proof of Work)
 
-## 🟦 1. DevSecOps CI/CD Pipeline System
+## 1. DevSecOps CI/CD Pipeline System
 
 ### Category: Cloud Infrastructure & Deployment Systems
 
@@ -40,18 +40,18 @@ A state-driven CI/CD pipeline that automates software delivery through controlle
 
 * Multi-stage CI/CD orchestration
 * Security validation gates (SonarQube, Snyk, Gitleaks)
-* Automated testing pipeline (API/UI/performance)
+* Automated testing pipelines (API/UI/performance)
 * Containerized deployment workflows
 
 ### What it proves
 
 * DevOps architecture design
 * CI/CD system engineering
-* Production deployment reliability systems
+* Production-grade deployment reliability systems
 
 ---
 
-## 🟨 2. Tender Discovery & Procurement Intelligence System
+## 2. Tender Discovery & Procurement Intelligence System
 
 ### Category: Data Automation & Distributed Systems
 
@@ -63,17 +63,17 @@ A distributed crawling and processing system that extracts, classifies, and enri
 * Distributed worker architecture (Celery + ECS)
 * Strategy-based extraction system
 * PCI-based relevance scoring
-* Structured data intelligence pipeline
+* Structured data intelligence pipelines
 
 ### What it proves
 
 * Distributed system design
 * Large-scale data pipeline engineering
-* Strategy pattern architecture
+* Strategy-pattern-based architecture
 
 ---
 
-## 🟩 3. Handyman Marketplace System
+## 3. Handyman Marketplace System
 
 ### Category: Backend Systems / Product Engineering
 
@@ -89,164 +89,163 @@ A multi-actor marketplace platform that manages clients, craftsmen, offers, trus
 
 ### What it proves
 
-* SaaS/product system design
+* SaaS product system design
 * Marketplace architecture
-* Complex state-driven business logic systems
+* Complex state-driven business workflows
 
 ---
 
-## 🟨 4. Multi-Source AI News Aggregator
+## 4. Multi-Source AI News Aggregator
 
 ### Category: AI Backend Systems / Data Automation
 
-An AI-powered content aggregation system that consolidates multiple news sources into a unified timeline with classification and filtering.
+An AI-powered aggregation system that consolidates multiple news sources into a unified timeline with classification and filtering.
 
 ### Key Capabilities
 
-* Multi-source scraping pipeline
+* Multi-source scraping pipelines
 * AI-based content classification
 * Unified timeline aggregation
-* Saved articles system
-* REST-based ingestion architecture
+* Structured ingestion architecture
 
 ### What it proves
 
 * AI integration in backend systems
-* content processing pipelines
-* structured data transformation systems
+* Content processing pipelines
+* Structured data transformation systems
 
 ---
 
-## 🟧 5. Tax Rebate Processing System
+## 5. Tax Rebate Processing System
 
 ### Category: Workflow Automation Systems
 
-A structured workflow system that manages tax onboarding, document processing, tax calculations, and refund lifecycle management.
+A structured workflow system that manages onboarding, document processing, tax calculations, and refund lifecycle management.
 
 ### Key Capabilities
 
 * Multi-stage workflow engine
-* Document ingestion and processing
-* Tax calculation engine with configurable rules
-* Staff review and approval system
-* Refund lifecycle tracking
+* Document ingestion and processing pipelines
+* Rule-based tax calculation engine
+* Approval and review workflows
+* Lifecycle tracking system
 
 ### What it proves
 
-* workflow system engineering
-* financial process automation
-* state-driven business process design
+* Workflow system engineering
+* Financial process automation
+* State-driven business process design
 
 ---
 
-## 🟦 6. Taylor CAD Property Data Extraction System
+## 6. Taylor CAD Property Data Extraction System
 
 ### Category: Data Automation & Web Intelligence Systems
 
-A resilient browser automation system that extracts structured property data from dynamic government portals with checkpoint-based recovery.
+A resilient browser automation system that extracts structured property data from dynamic government portals using checkpoint-based recovery.
 
 ### Key Capabilities
 
 * Playwright-based browser automation
-* dynamic DOM parsing (Kendo UI handling)
-* deep property-level data extraction
-* checkpoint-based recovery system
-* structured Excel data export
+* Dynamic DOM parsing (Kendo UI handling)
+* Deep structured data extraction pipelines
+* Checkpoint-based recovery system
+* Export-ready structured datasets
 
 ### What it proves
 
-* resilient scraping system design
-* real-world data pipeline engineering
-* fault-tolerant automation systems
+* Resilient scraping system design
+* Real-world data pipeline engineering
+* Fault-tolerant automation systems
 
 ---
 
-# 🧭 Service Mapping (What I Offer)
+# Service Mapping (What I Offer)
 
-## 🟦 1. Backend Systems for Scalable Product Architecture
+## 1. Backend Systems for Scalable Product Architecture
 
-### Covered Systems:
+Covered Systems:
 
 * Handyman Marketplace
-* Tax Processing System
+* Tax Rebate System
 
-### What I deliver:
+What I deliver:
 
 * SaaS backend architecture
 * scalable API systems
-* business logic design
-* multi-role system workflows
+* business workflow design
+* multi-role system engineering
 
 ---
 
-## 🟨 2. Data Automation & Distributed Processing Systems
+## 2. Data Automation & Distributed Processing Systems
 
-### Covered Systems:
+Covered Systems:
 
 * Tender System
 * Taylor CAD System
-* News Aggregator
+* AI News Aggregator
 
-### What I deliver:
+What I deliver:
 
-* scraping + ingestion pipelines
-* distributed worker systems
-* data transformation engines
+* distributed scraping systems
+* worker-based architectures
+* data transformation pipelines
 * large-scale automation systems
 
 ---
 
-## 🟧 3. Cloud Infrastructure & Deployment Systems
+## 3. Cloud Infrastructure & Deployment Systems
 
-### Covered Systems:
+Covered Systems:
 
-* DevSecOps Pipeline System
+* DevSecOps CI/CD Pipeline
 
-### What I deliver:
+What I deliver:
 
-* CI/CD pipelines
+* CI/CD automation pipelines
 * containerized deployments
-* security + testing automation
-* release engineering systems
+* secure release engineering systems
 
 ---
 
-## 🟨 4. AI-Enhanced Backend Systems
+## 4. AI-Enhanced Backend Systems
 
-### Covered Systems:
+Covered Systems:
 
-* News Aggregator (classification layer)
+* AI News Aggregator
 
-### What I deliver:
+What I deliver:
 
-* AI integration into backend systems
-* structured data extraction using LLMs
-* classification and enrichment pipelines
+* LLM integration into backend systems
+* structured AI processing pipelines
+* classification and enrichment systems
 
 ---
 
-## 🟩 5. Business Workflow Automation Systems
+## 5. Business Workflow Automation Systems
 
-### Covered Systems:
+Covered Systems:
 
-* Tax Processing System
-* Handyman Marketplace (partial)
+* Tax Rebate System
+* Handyman Marketplace
 
-### What I deliver:
+What I deliver:
 
 * workflow engine design
-* multi-step business process automation
+* multi-step business automation
 * state-driven execution systems
 
 ---
 
-## 🟦 6. System Interfaces & Operational Dashboards
+## 6. System Interfaces & Operational Dashboards
 
-### Covered Systems:
+Covered Systems:
 
 * Handyman Marketplace (admin + user flows)
+* Virtual Office (real-time workspace system)
 
-### What I deliver:
+What I deliver:
 
 * API-driven frontend systems
 * operational dashboards
@@ -254,42 +253,38 @@ A resilient browser automation system that extracts structured property data fro
 
 ---
 
-# 🧠 What Makes This Portfolio Different
+# What Makes This Portfolio Different
 
-This portfolio is not organized around:
-
-* tools
-* frameworks
-* isolated projects
+This portfolio is not organized around tools, frameworks, or isolated projects.
 
 It is organized around:
 
-> **real-world systems with state-driven architecture and operational constraints**
+> real-world systems built with state-driven architecture and operational constraints
 
 Each system represents:
 
-* a business problem
-* a system-level design solution
-* a scalable architecture pattern
-* a reusable engineering capability
+* a real business problem
+* a system-level architecture solution
+* a scalable engineering pattern
+* a reusable capability
 
 ---
 
-# 🚀 How to Read This Portfolio
+# How to Read This Portfolio
 
-If you are a client, you are not hiring me for:
+If you are evaluating me, you are not hiring for:
 
 * individual features
 * small tasks
-* UI work
+* UI development
 
 You are hiring for:
 
-> **end-to-end system design and implementation**
+> end-to-end system design and implementation
 
 ---
 
-# 📌 Core Engineering Identity
+# Core Engineering Identity
 
 I specialize in:
 
@@ -297,21 +292,21 @@ I specialize in:
 
 ---
 
-# 📞 Contact / Collaboration
+# Contact / Collaboration
 
 If you're building systems that require:
 
 * backend architecture
 * automation pipelines
 * marketplace platforms
-* distributed data systems
+* distributed systems
 * CI/CD infrastructure
 
 We can collaborate on designing and building production-grade systems.
 
 ---
 
-# 🧠 Final Insight
+# Final Insight
 
 This portfolio represents a single idea:
 
