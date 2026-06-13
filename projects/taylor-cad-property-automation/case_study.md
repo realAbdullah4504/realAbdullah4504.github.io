@@ -1,158 +1,224 @@
-# Taylor CAD – Abilene Property Data Extraction System
-
-## Positioning Statement
-
-A fully automated property data extraction system built to collect, normalize, and export structured real estate records from the Taylor CAD public assessment portal into Excel for downstream analysis and reporting.
-
-The system simulates real user interactions, handles dynamic web content, and ensures data consistency using checkpoint-based recovery.
+# Taylor CAD – Property Data Extraction & Automation System
 
 ---
 
-## Problem Statement
+# 1. Client-Facing Summary (Business View)
 
-The Taylor CAD portal does not provide a bulk export API for property records.
+## Problem This System Solves
 
-Data is distributed across:
+Real estate and property assessment data from public portals is often:
 
-* Paginated subdivision search results
-* Dynamic JavaScript-driven grids
-* Property detail pages loaded in the same tab
-* Lazy-loaded tax and valuation sections
+* spread across paginated and dynamic web interfaces
+* not available via bulk export APIs
+* hidden inside JavaScript-driven UI components
+* difficult to extract consistently at scale
+* time-consuming and error-prone when done manually
 
-Manually collecting this data is slow, error-prone, and not scalable.
-
----
-
-## Objective
-
-To build a system that:
-
-* Automates end-to-end property data extraction
-* Handles dynamic frontend (Kendo UI + JS modals)
-* Extracts structured financial and ownership data
-* Ensures resumability on failure (checkpointing)
-* Exports clean dataset to Excel for analysis
+This makes large-scale property data collection inefficient and unreliable.
 
 ---
 
-## System Overview
+## Solution Delivered
 
-The system continuously monitors and extracts property records from the Taylor CAD public assessment portal.
+I built a **fully automated property data extraction system** that collects structured real estate records from the Taylor CAD public assessment portal.
 
-When a subdivision is selected, the workflow searches property listings, navigates to individual property detail pages, extracts structured data, and exports the results to Excel.
+The system:
 
-The workflow uses checkpoint-based state management to ensure reliable execution and prevent duplicate processing.
+* navigates dynamic web interfaces like a real user
+* extracts property data from listing and detail pages
+* handles JavaScript-heavy UI components
+* processes deeply nested property information
+* converts unstructured web data into structured datasets
+* exports clean data into Excel for analysis
+
+It transforms a manual inspection process into a **repeatable data pipeline system** .
 
 ---
 
-## Core Workflow
+## Business Impact
 
-```text
+* eliminated manual property data collection effort
+* enabled large-scale structured dataset generation
+* improved data consistency and accuracy
+* reduced time required for property record compilation
+* enabled downstream analytics and reporting workflows
+* made previously inaccessible data usable at scale
+
+---
+
+## What This System Replaces
+
+* manual browsing and copying of property records
+* spreadsheet-based data entry workflows
+* repetitive inspection of government property portals
+* ad-hoc scraping scripts with no recovery mechanism
+
+---
+
+# 2. System Overview (Engineering View)
+
+## System Problem
+
+The Taylor CAD portal presents structural challenges:
+
+* no bulk export API
+* dynamic JavaScript-based rendering (Kendo UI grids)
+* paginated subdivision-level navigation
+* lazy-loaded property details
+* inconsistent DOM structure across pages
+
+This system solves it through a **state-driven browser automation pipeline** .
+
+---
+
+## System Architecture
+
+The system operates as a multi-stage extraction pipeline:
+
 Subdivision Search
-      ↓
-Property List Extraction
-      ↓
-Property Detail Scraping
-      ↓
-Data Parsing
-      ↓
-Excel Export
-      ↓
-Checkpoint Save
-      ↓
-Next Subdivision
-```
+→ Property List Extraction
+→ Property Detail Navigation
+→ Data Parsing
+→ Normalization
+→ Excel Export
+→ Checkpoint Update
 
 ---
 
-## Workflow State Management
+# 3. State Model (Core System Abstraction)
 
-The system tracks processing progress using explicit workflow states.
+## Processing State Lifecycle
 
-```text
 Start / Resume
-      ↓
-Processing Subdivision
-      ↓
-Extracting Properties
-      ↓
-Scraping Details
-      ↓
-Saving Checkpoint
-      ↓
-Completed
-```
-
-This approach prevents duplicate data extraction and provides operational visibility into processing status.
+→ Processing Subdivision
+→ Extracting Property List
+→ Scraping Property Details
+→ Saving Checkpoint
+→ Completed
 
 ---
 
-## Core Capabilities
+## Core State Mechanism
 
-### Automated Browser Navigation
+The system maintains:
 
-Built using Playwright to simulate real user interactions including subdivision modal navigation, pagination handling, and click-based property navigation.
+* processed subdivisions
+* processed property IDs
+* checkpoint persistence layer
 
-### Resilient DOM Parsing
+This ensures:
 
-Primary extraction via `onclick` handlers in grid rows with CSS-based fallback selectors for robustness against UI changes.
-
-### Deep Property Scraping
-
-Each property is resolved via direct navigation to detail pages, followed by staged scroll simulation to trigger lazy-loaded sections, and full HTML parsing via BeautifulSoup.
-
-### Structured Data Extraction
-
-Extracts owner details, property metadata, financial data, physical attributes, and deed history from dynamically loaded content.
-
-### Resilient Checkpoint System
-
-Stores `done_property_ids` and `done_subdivisions` in JSON checkpoint files to enable crash recovery, incremental processing, and safe re-runs without duplication.
-
-### Structured Excel Export
-
-Generates styled Excel output with auto column formatting and append-only incremental writes using OpenPyXL.
+* no duplicate extraction
+* safe recovery from failures
+* resumable execution across runs
 
 ---
 
-## Engineering Highlights
+## Why State Model Matters
 
-* Event-driven browser automation workflow
-* Metadata-based property identification
-* Dynamic Kendo UI grid parsing
-* Lazy-loaded content handling
-* Adaptive table parsing for inconsistent structures
-* Checkpoint-based recovery mechanisms
-* Centralized data normalization
-* Automated Excel report generation
+This transforms the system from:
 
----
+> simple scraping script
 
-## Results & Impact
+into:
 
-The automation eliminated repetitive property data collection tasks and standardized the extraction process.
-
-Benefits include:
-
-* Reduced manual effort
-* Faster data collection
-* Consistent data formatting
-* Reduced risk of missed records
-* Improved operational visibility
-* Scalable handling of large property datasets
+> fault-tolerant data extraction pipeline
 
 ---
 
-## Technologies Used
+# 4. System Flow (Execution Behavior)
+
+Subdivision Selection
+→ Listing Page Parsing
+→ Property Row Extraction
+→ Detail Page Navigation
+→ Lazy Load Triggering
+→ Structured Data Extraction
+→ Excel Write Operation
+→ Checkpoint Save
+→ Next Subdivision
+
+---
+
+# 5. Core Components
+
+## Browser Automation Engine
+
+* built using Playwright
+* simulates real user navigation
+* handles modal interactions and pagination
+* manages dynamic UI behavior
+
+---
+
+## Resilient Parsing Layer
+
+* extracts data from`onclick` handlers and DOM events
+* fallback CSS selector strategies
+* handles Kendo UI grid structures
+
+---
+
+## Deep Detail Scraper
+
+* navigates to individual property pages
+* triggers lazy-loaded sections via scroll simulation
+* extracts structured financial and ownership data
+
+---
+
+## Data Normalization Engine
+
+* standardizes inconsistent field formats
+* structures property metadata
+* aligns financial + physical attributes into unified schema
+
+---
+
+## Checkpoint System
+
+* JSON-based state persistence
+* tracks completed subdivisions and properties
+* enables crash recovery and incremental execution
+
+---
+
+## Excel Export System
+
+* structured spreadsheet generation
+* column formatting and alignment
+* incremental append-safe writes using OpenPyXL
+
+---
+
+# 6. Engineering Decisions
+
+* browser automation chosen over API simulation due to UI restrictions
+* checkpoint-based recovery to handle long-running extraction jobs
+* deep navigation approach instead of shallow listing scraping
+* DOM-event-based extraction for reliability over static selectors
+* structured normalization layer to handle inconsistent data formats
+* incremental Excel writing to avoid memory and data loss issues
+
+---
+
+# 7. Outcome
+
+The system enables:
+
+* automated extraction of large-scale property datasets
+* reliable handling of dynamic government web portals
+* consistent structured dataset generation
+* elimination of manual data collection workflows
+* fault-tolerant long-running scraping operations
+* scalable data pipeline for real estate intelligence use cases
+
+---
+
+# 8. Technologies Used
 
 * Python
 * Playwright
 * BeautifulSoup
 * OpenPyXL
-* JSON Checkpointing System
-
----
-
-## Final Summary
-
-This project demonstrates the automation of large-scale property data extraction workflows by combining browser automation, resilient parsing, checkpoint-based recovery, and structured data export into a repeatable operational process.
+* JSON-based checkpoint system

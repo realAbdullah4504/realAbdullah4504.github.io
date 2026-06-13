@@ -1,98 +1,194 @@
-# Multi-Source AI News Aggregator
+# Multi-Source AI News Aggregator (Intelligent Content System)
 
-## Overview
+---
 
-An AI-powered multi-source news aggregation platform that automatically classifies content into categories and presents a unified timeline for faster discovery and consumption. The system consolidates news from multiple external sources into a single intelligent interface with AI-based categorization, rather than functioning as a generic RSS reader or manual news clipper.
+# 1. Client-Facing Summary (Product View)
+
+## Problem This System Solves
+
+Users consume news from multiple platforms, which creates:
+
+* fragmented information across sources
+* repetitive manual browsing across websites
+* no unified view of relevant content
+* difficulty tracking or saving important articles
+* lack of intelligent filtering or prioritization
+
+This results in slow and inefficient information consumption.
+
+---
+
+## Solution Delivered
+
+I built an **AI-powered multi-source news aggregation system** that consolidates content from multiple external sources into a single intelligent interface.
+
+Instead of acting as a simple RSS reader, the system:
+
+* aggregates news from multiple sources
+* classifies content using AI-based intelligence
+* normalizes heterogeneous data into structured categories
+* presents a unified timeline of articles
+* enables filtering and saving of relevant content
+
+The system transforms fragmented news consumption into a **centralized, intelligent content experience layer** .
+
+---
+
+## Business Impact
+
+* faster access to relevant news across multiple sources
+* reduced time spent switching between platforms
+* improved content discoverability through AI classification
+* unified view of global information streams
+* personalized filtering and saved content workflow
+* structured consumption of unstructured information
+
+---
+
+## What This System Replaces
+
+* manual browsing across multiple news websites
+* traditional RSS readers without intelligence layer
+* static news feeds without categorization
+* fragmented content consumption workflows
+
+---
+
+# 2. System Overview (Engineering View)
 
 ## System Problem
 
-Users consume news from multiple independent platforms, leading to fragmented information across different sources, time-consuming manual browsing, lack of unified categorization or prioritization, and no centralized way to track or save relevant articles.
+News consumption is fragmented across multiple independent sources, leading to:
 
-The system was built to aggregate, classify, and organize news into a single intelligent interface.
+* duplicated effort in browsing multiple platforms
+* inconsistent categorization of content
+* lack of unified timeline or prioritization
+* no structured way to organize saved content
+
+This system solves it by introducing an **AI-driven content consolidation pipeline** .
+
+---
 
 ## System Architecture
 
-The system follows a layered architecture:
+The system follows a layered processing model:
 
 ### Input Layer
 
-Web scraping from multiple news sources with structured extraction of article title, content, and metadata.
+* multi-source web scraping
+* structured extraction of articles and metadata
 
 ### Processing Layer
 
-REST APIs for article ingestion and retrieval, with filtering logic for category and source-based queries.
+* REST APIs for ingestion and retrieval
+* filtering logic for category and source queries
 
 ### Intelligence Layer
 
-AI-based classification model normalizing content into consistent categories: General, Sports, and Lifestyle.
+* AI-based classification engine
+* normalization into consistent categories
 
 ### Output Layer
 
-React-based timeline visualization with dynamic filtering, saved articles management, and responsive design for multi-device support.
+* React-based unified timeline interface
+* filtering + saved articles system
 
-## State Model
+---
 
-### Article Lifecycle
+# 3. State Model (Content Lifecycle)
 
-Raw (scraped) → Classified → Indexed → Displayed → Archived (if superseded)
+## Article Lifecycle
 
-### Category Assignment
+Raw → Classified → Indexed → Displayed → Archived
 
-Unclassified → General / Sports / Lifestyle (AI-assigned)
+---
 
-## System Flow
+## Category Lifecycle
 
-```
+Unclassified → General / Sports / Lifestyle
+
+---
+
+## System Behavior
+
+Each article transitions through controlled states from ingestion to user interaction, ensuring consistent classification and retrieval.
+
+---
+
+# 4. System Flow
+
 External News Sources
-    ↓
-Web Scraping
-    ↓
-Structured Extraction
-    ↓
-AI-Based Classification
-    ↓
-Indexed Repository
-    ↓
-Unified Timeline API
-    ↓
-Client-Side Filtering & Display
-```
+→ Web Scraping
+→ Structured Extraction
+→ AI Classification
+→ Indexed Repository
+→ Unified Timeline API
+→ Client UI Filtering & Display
 
-## Core Components
+---
 
-### Multi-Source Scraper
+# 5. Core Components
 
-Web scraping pipeline built for structured metadata extraction from multiple news publishers. Handles heterogeneous page structures and extracts normalized article data.
+## Multi-Source Scraper
 
-### Classification Engine
+* extracts structured article data from heterogeneous sources
+* normalizes inconsistent HTML structures
+* handles multiple publisher formats
 
-AI-based model classifies articles into standardized categories (General, Sports, Lifestyle) with consistent normalization of content regardless of source.
+---
 
-### Unified Timeline
+## Classification Engine (AI Layer)
 
-All articles from multiple sources displayed in a single chronological view with dynamic filtering by category and source.
+* classifies articles into standardized categories
+* ensures consistency across different news sources
+* removes dependency on manual tagging
 
-### Saved Articles
+---
 
-Persistent bookmark system allowing users to save articles for later consumption with cross-device synchronization.
+## Unified Timeline System
 
-## Engineering Decisions
+* combines all sources into a single chronological feed
+* enables category and source filtering
+* provides consistent content experience layer
 
-The system was designed as an intelligent content consolidation layer rather than a reader-only aggregation. AI-based classification was chosen over manual categorization to ensure consistent category assignment across heterogeneous sources. The REST API design supports scalable article ingestion and retrieval without coupling the scraper to the client.
+---
 
-## Outcome
+## Saved Articles System
 
-The system reduces effort required to browse multiple news platforms, improves content discoverability through AI-based categorization, provides a unified experience for tracking and saving articles, and enables faster access to relevant news through filtering and timeline structure.
+* persistent bookmarking of articles
+* cross-session retention of saved content
+* supports user-driven content curation
 
-## Technologies
+---
 
-- React
-- TypeScript
-- Python (AI Classification & Scraping)
-- Python Flask (API Layer)
-- REST APIs
-- Responsive UI Design
+# 6. Engineering Decisions
 
-## Links
+* AI classification used instead of rule-based tagging for scalability
+* decoupled scraping layer from API layer for maintainability
+* REST architecture used for flexible data access
+* unified timeline abstraction instead of per-source feeds
+* normalized content schema to handle heterogeneous inputs
 
-- Live Demo: [https://news-consolidater.vercel.app/](https://news-consolidater.vercel.app/)
+---
+
+# 7. Outcome
+
+The system delivers:
+
+* unified access to multiple news sources
+* reduced cognitive load in information consumption
+* AI-driven categorization of unstructured content
+* faster discovery of relevant news
+* structured and persistent content saving system
+* scalable multi-source content ingestion architecture
+
+---
+
+# 8. Technologies Used
+
+* React
+* TypeScript
+* Python (Scraping + AI Classification)
+* Flask (API Layer)
+* REST APIs
+* Responsive UI Architecture

@@ -1,99 +1,267 @@
 # Tender Discovery & Procurement Intelligence Platform
 
-## Overview
+---
 
-A distributed procurement intelligence system that continuously discovers, monitors, extracts, and enriches tender opportunities from heterogeneous government and institutional procurement portals. The system transforms unstructured procurement data into structured, searchable intelligence using horizontally scalable worker-based execution.
+# 1. Client-Facing Summary (Business View)
+
+## Problem Businesses Face
+
+Organizations that track government and institutional tenders face a major operational bottleneck:
+
+* procurement data is scattered across hundreds of portals
+* each portal has different structure and format
+* manual monitoring is slow, inconsistent, and error-prone
+* high time cost in filtering irrelevant opportunities
+* difficulty extracting structured data from dynamic pages and PDFs
+* no centralized system for procurement intelligence
+
+As a result, valuable procurement opportunities are often missed or discovered too late.
+
+---
+
+## Solution Delivered
+
+I built a **distributed procurement intelligence system** that automatically discovers, extracts, and processes tender opportunities from multiple heterogeneous portals.
+
+The system continuously:
+
+* discovers new procurement listings
+* extracts structured tender data from unstructured sources
+* filters and classifies relevant opportunities
+* ranks tenders based on relevance scoring
+* stores everything in a centralized intelligence repository
+
+It transforms fragmented procurement data into a **searchable, structured intelligence system** .
+
+---
+
+## Business Impact
+
+* automated discovery of procurement opportunities across multiple portals
+* significant reduction in manual monitoring effort
+* faster identification of relevant tenders
+* improved accuracy in filtering and classification
+* centralized procurement intelligence database
+* scalable monitoring across large number of sources
+* continuous operation with minimal human intervention
+
+---
+
+## What This System Replaces
+
+* manual tender tracking across portals
+* spreadsheet-based opportunity monitoring
+* fragmented scraping scripts per portal
+* inconsistent procurement discovery workflows
+* reactive instead of real-time monitoring systems
+
+---
+
+# 2. System Overview (Engineering View)
 
 ## System Problem
 
-Procurement monitoring across multiple government and institutional portals is fragmented due to inconsistent portal structures and layouts, distributed and unstandardized procurement listings, high noise from irrelevant content, manual effort required for classification and filtering, difficulty extracting structured data from dynamic pages and PDFs, and scalability limitations in manual monitoring workflows. This creates inefficiency in identifying relevant procurement opportunities and tracking them consistently at scale.
+Procurement monitoring is fragmented due to:
+
+* inconsistent portal structures
+* unstructured and dynamic listings
+* lack of standard data formats
+* high manual effort for classification
+* difficulty scaling across multiple portals
+
+This system solves it using a **distributed, state-driven ingestion and processing pipeline** .
+
+---
 
 ## System Architecture
 
-The system operates as a multi-stage distributed pipeline where procurement data flows through controlled processing states.
+The system operates as a multi-stage pipeline where procurement data flows through controlled processing states.
 
-```
 Portal Registry
-    ↓
+↓
 Seed URL Discovery
-    ↓
+↓
 Page Crawling
-    ↓
+↓
 Page Classification
-    ↓
+↓
 Tender Detection
-    ↓
+↓
 Data Extraction
-    ↓
+↓
 PCI & Relevance Scoring
-    ↓
+↓
 Document Enrichment
-    ↓
+↓
 Intelligence Repository
-```
 
-Execution is organized into four functional planes:
+---
 
-- **Control Plane** — portal registry management, job creation and scheduling, execution tracking and monitoring
-- **Execution Plane** — Celery distributed task queues, AWS ECS worker clusters, parallel task execution
-- **Data Ingestion Plane** — Playwright-based crawling engine, incremental portal discovery, link traversal and filtering
-- **Processing Plane** — tender classification engine, structured extraction system, portal-specific parsing strategies
-- **Intelligence Plane** — PCI DSS relevance scoring, keyword-based classification, opportunity prioritization
-- **Persistence Plane** — MongoDB document storage, normalized tender intelligence records
+## Execution Planes
 
-## State Model
+### 🔹 Control Plane
 
-### Job Lifecycle
+* portal registry management
+* job creation and scheduling
+* execution tracking and monitoring
+
+### 🔹 Execution Plane
+
+* Celery distributed task queues
+* AWS ECS worker clusters
+* parallel task execution system
+
+### 🔹 Data Ingestion Plane
+
+* Playwright-based crawling engine
+* incremental portal discovery
+* link traversal and filtering
+
+### 🔹 Processing Plane
+
+* tender classification engine
+* structured data extraction system
+* portal-specific parsing strategies
+
+### 🔹 Intelligence Plane
+
+* PCI-based relevance scoring system
+* keyword classification engine
+* opportunity prioritization layer
+
+### 🔹 Persistence Plane
+
+* MongoDB document storage
+* normalized procurement intelligence records
+
+---
+
+# 3. State Model (Core System Abstraction)
+
+The system uses a **job-based state lifecycle model** to track execution and ensure fault tolerance.
+
+## Job Lifecycle
 
 PENDING → PROCESSING → COMPLETED
 
-### Failure Lifecycle
+## Failure Lifecycle
 
 PENDING → PROCESSING → FAILED
 
-Each job passes through stages tracked for observability and recovery: portal discovery, listing detection, extraction, PCI scoring, and enrichment.
+---
 
-## System Flow
+## State Breakdown
 
-Horizontal scalability is achieved through independent worker execution units:
+Each job passes through structured stages:
+
+* portal discovery
+* listing detection
+* data extraction
+* relevance scoring
+* enrichment
+* storage
+
+---
+
+## State Enforcement Logic
+
+* each job state is explicitly tracked
+* failed jobs are isolated without breaking pipeline
+* processing is resumable and observable
+* no full pipeline re-execution required on failure
+
+---
+
+## Why State Model Matters
+
+This allows the system to behave as:
+
+* a**fault-tolerant distributed pipeline**
+* not just a scraping script system
+* but a**controlled execution engine for procurement intelligence**
+
+---
+
+# 4. System Flow
 
 Job Creation → Celery Queue → ECS Worker Pool → Parallel Processing → Result Storage
 
-Each worker operates independently, enabling parallel portal processing, concurrent listing page extraction, and distributed detail-page enrichment.
+---
 
-## Core Components
+## Execution Behavior
 
-### Strategy-Based Extraction System
+* each worker operates independently
+* multiple portals processed in parallel
+* listing and detail pages processed concurrently
+* results aggregated into centralized repository
 
-Portal-specific extraction logic is isolated into interchangeable strategies, enabling extensibility without modifying the core pipeline.
+---
 
-### Distributed Worker Architecture
+# 5. Core Components
 
-Celery + ECS enables horizontal scaling and independent execution of crawling and processing tasks.
+## Strategy-Based Extraction System
 
-### State-Driven Pipeline Design
+Each portal uses a **pluggable extraction strategy** , allowing:
 
-Each tender moves through explicit processing states, enabling traceability and fault tolerance.
+* support for heterogeneous portal structures
+* extensibility without modifying core pipeline
+* isolated parsing logic per portal type
 
-### Control vs Data Plane Separation
+---
 
-Execution logic is decoupled from data storage and portal configuration, improving system modularity.
+## Distributed Worker Architecture
 
-## Engineering Decisions
+* Celery handles task distribution
+* AWS ECS provides horizontal scaling
+* workers process jobs independently
 
-Extensibility is prioritized through strategy-based extraction, allowing new portal types to be supported without pipeline changes. Horizontal scaling is preferred over vertical for handling variable portal load. State tracking at every processing stage enables failure recovery and observability without replaying entire crawls.
+---
 
-## Outcome
+## State-Driven Pipeline
 
-The system delivers automated procurement discovery across multiple portals with significant reduction in manual monitoring effort, scalable processing of large-volume procurement data, improved accuracy in tender classification and filtering, and a centralized intelligence repository for procurement opportunities. Reliable distributed processing with failure recovery mechanisms supports continuous operation across heterogeneous portal sources.
+* every tender follows a defined lifecycle
+* enables traceability and failure recovery
+* supports partial reprocessing
 
-## Technologies
+---
 
-- Python
-- Celery
-- AWS ECS
-- Playwright
-- MongoDB
-- Streamlit
-- Docker
+## Control vs Data Separation
 
+* control plane manages execution logic
+* data plane handles storage and retrieval
+* improves modularity and system clarity
+
+---
+
+# 6. Engineering Decisions
+
+* horizontal scaling over vertical scaling for portal load variability
+* strategy pattern for portal-specific extraction logic
+* state tracking for fault tolerance and observability
+* distributed worker execution for parallel processing
+* separation of ingestion and processing layers for scalability
+
+---
+
+# 7. Outcome
+
+The system enables:
+
+* automated discovery of procurement opportunities across multiple portals
+* scalable processing of high-volume unstructured data
+* centralized procurement intelligence system
+* reduced manual monitoring workload
+* improved classification and filtering accuracy
+* resilient distributed execution with failure recovery
+
+---
+
+# 8. Technologies Used
+
+* Python
+* Celery
+* AWS ECS
+* Playwright
+* MongoDB
+* Streamlit
+* Docker
