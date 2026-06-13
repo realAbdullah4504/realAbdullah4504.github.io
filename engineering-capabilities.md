@@ -1,6 +1,6 @@
 # Engineering Capabilities & System Design Stack
 
-A production-focused engineering profile specializing in backend systems, distributed architectures, automation pipelines, and cloud-native application design.
+A production-focused engineering profile specializing in backend systems, distributed architectures, automation pipelines, cloud-native application design, and AI-augmented backend workflows.
 
 All systems are designed with emphasis on scalability, reliability, fault tolerance, and event-driven execution models.
 
@@ -19,8 +19,9 @@ Core principles:
 * Reliability through retries, idempotency, and recovery mechanisms
 * Observability-aware system design (logs, metrics, traces as runtime signals)
 * Evolutionary architecture: monolith → modular systems → distributed systems
+* AI-assisted system design and automation where applicable (LLM-based components integrated into backend workflows when required)
 
-This thinking layer applies to all backend, automation, and cloud systems.
+This thinking layer applies across backend systems, distributed systems, cloud infrastructure, automation pipelines, and AI-augmented workflows.
 
 ---
 
@@ -31,8 +32,9 @@ This is the core reasoning layer behind all engineering decisions.
 ## Architecture Design Capabilities
 
 * Designing monolithic, modular, and distributed systems based on scale requirements
-* Selecting between event-driven, queue-based, and synchronous architectures
+* Selecting between event-driven, queue-based, synchronous, and AI-augmented workflows
 * Designing async workflows using worker-based systems
+* Integrating LLM-based components into backend systems for classification, summarization, extraction, and automation tasks
 * Breaking complex systems into scalable, loosely coupled components
 * Defining system boundaries and service responsibilities
 
@@ -44,13 +46,15 @@ This is the core reasoning layer behind all engineering decisions.
 * Failure isolation between system components
 * Retry, fallback, and recovery strategies
 * Idempotent execution design
+* AI-in-the-loop processing for data enrichment and transformation tasks
 
 ## Data Flow & System Behavior Design
 
-* End-to-end system flow design (request → processing → storage → response)
+* End-to-end system flow design (request → processing → AI enrichment → storage → response)
 * Asynchronous pipeline design for long-running workloads
 * Multi-stage processing and transformation pipelines
 * Consistency handling in distributed environments
+* AI-assisted transformation layers inside backend pipelines
 
 ---
 
@@ -68,6 +72,9 @@ Design and implementation of scalable backend systems and APIs powering business
 * Stateless backend architecture design
 * Data modeling and relational schema design (PostgreSQL, Supabase)
 * Query optimization and performance-aware backend design
+* LLM API integration (OpenAI / GPT-based systems) for automation and data processing workflows
+
+---
 
 ## Scaling & Production Principles
 
@@ -76,12 +83,18 @@ Design and implementation of scalable backend systems and APIs powering business
 * Rate limiting and traffic control
 * Load-aware backend design patterns
 * Service decoupling for independent scaling
+* Structured handling of AI-generated outputs for production reliability
+
+---
 
 ## Technologies
 
 * Node.js, Express.js
 * Python (Flask, FastAPI)
 * REST APIs, GraphQL
+* LLM APIs (OpenAI / GPT-based integrations)
+
+---
 
 ## Demonstrated In
 
@@ -102,6 +115,9 @@ High-throughput, event-driven, and worker-based systems designed for automation,
 * Web scraping and automated data extraction pipelines
 * ETL-style data processing workflows
 * Event-driven automation systems
+* AI-assisted data processing pipelines (classification, extraction, enrichment)
+
+---
 
 ## Reliability & Execution Patterns
 
@@ -111,6 +127,9 @@ High-throughput, event-driven, and worker-based systems designed for automation,
 * Failure isolation in distributed workers
 * Dead-letter queue patterns for failed jobs
 * Incremental processing and deduplication strategies
+* Safe handling of AI-generated outputs in automated systems
+
+---
 
 ## Technologies
 
@@ -119,10 +138,13 @@ High-throughput, event-driven, and worker-based systems designed for automation,
 * Playwright (browser automation)
 * AWS ECS (containerized workers)
 * Queue-based systems (task distribution + retries)
+* LLM APIs for data enrichment and automation pipelines
+
+---
 
 ## Demonstrated In
 
-* Tender Discovery & Procurement Intelligence Platform
+* Tender Discovery & Procurement Intelligence Platform (distributed scraping + automation pipeline system)
 * Taylor CAD – Abilene Property Data Extraction System
 
 ---
@@ -140,6 +162,8 @@ Design of cloud-native infrastructure, CI/CD pipelines, and deployment systems f
 * Release automation and rollback mechanisms
 * Secure configuration and secrets management
 
+---
+
 ## Cloud Architecture Capabilities
 
 * Compute: EC2, ECS, Lambda
@@ -149,6 +173,8 @@ Design of cloud-native infrastructure, CI/CD pipelines, and deployment systems f
 * Observability integration at infrastructure level
 * CI/CD systems: CodePipeline, CodeBuild, CodeDeploy
 
+---
+
 ## Architecture Patterns
 
 * Modular monolith deployments
@@ -156,6 +182,8 @@ Design of cloud-native infrastructure, CI/CD pipelines, and deployment systems f
 * Microservices (selective use based on complexity)
 * Serverless event-based workloads
 * Worker-based distributed systems
+
+---
 
 ## Technologies
 
@@ -165,6 +193,8 @@ Design of cloud-native infrastructure, CI/CD pipelines, and deployment systems f
 * Linux system management
 * Jenkins, GitLab CI/CD
 * Nginx
+
+---
 
 ## Demonstrated In
 
@@ -176,7 +206,7 @@ Design of cloud-native infrastructure, CI/CD pipelines, and deployment systems f
 
 # Frontend & Application Engineering
 
-Development of frontend applications as supporting interfaces for backend and distributed systems.
+Development of frontend applications as interface layers for backend and distributed systems.
 
 ## Core Capabilities
 
@@ -185,6 +215,9 @@ Development of frontend applications as supporting interfaces for backend and di
 * Responsive web application development
 * Mobile application development
 * Backend-integrated UI systems
+* System interfaces for automation and workflow platforms
+
+---
 
 ## Technologies
 
@@ -194,10 +227,12 @@ Development of frontend applications as supporting interfaces for backend and di
 * Material UI, Tailwind CSS
 * React Native
 
+---
+
 ## Demonstrated In
 
-* Handyman (Next.js) Marketplace System
-* Nutrifactor Mobile Commerce (iOS/Android React Native) & Customer Experience Platform
+* Handyman Marketplace System (Next.js interface layer)
+* Nutrifactor Mobile Commerce Platform (React Native)
 * News Consolidator (React) — AI-Powered Multi-Source News Aggregation & Classification System
 * CopyFlow (React) — School Submission & Print Workflow Management System
 * Briefly (React) — Multi-Tenant Team Briefing & Accountability System
@@ -218,6 +253,9 @@ Design of automation systems that integrate external services and reduce manual 
 * External API integration systems
 * Automated data movement pipelines
 * Failure recovery in business workflows
+* AI-assisted workflow automation (classification, summarization, and transformation tasks)
+
+---
 
 ## Technologies
 
@@ -226,6 +264,9 @@ Design of automation systems that integrate external services and reduce manual 
 * Cron-based scheduling
 * API integrations
 * n8n workflow automation
+* LLM APIs for automation workflows
+
+---
 
 ## Demonstrated In
 
@@ -267,10 +308,9 @@ These are not standalone domains but embedded design principles across all syste
 
 ---
 
+# Security & Quality Engineering
 
-## Security & Quality Engineering
-
-Engineering practices focused on ensuring system reliability, security, and production readiness through a combination of automated tools and manual analysis.
+Engineering practices focused on ensuring system reliability, security, and production readiness through automated tools and manual analysis.
 
 ---
 
@@ -278,10 +318,10 @@ Engineering practices focused on ensuring system reliability, security, and prod
 
 * Static and dynamic code analysis for identifying vulnerabilities and system risks
 * Dependency and supply-chain security review
-* API testing and validation for system correctness and reliability
+* API testing and validation for system correctness
 * Manual security analysis and code review practices
 * Load and performance testing for system stability under stress
-* Debugging and inspection of application behavior in production-like environments
+* Debugging and inspection of production-like system behavior
 
 ---
 
@@ -299,5 +339,3 @@ Engineering practices focused on ensuring system reliability, security, and prod
 ## Demonstrated In
 
 * Multi-Language Static Analysis System for Security & Code Quality
-
----
