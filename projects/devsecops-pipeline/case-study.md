@@ -1,4 +1,4 @@
-# Automated DevSecOps CI/CD, QA & Deployment System
+# Automated DevSecOps CI/CD and Deployment Pipeline System
 
 ## Overview
 

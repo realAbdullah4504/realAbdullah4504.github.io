@@ -1,4 +1,4 @@
-# Role-Based School Administration and Lesson Submission Management System
+# CopyFlow — School Submission & Print Workflow Management System
 
 ## Summary
 

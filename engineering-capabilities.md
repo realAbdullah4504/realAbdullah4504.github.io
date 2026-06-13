@@ -1,288 +1,303 @@
 # Engineering Capabilities & System Design Stack
 
-A production engineering profile focused on **system design, distributed architectures, and cloud-native application development**.
+A production-focused engineering profile specializing in backend systems, distributed architectures, automation pipelines, and cloud-native application design.
 
-All capabilities are grounded in scalability, reliability, and event-driven design across backend systems, distributed workloads, and cloud infrastructure.
+All systems are designed with emphasis on scalability, reliability, fault tolerance, and event-driven execution models.
 
 ---
 
 # Engineering Philosophy & System Design Approach
 
-A system-first engineering approach where every solution is designed through the lens of:
+A system-first engineering approach where architectural decisions are made before implementation, focusing on production-grade behavior rather than isolated features.
 
-- Scalability under increasing workloads
-- Fault tolerance in distributed environments
-- Event-driven and asynchronous processing models
-- Stateless and horizontally scalable architectures
-- Observability-driven design (logs, metrics, traces as first-class signals)
-- Evolution from monolith → modular systems → distributed cloud-native architectures
+Core principles:
 
-This mindset is consistently applied across backend systems, infrastructure design, and automation pipelines.
+* Designing systems for scalability under increasing load
+* Building fault-tolerant distributed architectures
+* Favoring event-driven and asynchronous processing models
+* Stateless service design for horizontal scaling
+* Reliability through retries, idempotency, and recovery mechanisms
+* Observability-aware system design (logs, metrics, traces as runtime signals)
+* Evolutionary architecture: monolith → modular systems → distributed systems
 
----
-
-# Architecture Decision Framework
-
-A guiding decision layer used across all architectures:
-
-## When to use what
-
-- **Monolith / Modular Monolith**
-
-  - Early-stage systems
-  - Tight domain coupling
-  - Fast iteration requirement
-- **Microservices**
-
-  - Independent scaling requirements
-  - Clear domain separation
-  - High system complexity with multiple components
-- **Event-Driven Architecture (Queue / Pub-Sub)**
-
-  - Async processing workflows
-  - Long-running or heavy workloads
-  - Decoupling producers and consumers
-- **Serverless (Lambda-style execution)**
-
-  - Spiky or low-maintenance workloads
-  - Event-triggered automation
-  - Stateless lightweight processing
-- **Worker-Based Systems**
-
-  - High-throughput data processing
-  - ETL, scraping, batch workflows
-  - Retry-heavy execution models
+This thinking layer applies to all backend, automation, and cloud systems.
 
 ---
 
-## Backend & API Engineering
+# System Design & Architecture Thinking
 
-Design and implementation of scalable backend systems, APIs, and business workflows powering automation and data-driven platforms.
+This is the core reasoning layer behind all engineering decisions.
 
-### Core Capabilities
+## Architecture Design Capabilities
 
-- RESTful API design and lifecycle management
-- GraphQL integration for flexible data access
-- Business workflow orchestration
-- Authentication and authorization systems
-- Third-party service integration
-- Stateless backend design for horizontal scaling
+* Designing monolithic, modular, and distributed systems based on scale requirements
+* Selecting between event-driven, queue-based, and synchronous architectures
+* Designing async workflows using worker-based systems
+* Breaking complex systems into scalable, loosely coupled components
+* Defining system boundaries and service responsibilities
 
-### Scaling Principles
+## Distributed Design Patterns
 
-- Stateless service design
-- Caching strategies for performance optimization
-- Rate limiting and traffic control
-- Versioned API evolution strategies
+* Event-driven architecture (pub/sub, queues)
+* Worker-based distributed processing systems
+* Stateless service design for horizontal scaling
+* Failure isolation between system components
+* Retry, fallback, and recovery strategies
+* Idempotent execution design
 
-### Technologies
+## Data Flow & System Behavior Design
 
-- Node.js, Express.js
-- Python (Django, FastAPI)
-- Linux systems
-- REST APIs, GraphQL
-
-### Demonstrated In
-
-- Tender Discovery & Procurement Intelligence Platform
-- Handyman Marketplace
-- Tax Rebate Processing System
-- Property Data Aggregation System
+* End-to-end system flow design (request → processing → storage → response)
+* Asynchronous pipeline design for long-running workloads
+* Multi-stage processing and transformation pipelines
+* Consistency handling in distributed environments
 
 ---
 
-## Distributed Systems & Data Engineering
+# Backend & API Engineering
 
-High-throughput, event-driven, and worker-based architectures for large-scale automation and data processing.
+Design and implementation of scalable backend systems and APIs powering business logic, automation workflows, and data-driven applications.
 
-### Core System Design Responsibilities
+## Core Capabilities
 
-- Event-driven pipeline design (queue-based async execution)
-- Worker-based horizontal scaling
-- Fault-tolerant retry-safe execution models
-- Idempotent processing for distributed workflows
-- State management using checkpoints and recovery mechanisms
-- Failure isolation across system components
+* RESTful API design and lifecycle management
+* GraphQL API integration for flexible data access
+* Business workflow orchestration and service design
+* Authentication and authorization systems
+* External API integrations and service composition
+* Stateless backend architecture design
+* Data modeling and relational schema design (PostgreSQL, Supabase)
+* Query optimization and performance-aware backend design
 
-### Data Pipeline Engineering
+## Scaling & Production Principles
 
-- Large-scale web scraping systems
-- Multi-stage transformation and normalization pipelines
-- Incremental processing and deduplication strategies
-- Data consistency and reconciliation systems
+* API versioning and lifecycle evolution
+* Caching strategies for performance optimization
+* Rate limiting and traffic control
+* Load-aware backend design patterns
+* Service decoupling for independent scaling
 
-### Core Technologies
+## Technologies
 
-- Celery, Redis
-- AWS ECS (containerized workers)
-- Docker
-- Playwright (browser automation)
-- Queue-based architectures (task distribution + retries)
+* Node.js, Express.js
+* Python (Flask, FastAPI)
+* REST APIs, GraphQL
 
-### Demonstrated In
+## Demonstrated In
 
-- Tender Discovery & Automation Pipeline
-- Property Data Extraction System (Abilene CAD Scraper)
-
----
-
-## DevOps, Cloud & Platform Engineering
-
-Design of CI/CD pipelines, infrastructure automation, and cloud-native application delivery systems.
-
-### Core System Design Focus
-
-- Infrastructure as Code (Terraform, CloudFormation)
-- CI/CD pipeline design and automated deployments
-- Containerized application delivery strategies
-- Cloud-native scaling and environment isolation
-- Secure secrets and configuration management
-- Release automation and rollback strategies
-
-### Cloud Architecture Capabilities
-
-- Compute: EC2, ECS, Lambda (event-driven execution)
-- Data: RDS, DynamoDB, DocumentDB
-- Networking: VPC, Load Balancer, Route 53, PrivateLink
-- Messaging/Eventing: SQS, SNS, EventBridge
-- Observability: CloudWatch, X-Ray, CloudTrail
-- CI/CD: CodePipeline, CodeBuild, CodeDeploy
-- Reverse proxy and routing layers (Nginx concepts)
-
-### Architecture Patterns
-
-- Modular monolith systems
-- Event-driven architectures
-- Microservices (selective use)
-- Serverless workloads
-- Worker-based distributed systems
-
-### Technologies
-
-- Docker, Docker Compose
-- Kubernetes (cluster setup and workload deployment experience)
-- AWS ecosystem
-- Jenkins, GitLab CI/CD
-- Nginx
-
-### Demonstrated In
-
-- DevSecOps CI/CD & Deployment System
-- Kubernetes Cluster Deployment Project
-- Cloud-native automation systems
+* Handyman Marketplace System
+* Tax Rebate Processing & Refund Management Platform
+* News Consolidator (Python) — AI-Powered Multi-Source News Aggregation & Classification System
 
 ---
 
-## Frontend & Application Engineering
+# Distributed Systems & Automation Engineering
 
-Development of responsive web and mobile applications with modern frontend ecosystems.
+High-throughput, event-driven, and worker-based systems designed for automation, scraping, and large-scale data processing.
 
-### Technologies
+## Core Capabilities
 
-- React, Next.js
-- TypeScript
-- React Query / TanStack
-- Material UI, Tailwind CSS
-- React Native
+* Queue-based distributed processing systems
+* Worker orchestration and horizontal scaling
+* Web scraping and automated data extraction pipelines
+* ETL-style data processing workflows
+* Event-driven automation systems
 
-### Demonstrated In
+## Reliability & Execution Patterns
 
-- Handyman Marketplace
-- Mobile Ecommerce Platform
-- AI-powered frontend applications
+* Retry-safe execution models
+* Idempotent task design
+* Checkpoint-based recovery mechanisms
+* Failure isolation in distributed workers
+* Dead-letter queue patterns for failed jobs
+* Incremental processing and deduplication strategies
 
----
+## Technologies
 
-## Data Persistence & Database Engineering
+* Celery, Redis
+* Docker
+* Playwright (browser automation)
+* AWS ECS (containerized workers)
+* Queue-based systems (task distribution + retries)
 
-Design of relational and non-relational data models supporting transactional workloads, analytical workflows, and distributed application architectures.
+## Demonstrated In
 
-### Technologies
-
-- PostgreSQL
-- MongoDB
-- MySQL
-
-### Demonstrated In
-
-- Marketplace systems
-- Tender automation platform
-- Property & tax data systems
+* Tender Discovery & Procurement Intelligence Platform
+* Taylor CAD – Abilene Property Data Extraction System
 
 ---
 
-## Workflow & Business Process Automation
+# DevOps & Cloud Engineering
 
-Design of lightweight automation systems that reduce manual effort and integrate business processes across external services.
+Design of cloud-native infrastructure, CI/CD pipelines, and deployment systems for scalable applications.
 
-### Core Responsibilities
+## Core Capabilities
 
-- Business workflow automation
-- Trigger-based process execution
-- Scheduled operational tasks
-- External service integrations
-- Automated data movement and processing
-- Process reliability and failure recovery
+* CI/CD pipeline design and automation
+* Infrastructure as Code concepts (Terraform, CloudFormation)
+* Containerized deployment strategies
+* Environment isolation (dev, staging, production)
+* Release automation and rollback mechanisms
+* Secure configuration and secrets management
 
-### Technologies
+## Cloud Architecture Capabilities
 
-- Google Apps Script
-- Background job systems
-- Scheduled task orchestration
-- API integrations
-- n8n (workflow automation)
+* Compute: EC2, ECS, Lambda
+* Data: RDS, DynamoDB, DocumentDB
+* Networking: VPC, Load Balancers, Route 53, PrivateLink
+* Messaging: SQS, SNS, EventBridge
+* Observability integration at infrastructure level
+* CI/CD systems: CodePipeline, CodeBuild, CodeDeploy
 
-### Demonstrated In
+## Architecture Patterns
 
-- Gmail-based Email Automation System
+* Modular monolith deployments
+* Event-driven systems
+* Microservices (selective use based on complexity)
+* Serverless event-based workloads
+* Worker-based distributed systems
+
+## Technologies
+
+* Docker, Docker Compose
+* Kubernetes (cluster setup and workload deployment)
+* AWS ecosystem
+* Linux system management
+* Jenkins, GitLab CI/CD
+* Nginx
+
+## Demonstrated In
+
+* Automated DevSecOps CI/CD and Deployment Pipeline System
+* Kubernetes Cluster Deployment Project
+* Cloud-native automation systems
+
+---
+
+# Frontend & Application Engineering
+
+Development of frontend applications as supporting interfaces for backend and distributed systems.
+
+## Core Capabilities
+
+* API-driven frontend application development
+* Admin dashboards and internal tools
+* Responsive web application development
+* Mobile application development
+* Backend-integrated UI systems
+
+## Technologies
+
+* React, Next.js
+* TypeScript
+* React Query / TanStack
+* Material UI, Tailwind CSS
+* React Native
+
+## Demonstrated In
+
+* Handyman (Next.js) Marketplace System
+* Nutrifactor Mobile Commerce (iOS/Android React Native) & Customer Experience Platform
+* News Consolidator (React) — AI-Powered Multi-Source News Aggregation & Classification System
+* CopyFlow (React) — School Submission & Print Workflow Management System
+* Briefly (React) — Multi-Tenant Team Briefing & Accountability System
+* Virtual Office (React) — Real-Time Workspace Management System
+* Stock Clubs (figma-to-react) — Investment Group Platform
 
 ---
 
-## Observability, Reliability & System Operations
+# Workflow & Business Process Automation
 
-Observability as a **system-wide architectural layer across all systems**.
+Design of automation systems that integrate external services and reduce manual operational effort.
 
-### Core Responsibilities
+## Core Capabilities
 
-- System monitoring and performance tracking
-- Distributed logging and debugging strategies
-- Failure detection and alerting mechanisms
-- Pipeline observability for worker-based systems
-- Production incident tracing and debugging
+* Business workflow automation systems
+* Event-triggered process execution
+* Scheduled job orchestration
+* External API integration systems
+* Automated data movement pipelines
+* Failure recovery in business workflows
 
-### Technologies
+## Technologies
 
-- Prometheus
-- Grafana
-- Structured logging & telemetry systems
+* Google Apps Script
+* Background job systems
+* Cron-based scheduling
+* API integrations
+* n8n workflow automation
 
-### Demonstrated In
+## Demonstrated In
 
-- DevSecOps CI/CD & Deployment System
-- Distributed automation systems
+* Gmail-based Email Automation System
 
 ---
+
+# Cross-Cutting System Concerns
+
+These are not standalone domains but embedded design principles across all systems.
+
+## Data Design & Persistence
+
+* Relational and NoSQL data modeling
+* Indexing and query optimization strategies
+* Data consistency in distributed systems
+* Schema design for scalable applications
+
+## Observability & Monitoring
+
+* Structured logging systems
+* Metrics and performance tracking
+* Distributed tracing across services and workers
+* Production debugging and system visibility
+
+## Reliability Engineering
+
+* Retry and fallback mechanisms
+* Idempotent system design
+* Fault tolerance strategies
+* System recovery and failure handling mechanisms
+
+## Security Engineering (Practical Level)
+
+* Authentication and authorization flows
+* API security best practices
+* Secrets and configuration management
+* Dependency and vulnerability awareness
+
+---
+
 
 ## Security & Quality Engineering
 
-Integration of security validation, code quality, and automated testing into delivery pipelines.
+Engineering practices focused on ensuring system reliability, security, and production readiness through a combination of automated tools and manual analysis.
 
-### Core Practices
+---
 
-* Static and dynamic code analysis
-* Dependency and vulnerability scanning
-* API and integration testing automation
-* Load and performance testing strategies
+## Core Practices
 
-### Technologies
+* Static and dynamic code analysis for identifying vulnerabilities and system risks
+* Dependency and supply-chain security review
+* API testing and validation for system correctness and reliability
+* Manual security analysis and code review practices
+* Load and performance testing for system stability under stress
+* Debugging and inspection of application behavior in production-like environments
 
-* SonarQube
-* Snyk
-* Gitleaks
-* Cypress
-* Newman
-* JMeter
+---
 
-### Demonstrated In
+## Technologies & Tools
 
-* Automated DevSecOps CI/CD & QA System
+* SonarQube (code quality analysis)
+* Snyk (dependency vulnerability scanning)
+* Gitleaks (secret detection)
+* Cypress (frontend testing)
+* Newman (API testing)
+* JMeter (performance testing)
+
+---
+
+## Demonstrated In
+
+* Multi-Language Static Analysis System for Security & Code Quality
+
+---

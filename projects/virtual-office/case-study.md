@@ -1,4 +1,4 @@
-# Virtual Office — Real-Time Workspace Management System
+# Virtual Office (React) — Real-Time Workspace Management System
 
 ## Overview
 
