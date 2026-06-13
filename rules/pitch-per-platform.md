@@ -18,3 +18,7 @@ RAG system + deployments (senior signal if positioned correctly)
 ec2,lambda,ecs,eks,beanstalk,rds,dynamodb,documentdb,vpc,elasticload balancing,route 53,privatelink,cloudwatch,xray,cloudtrail,systemsmanager,sqs,sns,eventbridge,AWS CodeBuild
 AWS CodeDeploy
 AWS CodePipeline,
+
+A packaged system where each capability is a sellable product backed by proof assets
+
+Capabilities → Services → Pricing → Case Studies → Profile → Proposals → Clients → Iteration

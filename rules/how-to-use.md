@@ -1,3 +1,5 @@
+A packaged system where each capability is a sellable product backed by proof assets
+
 ## 1. 🟢 Portfolio / GitHub README (public version)
 
 You **derive a simplified version** from this.
