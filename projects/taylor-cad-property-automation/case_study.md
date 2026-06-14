@@ -1,40 +1,5 @@
 # Taylor CAD – Property Data Extraction & Automation System
 
----
-
-# 1. Client-Facing Summary (Business View)
-
-## Problem This System Solves
-
-Real estate and property assessment data from public portals is often:
-
-* spread across paginated and dynamic web interfaces
-* not available via bulk export APIs
-* hidden inside JavaScript-driven UI components
-* difficult to extract consistently at scale
-* time-consuming and error-prone when done manually
-
-This makes large-scale property data collection inefficient and unreliable.
-
----
-
-## Solution Delivered
-
-I built a **fully automated property data extraction system** that collects structured real estate records from the Taylor CAD public assessment portal.
-
-The system:
-
-* navigates dynamic web interfaces like a real user
-* extracts property data from listing and detail pages
-* handles JavaScript-heavy UI components
-* processes deeply nested property information
-* converts unstructured web data into structured datasets
-* exports clean data into Excel for analysis
-
-It transforms a manual inspection process into a **repeatable data pipeline system** .
-
----
-
 ## Business Impact
 
 * eliminated manual property data collection effort

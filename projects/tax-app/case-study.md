@@ -1,41 +1,5 @@
 # Tax Rebate Processing & Refund Management Platform
 
----
-
-# 1. Client-Facing Summary (Business View)
-
-## Problem This System Solves
-
-Tax rebate and refund processing is traditionally handled through:
-
-* manual data collection across multiple forms
-* document-heavy verification workflows
-* spreadsheet-based tracking of applications
-* disconnected communication between staff and customers
-* slow and error-prone refund calculations
-* lack of visibility into application progress
-
-This creates slow processing cycles, operational inefficiency, and inconsistent customer experience.
-
----
-
-## Solution Delivered
-
-I built a **workflow-driven tax rebate processing platform** that digitizes and automates the entire lifecycle of tax refund applications.
-
-The system structures the entire process into a controlled workflow:
-
-* customer onboarding and identity verification
-* structured tax data collection
-* automated document processing
-* tax calculation based on configurable rules
-* staff review and approval workflows
-* refund tracking and reconciliation
-
-Instead of treating tax submissions as isolated forms, the system treats them as a **state-driven financial processing pipeline** .
-
----
-
 ## Business Impact
 
 * significantly reduced manual processing effort

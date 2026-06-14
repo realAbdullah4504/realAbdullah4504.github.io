@@ -1,40 +1,5 @@
 # Tender Discovery & Procurement Intelligence Platform
 
----
-
-# 1. Client-Facing Summary (Business View)
-
-## Problem Businesses Face
-
-Organizations that track government and institutional tenders face a major operational bottleneck:
-
-* procurement data is scattered across hundreds of portals
-* each portal has different structure and format
-* manual monitoring is slow, inconsistent, and error-prone
-* high time cost in filtering irrelevant opportunities
-* difficulty extracting structured data from dynamic pages and PDFs
-* no centralized system for procurement intelligence
-
-As a result, valuable procurement opportunities are often missed or discovered too late.
-
----
-
-## Solution Delivered
-
-I built a **distributed procurement intelligence system** that automatically discovers, extracts, and processes tender opportunities from multiple heterogeneous portals.
-
-The system continuously:
-
-* discovers new procurement listings
-* extracts structured tender data from unstructured sources
-* filters and classifies relevant opportunities
-* ranks tenders based on relevance scoring
-* stores everything in a centralized intelligence repository
-
-It transforms fragmented procurement data into a **searchable, structured intelligence system** .
-
----
-
 ## Business Impact
 
 * automated discovery of procurement opportunities across multiple portals

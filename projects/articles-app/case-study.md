@@ -2,38 +2,6 @@
 
 ---
 
-# 1. Client-Facing Summary (Product View)
-
-## Problem This System Solves
-
-Users consume news from multiple platforms, which creates:
-
-* fragmented information across sources
-* repetitive manual browsing across websites
-* no unified view of relevant content
-* difficulty tracking or saving important articles
-* lack of intelligent filtering or prioritization
-
-This results in slow and inefficient information consumption.
-
----
-
-## Solution Delivered
-
-I built an **AI-powered multi-source news aggregation system** that consolidates content from multiple external sources into a single intelligent interface.
-
-Instead of acting as a simple RSS reader, the system:
-
-* aggregates news from multiple sources
-* classifies content using AI-based intelligence
-* normalizes heterogeneous data into structured categories
-* presents a unified timeline of articles
-* enables filtering and saving of relevant content
-
-The system transforms fragmented news consumption into a **centralized, intelligent content experience layer** .
-
----
-
 ## Business Impact
 
 * faster access to relevant news across multiple sources
