@@ -133,6 +133,9 @@ Node.js (Express, NestJS), Python (FastAPI, Flask) — REST & GraphQL APIs, auth
 **Tender Procurement Intelligence Platform**
 Distributed data extraction system processing 50+ government portals using queue-based Playwright workers and ETL pipelines. Delivered automated ~5-minute cycles with 20 parallel workers.
 
+**Tax Rebate Processing & Refund Management Platform**
+Workflow-driven tax rebate lifecycle platform replacing manual forms, spreadsheet tracking, and fragmented approval processes. Built a state-controlled financial workflow engine for customer onboarding, identity verification, document processing, configurable tax calculations, staff review, refund approval, and refund reconciliation.
+
 **DevOps CI/CD Pipeline System**
 Automated build, test, security scanning, containerization (Docker), and deployment pipeline with full observability and rollback.
 
