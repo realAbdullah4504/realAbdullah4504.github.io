@@ -1,0 +1,3 @@
+Title: Multi-Source News Aggregator
+Filename: ai-news-aggregator
+Case Study: Built an AI-powered news platform that consolidates articles from multiple sources into a unified timeline. Automatically classifies content into categories, enables personalized filtering, and tracks saved articles across sessions. Eliminated manual browsing across websites by delivering structured, searchable news in one place. Built with React and Python.

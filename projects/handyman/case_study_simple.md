@@ -1,0 +1,3 @@
+Title: Handyman Marketplace Platform
+Filename: handyman-marketplace-platform
+Case Study: Built a service marketplace platform that connects customers with verified craftsmen through structured hiring workflows. Manages job requests from creation to completion with automated matching, real-time messaging, and trust scoring. Reduced coordination friction and improved service quality through system-enforced verification rules. Built with Next.js, TypeScript, and real-time communication.

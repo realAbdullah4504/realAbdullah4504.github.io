@@ -1,0 +1,3 @@
+Title: Team Briefing & Accountability System
+Filename: team-briefing-accountability
+Case Study: Built a platform for daily team updates where admins configure questions and employees submit structured progress reports. Tracks submissions in real-time with deadline enforcement and sends automatic reminders. Replaced scattered standup meetings with centralized visibility into team status and blockers.

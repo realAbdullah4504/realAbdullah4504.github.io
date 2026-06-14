@@ -1,0 +1,3 @@
+Title: Property Data Extraction Automation
+Filename: property-data-extraction-automation
+Case Study: Built an automated system that extracts property records from government portals and compiles them into structured Excel datasets. Navigates complex web interfaces, captures ownership and financial data, and handles failures through checkpoint recovery. Eliminated manual data entry by producing large-scale, consistent property databases.

@@ -1,0 +1,3 @@
+Title: Virtual Office Collaboration Platform
+Filename: virtual-office-collaboration
+Case Study: Built a real-time virtual workspace where remote teams collaborate through presence-aware rooms, task boards, and live chat. Employees set availability states that govern access and notifications, while admins assign tasks and track progress. Created an office-like interaction model for distributed teams without physical office friction.

@@ -1,0 +1,3 @@
+Title: School Print Workflow Management
+Filename: school-print-workflow-management
+Case Study: Built a role-based system for academic document handling from teacher submission to principal oversight. Teachers upload work, secretaries review and approve, and the system generates print instructions automatically. Standardized document workflows across school roles while eliminating manual coordination and improving traceability.

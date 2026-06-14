@@ -1,0 +1,3 @@
+Title: Automated Security Report Distribution
+Filename: automated-security-report-distribution
+Case Study: Built an email automation system that processes vulnerability reports and sends them to the correct clients automatically. Maps reports to recipient lists, includes access credentials, and tracks processing status to prevent duplicate deliveries. Eliminated manual report routing and reduced risk of missed notifications.

@@ -1,0 +1,3 @@
+Title: Security Audit Automation System
+Filename: security-audit-automation
+Case Study: Built a unified security assessment framework that analyzes codebases across multiple languages for vulnerabilities. Normalizes findings into consistent reports with risk classifications and file references. Standardized security reviews for clients while detecting injection risks, exposed secrets, and vulnerable dependencies.
