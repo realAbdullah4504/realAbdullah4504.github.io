@@ -1,0 +1,1 @@
+In this project, I designed and implemented a robust, scalable cloud infrastructure on AWS to support a high-performance application environment. The goal was to provide a seamless, automated deployment pipeline with minimal manual intervention, leveraging modern tools such as Docker, Kubernetes, and CloudFormation.
