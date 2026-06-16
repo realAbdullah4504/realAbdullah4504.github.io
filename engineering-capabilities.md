@@ -16,7 +16,7 @@ Node.js (Express, NestJS), Python (FastAPI, Flask)
 PostgreSQL, MongoDB, DynamoDB, Supabase, Firebase, Redis (caching, queues, pub/sub)
 
 **Cloud & Infrastructure (AWS)**
-EC2, ECS, EKS, Lambda, RDS, SQS, SNS, EventBridge, VPC, IAM, Secrets Manager, CloudWatch
+EC2, ECS, EKS, Lambda, RDS, SQS, SNS, EventBridge, VPC, IAM, Secrets Manager, CloudWatch, SSM
 
 **Containerization & Orchestration**
 Docker, Kubernetes
@@ -28,7 +28,7 @@ GitHub Actions, Jenkins, GitLab CI/CD, Terraform, CloudFormation
 SQS, SNS, EventBridge, Kafka, RabbitMQ, Celery, BullMQ
 
 **Observability & Monitoring**
-Prometheus, Grafana, OpenTelemetry, Loki, CloudWatch
+Prometheus, Grafana, OpenTelemetry, Loki, CloudWatch, AWS Xray
 
 **Data & Processing**
 Playwright (browser automation), ETL pipelines, distributed processing systems
@@ -69,7 +69,7 @@ Linux scripting, backend automation, distributed systems design
 * Databases: RDS, DynamoDB
 * Networking: VPC, Load Balancers, Route 53
 * Messaging: SQS, SNS, EventBridge
-* Security: IAM, Secrets Manager
+* Security: IAM, Secrets Manager, SSM
 
 **Containerization & Orchestration**
 
@@ -156,3 +156,5 @@ Multi-workspace platform with role-based access, structured reporting, and real-
 
 **CopyFlow — Workflow Management System**
 Role-based document lifecycle system with strict state transitions and permission control.
+
+---
