@@ -35,17 +35,14 @@ I build the application. You own the code and the architecture.
 
 ## Pricing
 
-### Starter Package
-$100
-MVP with 2–3 core pages, React/Next.js frontend with basic backend, simple auth, basic database.
+### Starter Package ($100)
+MVP app with React UI, basic backend, simple auth, and database setup.
 
-### Pro Package
-$350
-Full-stack app with authentication, database, REST API, admin panel or dashboard, basic unit tests, code review.
+### Pro Package ($350)
+Production-ready full-stack app with API, auth, DB, and admin dashboard.
 
-### Premium Package
-$750
-Complex full-stack system, role-based auth, payment integration or real-time features, modular architecture, performance optimization, 30 days support and bug fixes.
+### Premium Package ($750)
+Scalable system with payments/realtime, RBAC, optimized backend, and support.
 
 ---
 
