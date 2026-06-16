@@ -136,6 +136,9 @@ Distributed data extraction system processing 50+ government portals using queue
 **Tax Rebate Processing & Refund Management Platform**
 Workflow-driven tax rebate lifecycle platform replacing manual forms, spreadsheet tracking, and fragmented approval processes. Built a state-controlled financial workflow engine for customer onboarding, identity verification, document processing, configurable tax calculations, staff review, refund approval, and refund reconciliation.
 
+**Event-Driven Processing Platform on AWS**
+Production-grade event-driven processing system using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, and Redis pub/sub with full observability (OpenTelemetry, X-Ray, Prometheus, Loki).
+
 **DevOps CI/CD Pipeline System**
 Automated build, test, security scanning, containerization (Docker), and deployment pipeline with full observability and rollback.
 
