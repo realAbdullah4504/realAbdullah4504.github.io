@@ -1,143 +1,115 @@
-# Fiverr Gig: AWS Cloud Infrastructure & DevOps Setup
+# AWS Cloud Infrastructure & DevOps Gig
+
+---
 
 ## Title
 
-I will deploy and manage AWS cloud infrastructure with production grade DevOps setup
+I will be your AWS cloud architect and DevOps expert for deployment and infrastructure setup
 
 ---
 
 ## Description
 
-I build secure, automated AWS infrastructure using CloudFormation. No manual setup, no configuration drift everything is reproducible, version-controlled, and production-ready.
+I am an AWS cloud architect and DevOps expert helping businesses build, fix, and deploy scalable cloud infrastructure on Amazon Web Services.
 
-I help with web apps, backend APIs, and microservices by designing AWS environments for reliability, scalability, and operational stability.
+I design, set up, and optimize AWS environments for web applications, APIs, and backend systems for startups and businesses.
 
-What I deliver:
+Whether you need AWS setup, deployment, migration, or fixing existing cloud issues, I deliver secure and production-ready solutions.
 
-- AWS infrastructure setup: EC2, ECS, or Lambda
+---
 
-- VPC design: subnets, routing, internet gateways, security groups
+## What I can help you with
 
-- Terraform or CloudFormation IaC
+- AWS setup and configuration (EC2, ECS, Lambda, S3)
+- VPC networking and security setup
+- CI/CD pipelines for automated deployments
+- Docker-based application deployment
+- Kubernetes setup (if required)
+- Cloud monitoring and troubleshooting
+- Fixing AWS errors and performance issues
 
-- IAM least-privilege security
+---
 
-- Auto scaling and load balancing
+## AWS Services
 
-- CI/CD integration where required
+EC2, ECS, Lambda, S3, RDS, DynamoDB, VPC, IAM, CloudWatch, API Gateway, Route 53, SQS, SNS
 
-- CloudWatch logs, metrics, and alerts
+---
 
-AWS Services:
+## DevOps Tools
 
-EC2 | ECS | Lambda | RDS | DynamoDB | S3 | VPC | IAM | CloudWatch | SQS | SNS | Route 53 | API Gateway
+Docker, Kubernetes, Terraform, CloudFormation, CI/CD, GitHub Actions, Jenkins, AWS CLI
 
-DevOps Tools:
+---
 
-Code Pipeline | CloudFormation | AWS CLI | CloudWatch
+## Why choose me
 
-Why hire me:
+Secure, scalable, and production-ready AWS solutions optimized for performance, cost, and reliability.
 
-I build production-grade AWS systems with reliability and security in mind. You get infrastructure that is reproducible, secure, scalable, and maintainable.
+---
 
-Deliverables:
+## Deliverables
 
-- Infrastructure as Code repository
-
-- AWS architecture setup and configuration
-
+- AWS setup or fix
+- Deployment configuration
+- CI/CD pipeline setup
+- Security and IAM configuration
 - Monitoring and logging setup
-
-- Deployment and system documentation
-
-- Handover guide for operations or team use
+- Documentation
 
 ---
 
 ## Packages
 
-### Launch AWS Single Service Setup ($60)
-
-Deploy one AWS service with secure configuration, logging, and environment setup.
-
----
-
-### Scale AWS Deployment or Migration ($200)
-
-Deploy or migrate your application with secure AWS infrastructure and monitoring.
+### Basic — AWS Setup or Fix ($60)
+AWS EC2, S3, or Lambda setup or fix with basic configuration and deployment
 
 ---
 
-### Automate Production AWS Infrastructure ($500)
+### Standard — AWS Deployment with Automation ($200)
+Deploy app on AWS with Docker, CI/CD pipeline, and monitoring setup
 
-Production-ready AWS infrastructure with IaC, scaling, monitoring, and deployment automation.
+---
+
+### Premium — Full AWS Cloud Architecture Setup ($500)
+Full AWS architecture with CI/CD, IaC, scaling, security, and monitoring
 
 ---
 
 ## FAQ
 
-**Q: What AWS services do you support?**
-A: EC2, ECS, Lambda, CloudFormation, RDS, DynamoDB, S3, VPC, IAM, CloudWatch, SQS, SNS, Route 53, and API Gateway.
+**Q: Do you provide AWS setup and deployment services?**  
+Yes, I handle complete AWS setup, deployment, and optimization for applications and backend systems.
 
-**Q: Do you provide ongoing support after setup?**
-A: Yes, ongoing support can be arranged separately for maintenance, monitoring, and updates.
+**Q: Can you fix AWS issues or errors?**  
+Yes, I troubleshoot and fix AWS-related issues including EC2, Lambda, networking, and deployment errors.
 
-**Q: What information do you need to get started?**
-A: Your AWS requirements, application details, preferred region, and any existing infrastructure.
+**Q: Do you work with DevOps tools?**  
+Yes, I use Docker, Kubernetes, Terraform, CI/CD pipelines, and AWS DevOps tools.
 
-**Q: Can you work with my existing AWS account?**
-A: Yes, I can work with your existing account or set up a new one.
+**Q: Can you deploy my web application?**  
+Yes, I deploy web apps, APIs, and backend systems on AWS securely and efficiently.
 
-**Q: How long does a typical setup take?**
-A: Single service: 1–2 days; scaled deployment: 3–5 days; full automation: 1–2 weeks.
+**Q: Will my system be scalable?**  
+Yes, I design AWS architectures with scalability, load balancing, and auto scaling.
 
-**Q: Do you offer post-setup monitoring or maintenance?**
-A: Yes, I can set up monitoring and provide maintenance plans if needed.
-
----
-
-## Tags
-
-AWS, DevOps, Cloud Infrastructure, Terraform, CloudFormation, EC2, ECS, Lambda, CI/CD, Docker
-
----
-
-## Final Note
-
-I help you move from manual AWS setups to fully automated production-grade infrastructure that is secure, scalable, and maintainable.
-
-If needed, I can also help integrate deployment workflows for your applications into this infrastructure for a complete end-to-end system.
+**Q: Do you provide ongoing support?**  
+Yes, maintenance and optimization support can be provided separately.
 
 ---
 
 ## Buyer Requirements
 
-Please provide your AWS project requirements, application architecture details, preferred AWS region, and any existing infrastructure or access credentials before placing the order.
+- Project type (web app, API, backend, etc.)
+- Current AWS setup (new or existing)
+- Application details or repository
+- Deployment goals (fix, deploy, scale, migrate)
+- Required AWS services (if any)
+
+If you're unsure, I will help design the architecture from scratch.
 
 ---
 
-## Images Needed
+## Tags
 
-- AWS architecture diagram or current infrastructure screenshot
-- Application tech stack (language, framework, database)
-- CI/CD tool preference (GitHub Actions, GitLab CI, etc.)
-- Any existing code repository or deployment workflow details
-
----
-
-## Thumbnail Ideas
-
-1. AWS logo + cloud icon + "Production-grade Infrastructure"
-2. "Terraform" or "CloudFormation" IaC badge
-3. Stack: EC2/ECS + VPC + IAM + CloudWatch icons
-4. "Secure & Scalable AWS" headline
-
----
-
-## Future Improvements
-
-- Migrate AWS to multi-region for DR
-- Add AWS WAF, Shield for DDoS
-- Implement Config/GuardDuty for compliance
-- Add cost monitoring with Cost Explorer
-- Containerize workloads and move to EKS/Fargate
+AWS, DevOps, AWS Expert, Cloud Architect, Cloud Infrastructure, CI/CD, Docker, Kubernetes, Amazon Web Services, Serverless
