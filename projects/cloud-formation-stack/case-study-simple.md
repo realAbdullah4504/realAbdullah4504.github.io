@@ -1,1 +1,3 @@
-In this project, I designed and implemented a robust, scalable cloud infrastructure on AWS to support a high-performance application environment. The goal was to provide a seamless, automated deployment pipeline with minimal manual intervention, leveraging modern tools such as Docker, Kubernetes, and CloudFormation.
+# AWS CloudFormation Stack (ECS, Code Pipeline, SNS, SQS, Observability)
+
+Designed and implemented a production-grade AWS infrastructure using CloudFormation to deploy scalable backend systems for SaaS applications. The architecture includes VPC networking, ECS-based containerized services, ALB load balancing, SQS/SNS for async processing, Secrets Manager for secure configs, and CloudWatch for monitoring. The setup enables automated CI/CD deployments, fault-tolerant scaling, and secure multi-environment infrastructure provisioning from a single template.

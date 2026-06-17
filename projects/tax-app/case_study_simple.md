@@ -1,3 +1,3 @@
-Title: Tax Rebate Processing Platform
+# Tax Rebate Processing Platform
 Filename: tax-rebate-processing-platform
-Case Study: Built a tax processing platform that guides customers through rebate applications from registration to refund. Automates document extraction, tax calculations, and staff review workflows while tracking every case through defined lifecycle stages. Reduced manual processing and improved accuracy through structured financial workflows. Built with Node.js and MongoDB.
+Case Study: Built a tax processing platform that guides customers through rebate applications from registration to refund. Automates document extraction, tax calculations, and staff review workflows checking every case through defined lifecycle stages. Reduced manual processing and improved accuracy through structured financial workflows. Built with Node.js and MongoDB.

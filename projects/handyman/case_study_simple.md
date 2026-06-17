@@ -1,3 +1,11 @@
-Title: Handyman Marketplace Platform
-Filename: handyman-marketplace-platform
-Case Study: Built a service marketplace platform that connects customers with verified craftsmen through structured hiring workflows. Manages job requests from creation to completion with automated matching, real-time messaging, and trust scoring. Reduced coordination friction and improved service quality through system-enforced verification rules. Built with Next.js, TypeScript, and real-time communication.
+# Handyman Repair Service
+
+A user-friendly interface for homeowners to post jobs, track offers, and manage contracts seamlessly.
+Handyman Dashboard:
+A dedicated space for professionals to browse job opportunities, send quotes, and communicate with clients.
+Secure Transactions:
+In-app payment integration ensures secure and hassle-free payments for both parties.
+Real-Time Notifications:
+Stay updated with job statuses, offers, and messages instantly.
+Rating System:
+Build trust with a transparent rating and review system for homeowners and handymen alike.

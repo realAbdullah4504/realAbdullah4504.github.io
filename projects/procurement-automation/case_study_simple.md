@@ -1,3 +1,3 @@
-Title: Procurement Intelligence Platform
+# Tender Discovery & Procurement Intelligence Platform
 Filename: procurement-intelligence-platform
-Case Study: Built a system that continuously monitors government portals to discover procurement opportunities. Processes tenders through managed stages from detection to enrichment, assigning relevance scores and storing them in a centralized database. Eliminated manual tender tracking by automating discovery across dozens of sources in parallel.
+Case Study: Built a system that continuously monitors government portals to discover procurement opportunities. Processes tenders through managed stages from detection to enrichment, assigning relevance scores and storing them in a centralized database. Eliminated manual tender fetching by automating discovery across dozens of sources in parallel.
