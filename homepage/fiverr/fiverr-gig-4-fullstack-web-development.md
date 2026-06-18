@@ -1,4 +1,7 @@
 FINAL OPTIMIZED VERSION
+
+guru title Full Stack Developer (React & Node.js)
+
 Title
 
 I will build full stack web applications with React, Next.js and Node.js

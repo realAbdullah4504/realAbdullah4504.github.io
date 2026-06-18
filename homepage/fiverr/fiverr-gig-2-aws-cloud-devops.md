@@ -2,6 +2,8 @@
 
 ---
 
+guru title AWS DevOps & Cloud Architect
+
 ## Title
 
 I will be your AWS cloud architect and DevOps expert for deployment and infrastructure setup
@@ -18,7 +20,7 @@ Whether you need AWS setup, deployment, migration, or fixing existing cloud issu
 
 ---
 
-## What I can help you with
+## Services / Features
 
 - AWS setup and configuration (EC2, ECS, Lambda, S3)
 - VPC networking and security setup

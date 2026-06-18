@@ -1,5 +1,7 @@
 TITLE (≤100 chars, HIGH CTR)
 
+guru.com title DevOps Engineer(CI/CD,Docker,Kubernetes)
+
 I will be your DevOps engineer and cloud automation expert for CI/CD and Kubernetes
 
 DESCRIPTION (≤1200 chars, SEO OPTIMIZED)
@@ -10,7 +12,7 @@ I design deployment pipelines and cloud systems that reduce manual work for web 
 
 I work with AWS, cloud platforms, and self-hosted environments to deliver secure, scalable, and automated infra.
 
-What I can help you with:
+Services / Features
 
 - CI/CD pipelines (GitHub Actions, GitLab CI/CD, Jenkins)
 - Docker containerization and deployment
