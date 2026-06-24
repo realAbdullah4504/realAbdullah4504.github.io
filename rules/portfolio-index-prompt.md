@@ -1,133 +1,275 @@
-I am building a professional engineering portfolio that will become the single source of truth for my entire personal brand.
+# Engineering Portfolio Index Generator
 
-This portfolio index should organize all of my engineering projects into a structured engineering portfolio that demonstrates my capabilities as a Full-Stack Systems & DevOps Engineer.
+I am building a professional engineering portfolio that will become the single source of truth for all future professional assets.
 
-The goal is NOT to simply list projects.
+This Portfolio Index is not a resume.
 
-The goal is to communicate my engineering capability through progressively stronger evidence.
+This Portfolio Index is not a project archive.
 
-The portfolio index will later generate:
+This Portfolio Index is a curated engineering evidence document that demonstrates my strongest engineering capabilities through a selected set of flagship projects.
 
-- Personal portfolio website
-- Upwork portfolio
-- Fiverr portfolio
-- GitHub README
-- Resume/CV
-- LinkedIn projects
-- Engineering capability document
-- Client proposals
-- Case study navigation
+Future assets generated from this Portfolio Index include:
 
-Therefore the portfolio index should focus on engineering capability rather than technology lists.
+* Resume / CV
+* Portfolio Website
+* Upwork Profile
+* Fiverr Profile
+* Freelancer Profile
+* Guru Profile
+* LinkedIn Profile
+* GitHub README
+* Client Proposals
+* Cover Letters
+* Engineering Capability Documents
+* Architecture Showcases
 
-My engineering positioning is:
-
-- Full-Stack Systems & DevOps Engineer
-- 5 years of production engineering experience
-- End-to-end ownership from idea → MVP → scalable production infrastructure
-- Backend, frontend, distributed systems, cloud infrastructure, DevOps, and production operations
-
-Use my Engineering Capabilities document as the primary source of truth.
-
-The portfolio index should contain the following sections.
-
-# 1. Engineering Positioning
-
-A concise summary of my engineering identity.
+The goal is to communicate engineering capability through project evidence rather than technology inventories.
 
 ---
 
-# 2. Engineering Capability Matrix
+# Source Material
 
-Organize projects according to the engineering capabilities they demonstrate instead of by technology.
+Use the Engineering Capabilities document as the primary source.
 
-Possible capability groups include:
+Only use projects explicitly described in the Engineering Capabilities document.
 
-- Full-Stack Product Engineering
-- Backend Systems
-- Distributed Systems
-- Cloud Infrastructure
-- DevOps Engineering
-- System Design
-- Real-Time Systems
-- Workflow Systems
-- Data Engineering
-- Observability
-- Production Operations
-- Mobile Applications
+Do not invent:
 
-Each capability should reference the projects that prove it.
+* Technologies
+* Responsibilities
+* Clients
+* Certifications
+* Team sizes
+* Production usage
+* Business outcomes
+* Leadership responsibilities
+
+Use only information supported by the provided material.
 
 ---
 
-# 3. Project Catalogue
+# Engineering Positioning
 
-For every project include:
+Position me as an engineer capable of:
 
-- Project Name
-- Category
-- Business Domain
-- Primary Engineering Capabilities Demonstrated
-- Complexity Level
-- Technologies
-- Architecture Style
-- Key Engineering Challenges
-- Production Features
-- Scalability Features
-- Reliability Features
-- DevOps Features
-- Observability Features
-- Business Value
-- Related Case Study
+* Designing systems
+* Building systems
+* Deploying systems
+* Operating systems
+* Scaling systems
 
----
+Focus areas include:
 
-# 4. Flagship Projects
+* Backend Engineering
+* Full-Stack Systems
+* DevOps Engineering
+* Cloud Infrastructure
+* Distributed Systems
+* Platform Engineering
+* System Design
+* Workflow Automation
+* Production Operations
 
-Identify which projects should be considered flagship projects for:
-
-- Upwork
-- Portfolio Website
-- CV
-- Client Proposals
-
-Explain why each project is strategically important.
+Do not infer seniority levels, staff-level responsibilities, management responsibilities, or leadership titles unless explicitly supported by project evidence.
 
 ---
 
-# 5. Capability Coverage
+# Output Structure
 
-Create a matrix showing which engineering capabilities are demonstrated by each project.
+## 1. Engineering Identity
 
-This should reveal strengths, overlaps, and any capability gaps.
+Create a concise summary covering:
+
+* Engineering philosophy
+* System design approach
+* Operational mindset
+* Core strengths
+* Primary engineering focus
 
 ---
 
-# 6. Portfolio Navigation
+## 2. Core Engineering Capabilities
 
-Design a logical navigation hierarchy that visitors can follow.
+Organize capabilities demonstrated by the flagship projects.
+
+Possible capability areas include:
+
+* Full-Stack Product Engineering
+* Backend Systems
+* Distributed Systems
+* Cloud Infrastructure
+* DevOps Engineering
+* Platform Engineering
+* Workflow Systems
+* Event-Driven Systems
+* Real-Time Systems
+* Data Processing Systems
+* Observability
+* Production Operations
+
+For each capability include:
+
+* Capability Description
+* Supporting Projects
+* Engineering Evidence
+* Relevant Technologies
+
+---
+
+## 3. Flagship Project Catalogue
+
+For each flagship project include:
+
+### Project Overview
+
+* Project Name
+* Business Domain
+* Complexity Level
+
+### Engineering Evidence
+
+* Primary Capabilities Demonstrated
+* Architecture Style
+* Core Engineering Challenges
+* Key Design Decisions
+
+### Production Characteristics
+
+* Scalability Features
+* Reliability Features
+* Security Features
+* DevOps Features
+* Observability Features
+
+### Business Impact
+
+* Problem Solved
+* Operational Improvements
+* Business Value
+
+---
+
+## 4. Strategic Project Ranking
+
+Identify which projects are strongest for:
+
+* Resume / CV
+* Portfolio Website
+* Upwork
+* Fiverr
+* Freelancer
+* Guru
+* LinkedIn
+* Client Proposals
+* System Design Discussions
+
+Explain why each project is strategically valuable.
+
+---
+
+## 5. Capability Coverage Matrix
+
+Generate a matrix showing:
+
+Capabilities × Projects
+
+This should reveal:
+
+* Strongest engineering areas
+* Capability overlaps
+* Portfolio strengths
+* Positioning focus
+
+---
+
+## 6. Portfolio Navigation Structure
+
+Design a logical navigation hierarchy.
 
 Example:
 
 Engineering
+├── Backend Systems
 ├── Full-Stack Systems
-├── Backend Engineering
-├── Cloud & DevOps
+├── Cloud Infrastructure
+├── DevOps Engineering
 ├── Distributed Systems
-├── Data Engineering
-├── Mobile Applications
+├── Platform Engineering
+├── Workflow Systems
+├── Real-Time Systems
+├── Data Processing
 └── Case Studies
 
 ---
 
-# 7. Portfolio Growth Roadmap
+## 7. Engineering Achievements
 
-Identify missing flagship projects that would strengthen my engineering profile in the future.
+Extract measurable engineering achievements supported by project evidence.
 
-Focus on projects that increase my positioning as a senior Full-Stack Systems & DevOps Engineer rather than adding more technologies.
+Examples:
+
+* Scalability improvements
+* Reliability improvements
+* Deployment improvements
+* Automation improvements
+* Operational improvements
+
+Only include achievements explicitly supported by the provided material.
 
 ---
 
-Use my Engineering Capabilities document as the primary reference and treat every project as evidence supporting my engineering capability.
+## 8. Asset Generation Metadata
 
-The final output should be a clean Markdown document that becomes the master Portfolio Index for all future portfolio assets.
+For every flagship project generate:
+
+### Priority Scores
+
+* Resume Priority
+* Portfolio Priority
+* Upwork Priority
+* Fiverr Priority
+* LinkedIn Priority
+* Proposal Priority
+* Architecture Showcase Priority
+
+### Reusable Summaries
+
+* One-Line Summary
+* Short Summary
+* Executive Summary
+* Technical Summary
+
+### Keywords
+
+* ATS Keywords
+* Recruiter Keywords
+* Client Keywords
+* System Design Keywords
+
+These fields will be used later by automated generators.
+
+---
+
+## 9. Portfolio Growth Roadmap
+
+Identify missing flagship projects that would strengthen my positioning.
+
+Focus on:
+
+* Stronger system-design evidence
+* Platform engineering
+* Distributed systems
+* Cloud architecture
+* Operational excellence
+
+Do not recommend projects solely to learn new technologies.
+
+Recommend projects that improve engineering credibility and market positioning.
+
+---
+
+# Output Requirements
+
+Generate a clean Markdown document.
+
+This document should become the canonical Portfolio Index and the primary source for future CV generation, proposal generation, portfolio website generation, LinkedIn content, and freelancer profile optimization.
