@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - {{contact.name}}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000000;
+            background: #ffffff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+
+        h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            margin-bottom: 4pt;
+        }
+
+        h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 16pt;
+            margin-bottom: 8pt;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 4pt;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 10pt;
+            margin-bottom: 4pt;
+        }
+
+        p {
+            margin-bottom: 8pt;
+        }
+
+        ul {
+            margin-left: 20pt;
+            margin-bottom: 8pt;
+        }
+
+        li {
+            margin-bottom: 4pt;
+        }
+
+        .header {
+            margin-bottom: 16pt;
+        }
+
+        .header-title {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 8pt;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            line-height: 1.4;
+            margin-bottom: 4pt;
+        }
+
+        .section {
+            margin-bottom: 12pt;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .skill-category {
+            margin-bottom: 4pt;
+        }
+
+        .project {
+            margin-bottom: 12pt;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .project-name {
+            font-weight: bold;
+        }
+
+        .project-description {
+            margin-bottom: 4pt;
+        }
+
+        .project-stack {
+            font-size: 10pt;
+            margin-bottom: 4pt;
+        }
+
+        .education-item {
+            margin-bottom: 8pt;
+        }
+
+        @media print {
+            body {
+                padding: 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>{{contact.name}}</h1>
+        <p class="header-title">{{positioning.title}}</p>
+        <div class="contact-info">
+            <p>{{contact.location}} | {{contact.phone}} | {{contact.email}}</p>
+            <p>{{contact.linkedin}} | {{contact.github}} | {{contact.portfolio}}{% if contact.upwork %} | {{contact.upwork}}{% endif %}</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p>{{summary}}</p>
+    </section>
+
+    <section class="section">
+        <h2>Technical Skills</h2>
+        {% for category, skill_list in technical_skills.items() %}
+        <div class="skill-category">
+            <p><strong>{{category}}:</strong> {{skill_list | join(', ')}}</p>
+        </div>
+        {% endfor %}
+    </section>
+
+    {% if selected_projects %}
+    <section class="section">
+        <h2>Engineering Projects</h2>
+        {% for project in selected_projects %}
+        <article class="project">
+            <h3 class="project-name">{{project.name}}</h3>
+            <p class="project-description">{{project.business_domain}}</p>
+            <ul>
+                {% for impact in project.engineering_impact[:3] %}
+                <li>{{impact}}</li>
+                {% endfor %}
+            </ul>
+            <p class="project-stack"><strong>Technical Stack:</strong> {{project.technical_stack | join(', ')}}</p>
+        </article>
+        {% endfor %}
+    </section>
+    {% else %}
+    <section class="section">
+        <h2>Engineering Projects</h2>
+        {% for project in projects[:4] %}
+        <article class="project">
+            <h3 class="project-name">{{project.name}}</h3>
+            <p class="project-description">{{project.business_domain}}</p>
+            <ul>
+                {% for impact in project.engineering_impact[:3] %}
+                <li>{{impact}}</li>
+                {% endfor %}
+            </ul>
+            <p class="project-stack"><strong>Technical Stack:</strong> {{project.technical_stack | join(', ')}}</p>
+        </article>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    <section class="section">
+        <h2>Key Engineering Achievements</h2>
+        <ul>
+            {% if selected_achievements %}
+                {% for achievement in selected_achievements %}
+                <li>{{achievement}}</li>
+                {% endfor %}
+            {% else %}
+                {% for achievement in achievements[:5] %}
+                <li>{{achievement}}</li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <p><strong>{{education.degree}}</strong>, {{education.institution}} ({{education.graduation_year}})</p>
+            <p>Focus: {{education.academic_focus_areas | join(', ')}}</p>
+        </div>
+        {% if education.certifications %}
+        <div class="education-item">
+            <p><strong>Certifications:</strong> 
+                {% for cert in education.certifications %}
+                {{cert.name}} ({{cert.provider}}){% if not loop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+        {% endif %}
+    </section>
+
+</body>
+</html>
