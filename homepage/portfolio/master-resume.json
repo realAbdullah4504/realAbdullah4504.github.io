@@ -1,10 +1,4 @@
 {
-  "meta": {
-    "version": "1.0",
-    "type": "master-resume",
-    "generated": "2025-06-25",
-    "purpose": "Canonical source for job-specific resumes, portfolio generation, LinkedIn generation, freelance profile generation"
-  },
   "contact": {
     "name": "Abdullah Javed",
     "email": "abdullahjaved4504@gmail.com",
@@ -18,556 +12,399 @@
     "freelancer": "https://www.freelancer.com/u/JSTechSol",
     "guru": "https://www.guru.com/freelancers/abdullah-javed-developer"
   },
-  "positioning": {
-    "title": "Full-Stack Systems & DevOps Engineer",
-    "experience_years": 4,
-    "primary_focus_areas": [
-      "Backend Engineering",
-      "Full-Stack Systems",
-      "DevOps Engineering",
+  "profile": {
+    "title": "Full-Stack Software Engineer",
+    "focus_areas": [
+      "Backend Systems",
       "Cloud Infrastructure",
+      "DevOps",
+      "Automation",
       "Distributed Systems",
-      "Platform Engineering",
-      "System Design",
-      "Workflow Automation",
-      "Production Operations"
-    ]
+      "Modern Web Applications"
+    ],
+    "years_experience": 4,
+    "positioning_statement": "Full-Stack Software Engineer specializing in Backend Systems, Cloud Infrastructure, DevOps, Automation, Distributed Systems, and Modern Web Applications"
   },
-  "summary": "Full-stack systems and DevOps engineer with 4 years of experience building distributed systems, backend platforms, and cloud infrastructure. Designed distributed worker systems processing data from 50+ government portals, event-driven cloud platforms with observability, and automated CI/CD pipelines. Built financial workflow platforms, real-time collaboration systems, and multi-tenant SaaS applications.",
+  "professional_summary": "Full-stack software engineer with 4 years of experience building distributed systems, backend platforms, cloud infrastructure, and DevOps automation. Designed distributed worker systems processing data from 50+ government portals, event-driven cloud platforms with observability, and automated CI/CD pipelines. Built financial workflow platforms, real-time collaboration systems, and multi-tenant SaaS applications.",
+  "professional_experience": [
+    {
+      "id": "exp_001",
+      "company": "Ateitis Corp",
+      "position": "DevSecOps & Full-Stack Engineer (Part-Time)",
+      "employment_type": "Part-Time",
+      "location": null,
+      "start_date": "2025-07",
+      "end_date": null,
+      "overview": "Working as a DevSecOps and Full-Stack Engineer building cloud infrastructure, CI/CD pipelines, automation systems, distributed backend services, and production deployment workflows.",
+      "responsibilities": [
+        "Design and implement cloud-native backend infrastructure on AWS",
+        "Build and maintain CI/CD pipelines using Jenkins and GitLab CI/CD",
+        "Develop Infrastructure as Code solutions using CloudFormation and Terraform",
+        "Configure containerized deployments using Docker and AWS ECS",
+        "Build event-driven backend services using AWS SNS, SQS, and EventBridge",
+        "Implement observability using CloudWatch, OpenTelemetry, Prometheus, Grafana, and Loki",
+        "Automate software delivery, deployment, monitoring, and operational workflows",
+        "Improve security, deployment reliability, and production automation"
+      ],
+      "technologies": ["Node.js", "Python", "AWS", "Docker", "ECS", "CloudFormation", "Terraform", "Jenkins", "GitLab CI/CD", "MongoDB", "Redis", "OpenTelemetry", "Prometheus", "Grafana", "Loki"],
+      "flagship_project_ids": ["tender_procurement_intelligence_platform", "event_driven_processing_platform_aws", "devops_cicd_pipeline_system"],
+      "related_project_ids": []
+    },
+    {
+      "id": "exp_002",
+      "company": "Sofrix",
+      "position": "Frontend Engineer",
+      "employment_type": "Full-Time",
+      "location": null,
+      "start_date": "2024-09",
+      "end_date": "2025-07",
+      "overview": "Developed modern React and React Native applications for multiple client projects, focusing on user experience, reusable components, API integration, and scalable frontend architecture.",
+      "responsibilities": [
+        "Develop React and React Native applications",
+        "Build reusable UI components and application layouts",
+        "Integrate REST APIs and backend services",
+        "Implement authentication and role-based workflows",
+        "Manage application state and frontend architecture",
+        "Optimize application performance and responsiveness",
+        "Collaborate with backend developers and designers"
+      ],
+      "technologies": ["React", "React Native", "TypeScript", "JavaScript", "REST APIs"],
+      "flagship_project_ids": [],
+      "related_project_ids": []
+    },
+    {
+      "id": "exp_003",
+      "company": "Nutrifactor",
+      "position": "React Native Developer",
+      "employment_type": "Full-Time",
+      "location": null,
+      "start_date": "2023-10",
+      "end_date": "2024-10",
+      "overview": "Developed a React Native mobile commerce application integrated with a headless Shopify backend.",
+      "responsibilities": [
+        "Develop mobile application features using React Native",
+        "Integrate Shopify GraphQL APIs",
+        "Build product catalog and order management workflows",
+        "Synchronize inventory and order information",
+        "Improve application performance and usability",
+        "Collaborate with backend and product teams"
+      ],
+      "technologies": ["React Native", "TypeScript", "Shopify GraphQL"],
+      "flagship_project_ids": ["nutrifactor_mobile_commerce_platform"],
+      "related_project_ids": []
+    },
+    {
+      "id": "exp_004",
+      "company": "Ghanisoft",
+      "position": "MERN Stack Developer",
+      "employment_type": "Full-Time",
+      "location": null,
+      "start_date": "2023-06",
+      "end_date": "2023-10",
+      "overview": "Worked on full-stack web applications across e-commerce, restaurant management, and financial workflow systems using the MERN stack.",
+      "responsibilities": [
+        "Develop backend APIs using Node.js and Express",
+        "Build React-based frontend applications",
+        "Design MongoDB data models",
+        "Implement authentication and authorization",
+        "Integrate third-party services and cloud storage",
+        "Develop workflow-based business applications"
+      ],
+      "technologies": ["Node.js", "Express", "React", "MongoDB", "AWS S3"],
+      "flagship_project_ids": ["tax_rebate_processing_refund_management_platform"],
+      "related_project_ids": []
+    },
+    {
+      "id": "exp_005",
+      "company": "Upwork & Fiverr",
+      "position": "Freelance Full-Stack MERN Developer",
+      "employment_type": "Freelance",
+      "location": null,
+      "start_date": "2022-07",
+      "end_date": "2023-06",
+      "overview": "Delivered freelance MERN stack projects for international clients, building responsive web applications and REST APIs while managing complete project lifecycles from requirements to deployment.",
+      "responsibilities": [
+        "Build full-stack MERN applications",
+        "Develop REST APIs using Node.js and Express",
+        "Build React user interfaces",
+        "Design MongoDB database schemas",
+        "Deploy client applications",
+        "Maintain client communication and project delivery"
+      ],
+      "technologies": ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"],
+      "flagship_project_ids": [],
+      "related_project_ids": []
+    }
+  ],
   "technical_skills": {
-    "backend_engineering": [
-      "Node.js",
-      "Express",
-      "Python",
-      "REST",
-      "GraphQL"
-    ],
-    "frontend_engineering": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "React Native"
-    ],
-    "cloud_infrastructure": [
-      "AWS ECS",
-      "AWS ECR",
-      "AWS S3",
-      "AWS SNS",
-      "AWS SQS",
-      "AWS CloudFormation",
-      "AWS CloudWatch",
-      "AWS X-Ray"
-    ],
-    "devops_ci_cd": [
-      "Jenkins",
-      "GitLab CI/CD",
-      "Docker",
-      "SonarQube",
-      "Snyk"
-    ],
-    "databases_storage": [
-      "MongoDB",
-      "Redis",
-      "Supabase"
-    ],
-    "distributed_systems": [
-      "Celery",
-      "AWS SQS",
-      "AWS SNS",
-      "AWS EventBridge",
-      "ECS Fargate",
-      "Queue-Based Processing",
-      "Parallel Workers"
-    ],
-    "observability_monitoring": [
-      "OpenTelemetry",
-      "Prometheus",
-      "Loki",
-      "AWS CloudWatch",
-      "AWS X-Ray"
-    ],
-    "automation_data_processing": [
-      "Playwright",
-      "ETL Pipelines"
-    ]
+    "languages": ["Node.js", "Python", "TypeScript", "JavaScript"],
+    "backend": ["Node.js", "Express", "NestJS", "Python", "FastAPI", "Flask", "REST", "GraphQL"],
+    "frontend": ["React", "Next.js", "React Native", "TypeScript"],
+    "cloud": ["AWS EC2", "AWS ECS", "AWS EKS", "AWS Lambda", "AWS RDS", "AWS DynamoDB", "AWS SQS", "AWS SNS", "AWS EventBridge", "AWS VPC", "AWS IAM", "AWS Secrets Manager", "AWS CloudWatch", "AWS SSM", "AWS CloudFormation", "Terraform"],
+    "containers": ["Docker", "Kubernetes"],
+    "cicd": ["Jenkins", "GitLab CI/CD", "GitHub Actions"],
+    "databases": ["MongoDB", "Redis", "PostgreSQL", "DynamoDB", "Supabase"],
+    "messaging_event_streaming": ["SQS", "SNS", "EventBridge", "Redis pub/sub", "Kafka", "RabbitMQ", "BullMQ", "Celery"],
+    "distributed_systems": ["ECS Fargate", "Queue-Based Processing", "Parallel Workers", "Event-Driven Architecture"],
+    "monitoring_observability": ["Prometheus", "Grafana", "OpenTelemetry", "Loki", "CloudWatch", "AWS X-Ray", "structured logging"],
+    "automation_testing": ["Playwright", "ETL Pipelines", "SonarQube", "Snyk"]
   },
   "projects": [
     {
-      "id": "tender-procurement-intelligence-platform",
+      "id": "tender_procurement_intelligence_platform",
       "name": "Tender Procurement Intelligence Platform",
+      "project_type": "Data Processing Platform",
+      "associated_employment_id": "exp_001",
       "business_domain": "Procurement intelligence and government tender data extraction",
-      "complexity_level": "High",
-      "priority": "flagship",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Distributed Systems",
-          "Data Processing Systems",
-          "Backend Automation",
-          "Queue-Driven Processing",
-          "Browser Automation"
-        ],
-        "architecture_style": "Queue-based distributed worker system with Playwright automation and ETL pipelines",
-        "core_challenges": [
-          "Extracting data from 50+ government portals",
-          "Running extraction in parallel",
-          "Completing full extraction and processing cycles in about 5 minutes per batch",
-          "Validating, transforming, and deduplicating extracted data"
-        ],
-        "key_design_decisions": [
-          "Use queue-based Playwright workers for parallel extraction",
-          "Use ETL pipelines for transformation and processing",
-          "Use distributed worker fleets to reduce manual effort and cycle time"
-        ]
+      "complexity": "High",
+      "architecture_style": "Queue-based distributed worker system with Playwright automation and ETL pipelines",
+      "overview": "Distributed scraping system with queue-based Playwright workers and ETL pipelines processing data from 50+ government portals.",
+      "engineering_contributions": [
+        "Designed a distributed worker architecture using 20 parallel Playwright workers to process procurement data from 50+ government portals",
+        "Implemented ETL pipelines with validation, transformation, and deduplication for reliable data processing",
+        "Reduced processing from hours of manual effort to approximately 5-minute automated cycles using queue-driven parallel execution",
+        "Built checkpoint recovery patterns and fault-tolerant retry handling for distributed worker reliability"
+      ],
+      "technical_stack": ["Playwright", "Celery", "Redis", "AWS ECS", "AWS ECR", "MongoDB", "Docker", "ETL pipelines"],
+      "measurable_outcomes": {
+        "portals_processed": "50+",
+        "parallel_workers": 20,
+        "processing_cycle_time": "approximately 5 minutes",
+        "improvement": "reduced from hours of manual effort"
       },
-      "technical_stack": [
-        "Playwright",
-        "Celery",
-        "Redis",
-        "AWS ECS",
-        "AWS ECR",
-        "MongoDB",
-        "Docker"
-      ],
-      "engineering_impact": [
-        "Reduced processing from hours of manual effort to approximately 5-minute automated cycles",
-        "Enabled scalable procurement intelligence collection from 50+ government portals",
-        "Implemented validation, transformation, and deduplication for reliable data processing"
-      ],
-      "capability_tags": [
-        "Distributed Systems",
-        "Data Processing Systems",
-        "Backend Automation",
-        "Queue-Driven Processing",
-        "Browser Automation"
-      ]
+      "capability_tags": ["distributed_systems", "data_processing", "backend_automation", "queue_driven_processing", "browser_automation"]
     },
     {
-      "id": "event-driven-processing-platform-aws",
+      "id": "event_driven_processing_platform_aws",
       "name": "Event-Driven Processing Platform on AWS",
+      "project_type": "Cloud Platform",
+      "associated_employment_id": "exp_001",
       "business_domain": "Cloud processing platform and asynchronous backend operations",
-      "complexity_level": "High",
-      "priority": "flagship",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Event-Driven Systems",
-          "Cloud Infrastructure",
-          "Backend Systems",
-          "DevOps Engineering",
-          "Observability",
-          "Production Operations"
-        ],
-        "architecture_style": "Event-driven cloud platform using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, Redis pub/sub, and full observability",
-        "core_challenges": [
-          "Coordinating asynchronous processing across cloud services and background workers",
-          "Maintaining observability across API, worker, queue, and infrastructure boundaries",
-          "Designing failure handling for event-driven processing"
-        ],
-        "key_design_decisions": [
-          "Use SNS/SQS for asynchronous buffering and decoupling",
-          "Use ECS Fargate for containerized worker execution",
-          "Use Redis pub/sub for real-time communication",
-          "Build observability with OpenTelemetry, X-Ray, Prometheus, and Loki"
-        ]
-      },
-      "technical_stack": [
-        "AWS CloudFormation",
-        "AWS ECS Fargate",
-        "AWS SNS",
-        "AWS SQS",
-        "AWS EventBridge",
-        "MongoDB",
-        "Redis Pub/Sub",
-        "OpenTelemetry",
-        "AWS X-Ray",
-        "Prometheus",
-        "Loki",
-        "CloudWatch",
-        "Docker"
+      "complexity": "High",
+      "architecture_style": "Event-driven cloud platform using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, Redis pub/sub, and full observability",
+      "overview": "Production-grade event-driven cloud platform using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, Redis pub/sub, and full observability.",
+      "engineering_contributions": [
+        "Designed event-driven architecture using AWS CloudFormation, ECS Fargate, SNS/SQS, and EventBridge for asynchronous processing",
+        "Implemented Redis pub/sub for real-time communication and distributed tracing with OpenTelemetry and AWS X-Ray",
+        "Built observability stack with Prometheus, Loki, CloudWatch, and structured logging for production monitoring",
+        "Configured retry logic, dead-letter queues, and circuit breakers for failure isolation and recoverability"
       ],
-      "engineering_impact": [
-        "Improved failure isolation, monitoring, traceability, and recoverability in production",
-        "Enabled scalable and operable processing architecture for production workloads",
-        "Reduced deployment complexity with reproducible environments and rollback capability"
-      ],
-      "capability_tags": [
-        "Event-Driven Systems",
-        "Cloud Infrastructure",
-        "Backend Systems",
-        "DevOps Engineering",
-        "Observability",
-        "Production Operations"
-      ]
+      "technical_stack": ["AWS CloudFormation", "AWS ECS Fargate", "AWS SNS", "AWS SQS", "AWS EventBridge", "MongoDB", "Redis pub/sub", "OpenTelemetry", "AWS X-Ray", "Prometheus", "Loki", "CloudWatch", "Docker"],
+      "capability_tags": ["event_driven_systems", "cloud_infrastructure", "backend_systems", "devops_engineering", "observability", "production_operations"]
     },
     {
-      "id": "devops-cicd-pipeline-system",
+      "id": "devops_cicd_pipeline_system",
       "name": "DevOps CI/CD Pipeline System",
+      "project_type": "DevOps Platform",
+      "associated_employment_id": "exp_001",
       "business_domain": "Software delivery automation and release operations",
-      "complexity_level": "High",
-      "priority": "flagship",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "DevOps Engineering",
-          "Platform Engineering",
-          "Production Operations",
-          "Cloud Infrastructure",
-          "Observability"
-        ],
-        "architecture_style": "Automated delivery pipeline covering build, test, security scanning, containerization, deployment, monitoring, and rollback",
-        "core_challenges": [
-          "Automating reliable delivery from code to deployment",
-          "Ensuring repeatable environments",
-          "Integrating validation, security checks, deployment, and rollback"
-        ],
-        "key_design_decisions": [
-          "Automate build, test, security scanning, Docker containerization, and deployment",
-          "Support rollback and zero-downtime deployment patterns",
-          "Use Infrastructure as Code to make environments reproducible"
-        ]
-      },
-      "technical_stack": [
-        "Jenkins",
-        "GitLab CI/CD",
-        "Docker",
-        "SonarQube",
-        "Snyk",
-        "Redmine",
-        "Linux",
-        "VPS"
+      "complexity": "High",
+      "architecture_style": "Automated delivery pipeline covering build, test, security scanning, containerization, deployment, monitoring, and rollback",
+      "overview": "Automated delivery pipeline covering build, test, security scanning, Docker containerization, deployment, monitoring, and rollback.",
+      "engineering_contributions": [
+        "Automated build, test, security scanning, Docker containerization, and deployment workflows using Jenkins and GitLab CI/CD",
+        "Implemented Infrastructure as Code with CloudFormation and Terraform for reproducible environment provisioning",
+        "Configured zero-downtime deployment patterns with rollback support for production reliability",
+        "Integrated SonarQube and Snyk for automated security scanning and code quality checks"
       ],
-      "engineering_impact": [
-        "Reduced manual deployment effort and improved release repeatability",
-        "Enabled faster, safer, and more consistent release operations",
-        "Improved delivery reliability with rollback support and reproducible environments"
-      ],
-      "capability_tags": [
-        "DevOps Engineering",
-        "Platform Engineering",
-        "Production Operations",
-        "Cloud Infrastructure",
-        "Observability"
-      ]
+      "technical_stack": ["Jenkins", "GitLab CI/CD", "Docker", "SonarQube", "Snyk", "CloudFormation", "Terraform", "Linux", "VPS"],
+      "capability_tags": ["devops_engineering", "platform_engineering", "production_operations", "cloud_infrastructure", "observability"]
     },
     {
-      "id": "tax-rebate-processing-platform",
+      "id": "tax_rebate_processing_refund_management_platform",
       "name": "Tax Rebate Processing & Refund Management Platform",
+      "project_type": "Workflow Platform",
+      "associated_employment_id": "exp_004",
       "business_domain": "Tax rebate processing, financial workflow, refund management",
-      "complexity_level": "High",
-      "priority": "flagship",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Workflow Systems",
-          "Backend Systems",
-          "Full-Stack Product Engineering",
-          "Financial Process Automation",
-          "Role-Based Operations"
-        ],
-        "architecture_style": "State-controlled workflow platform for onboarding, verification, document processing, calculation, review, approval, and reconciliation",
-        "core_challenges": [
-          "Replacing manual forms, spreadsheet tracking, and fragmented approvals",
-          "Coordinating customer onboarding, identity verification, document processing, tax calculations, staff review, refund approval, and refund reconciliation",
-          "Maintaining clear state transitions through a financial lifecycle"
-        ],
-        "key_design_decisions": [
-          "Build a controlled workflow engine rather than a loose collection of forms",
-          "Model the tax rebate lifecycle as explicit stages",
-          "Centralize review and approval flow inside the system"
-        ]
-      },
+      "complexity": "High",
+      "architecture_style": "State-controlled workflow platform for onboarding, verification, document processing, calculation, review, approval, and reconciliation",
+      "overview": "State-controlled workflow platform for onboarding, identity verification, document processing, tax calculations, staff review, refund approval, and reconciliation.",
+      "engineering_contributions": [
+        "Designed a state-controlled workflow engine with explicit lifecycle states for financial processing operations",
+        "Built backend systems for identity verification, document processing, configurable tax calculations, and staff review workflows",
+        "Centralized refund approval and reconciliation processes replacing manual forms and spreadsheet tracking",
+        "Implemented role-based access control and strict state transitions for auditability and process reliability"
+      ],
       "technical_stack": ["Node.js", "REST", "MongoDB", "AWS S3"],
-      "engineering_impact": [
-        "Replaced manual tax rebate tracking and fragmented approval operations",
-        "Centralized onboarding, document processing, review, approval, and reconciliation",
-        "Improved reliability and auditability of refund workflow execution"
-      ],
-      "capability_tags": [
-        "Workflow Systems",
-        "Backend Systems",
-        "Full-Stack Product Engineering",
-        "Financial Process Automation",
-        "Role-Based Operations"
-      ]
+      "capability_tags": ["workflow_systems", "backend_systems", "full_stack_product_engineering", "financial_process_automation", "role_based_operations"]
     },
     {
-      "id": "handyman-marketplace-system",
+      "id": "handyman_marketplace_system",
       "name": "Handyman Marketplace System",
+      "project_type": "Marketplace Platform",
+      "associated_employment_id": null,
       "business_domain": "Service marketplace",
-      "complexity_level": "Medium to High",
-      "priority": "supporting",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Full-Stack Product Engineering",
-          "Backend Systems",
-          "Real-Time Workflows",
-          "Marketplace Workflow Design"
-        ],
-        "architecture_style": "Full-stack marketplace platform with frontend, backend, authentication, payments, real-time workflows, and scalable infrastructure",
-        "core_challenges": [
-          "Coordinating marketplace interactions",
-          "Supporting authentication and payment workflows",
-          "Designing real-time workflows for service marketplace operations"
-        ],
-        "key_design_decisions": [
-          "Build a full-stack platform rather than isolated marketplace screens",
-          "Include scalable backend and infrastructure support",
-          "Support real-time workflow behavior"
-        ]
-      },
+      "complexity": "Medium to High",
+      "architecture_style": "Full-stack marketplace platform with frontend, backend, authentication, payments, real-time workflows, and scalable infrastructure",
+      "overview": "Full-stack marketplace platform with authentication, payments, real-time workflows, and scalable backend infrastructure.",
+      "engineering_contributions": [
+        "Built marketplace workflows connecting service participants with authentication and payment integration",
+        "Designed scalable backend architecture supporting real-time coordination and service operations",
+        "Centralized authentication, payment processing, and workflow operations in a unified platform"
+      ],
       "technical_stack": ["Next.js", "Node.js", "AWS S3"],
-      "engineering_impact": [
-        "Enabled marketplace workflows between service participants",
-        "Centralized authentication, payment, and workflow operations",
-        "Supported scalable marketplace business model"
-      ],
-      "capability_tags": [
-        "Full-Stack Product Engineering",
-        "Backend Systems",
-        "Real-Time Workflows",
-        "Marketplace Workflow Design"
-      ]
+      "capability_tags": ["full_stack_product_engineering", "backend_systems", "real_time_workflows", "marketplace_workflow_design"]
     },
     {
-      "id": "virtual-office-real-time-workspace",
+      "id": "virtual_office_real_time_workspace",
       "name": "Virtual Office - Real-Time Workspace",
+      "project_type": "Collaboration Platform",
+      "associated_employment_id": null,
       "business_domain": "Collaboration and real-time workspace operations",
-      "complexity_level": "Medium to High",
-      "priority": "supporting",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Real-Time Systems",
-          "Full-Stack Product Engineering",
-          "State Management",
-          "Collaboration Workflows"
-        ],
-        "architecture_style": "Presence-based collaboration platform with dynamic user states and WebSocket real-time interactions",
-        "core_challenges": [
-          "Representing live user presence and state changes",
-          "Delivering real-time interactions between users",
-          "Coordinating workspace behavior across connected clients"
-        ],
-        "key_design_decisions": [
-          "Use WebSocket interactions for real-time communication",
-          "Model dynamic user states as first-class workflow data",
-          "Build presence into the collaboration experience"
-        ]
-      },
-      "technical_stack": ["React", "Supabase", "TypeScript"],
-      "engineering_impact": [
-        "Supported real-time collaboration and user presence in virtual workspace",
-        "Made user availability and workspace interaction visible in real time",
-        "Improved coordination for distributed workspace activity"
+      "complexity": "Medium to High",
+      "architecture_style": "Presence-based collaboration platform with dynamic user states and WebSocket real-time interactions",
+      "overview": "Presence-based collaboration platform with dynamic user states and WebSocket interactions.",
+      "engineering_contributions": [
+        "Implemented WebSocket-based real-time communication for live user presence and state changes",
+        "Designed dynamic user state management for workspace interaction visibility",
+        "Built presence-driven collaboration features for distributed team coordination"
       ],
-      "capability_tags": [
-        "Real-Time Systems",
-        "Full-Stack Product Engineering",
-        "State Management",
-        "Collaboration Workflows"
-      ]
+      "technical_stack": ["React", "Supabase", "TypeScript", "WebSockets"],
+      "capability_tags": ["real_time_systems", "full_stack_product_engineering", "state_management", "collaboration_workflows"]
     },
     {
-      "id": "briefly-multi-tenant-saas",
+      "id": "briefly_multi_tenant_saas",
       "name": "Briefly - Multi-Tenant SaaS",
+      "project_type": "SaaS Platform",
+      "associated_employment_id": null,
       "business_domain": "SaaS workflow and structured reporting",
-      "complexity_level": "Medium to High",
-      "priority": "supporting",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Multi-Tenant SaaS Engineering",
-          "Workflow Automation",
-          "Role-Based Access Control",
-          "Full-Stack Product Engineering"
-        ],
-        "architecture_style": "Multi-workspace SaaS platform with role-based access, structured reporting, and real-time workflow automation",
-        "core_challenges": [
-          "Supporting multiple workspaces",
-          "Managing role-based access",
-          "Structuring reporting and workflow automation"
-        ],
-        "key_design_decisions": [
-          "Use a multi-workspace model",
-          "Build role-based access into the product structure",
-          "Support real-time workflow automation"
-        ]
-      },
-      "technical_stack": ["React", "Supabase", "TypeScript"],
-      "engineering_impact": [
-        "Supported structured reporting and workflow automation across workspaces",
-        "Centralized role-based workflow and reporting",
-        "Improved team workflow visibility and accountability"
+      "complexity": "Medium to High",
+      "architecture_style": "Multi-workspace SaaS platform with role-based access, structured reporting, and real-time workflow automation",
+      "overview": "Multi-workspace SaaS platform with role-based access, structured reporting, and real-time workflow automation.",
+      "engineering_contributions": [
+        "Designed multi-tenant SaaS architecture with workspace boundaries and role-based access control",
+        "Built structured reporting workflows and real-time automation across multiple workspaces",
+        "Centralized role-based workflow and reporting for improved team visibility"
       ],
-      "capability_tags": [
-        "Multi-Tenant SaaS Engineering",
-        "Workflow Automation",
-        "Role-Based Access Control",
-        "Full-Stack Product Engineering"
-      ]
+      "technical_stack": ["React", "Supabase", "TypeScript"],
+      "capability_tags": ["multi_tenant_saas_engineering", "workflow_automation", "role_based_access_control", "full_stack_product_engineering"]
     },
     {
-      "id": "copyflow-workflow-management",
+      "id": "copyflow_workflow_management_system",
       "name": "CopyFlow - Workflow Management System",
+      "project_type": "Workflow Platform",
+      "associated_employment_id": null,
       "business_domain": "Document workflow management",
-      "complexity_level": "Medium to High",
-      "priority": "supporting",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Workflow Systems",
-          "Role-Based Access Control",
-          "Backend Systems",
-          "Full-Stack Product Engineering"
-        ],
-        "architecture_style": "Role-based document lifecycle system with strict state transitions and permission control",
-        "core_challenges": [
-          "Managing a controlled document lifecycle",
-          "Enforcing state transitions",
-          "Applying permission control across roles"
-        ],
-        "key_design_decisions": [
-          "Model document processing as a lifecycle",
-          "Enforce strict state transitions",
-          "Use role-based permission control"
-        ]
-      },
-      "technical_stack": ["React", "Supabase", "TypeScript"],
-      "engineering_impact": [
-        "Controlled role-based document workflow operations",
-        "Reduced ambiguity in document lifecycle and permissions",
-        "Improved structure and auditability of workflow management"
+      "complexity": "Medium to High",
+      "architecture_style": "Role-based document lifecycle system with strict state transitions and permission control",
+      "overview": "Role-based document lifecycle system with strict state transitions and permission control.",
+      "engineering_contributions": [
+        "Designed role-based document lifecycle architecture with strict state transitions",
+        "Implemented permission control across workflow stages and user roles",
+        "Built controlled document processing workflow reducing ambiguity in lifecycle operations"
       ],
-      "capability_tags": [
-        "Workflow Systems",
-        "Role-Based Access Control",
-        "Backend Systems",
-        "Full-Stack Product Engineering"
-      ]
+      "technical_stack": ["React", "Supabase", "TypeScript"],
+      "capability_tags": ["workflow_systems", "role_based_access_control", "backend_systems", "full_stack_product_engineering"]
     },
     {
-      "id": "nutrifactor-mobile-commerce",
+      "id": "nutrifactor_mobile_commerce_platform",
       "name": "Nutrifactor Mobile Commerce Platform",
+      "project_type": "Mobile Application",
+      "associated_employment_id": "exp_003",
       "business_domain": "Mobile commerce and headless ecommerce",
-      "complexity_level": "Medium to High",
-      "priority": "supporting",
-      "engineering_evidence": {
-        "primary_capabilities": [
-          "Mobile Application Engineering",
-          "Full-Stack Product Engineering",
-          "API Integration",
-          "Commerce Workflow Integration"
-        ],
-        "architecture_style": "Headless Shopify mobile commerce integration using React Native and Shopify GraphQL",
-        "core_challenges": [
-          "Integrating mobile commerce flows with Shopify",
-          "Synchronizing inventory and orders in real time",
-          "Supporting commerce interactions in a React Native client"
-        ],
-        "key_design_decisions": [
-          "Use a headless Shopify integration rather than a traditional storefront",
-          "Use Shopify GraphQL for commerce data integration",
-          "Build the customer experience in React Native"
-        ]
-      },
-      "technical_stack": ["React Native", "TypeScript", "Shopify GraphQL"],
-      "engineering_impact": [
-        "Delivered mobile commerce experience over headless Shopify backend",
-        "Synchronized inventory and orders between mobile app and commerce backend",
-        "Enabled mobile shopping and commerce operations"
+      "complexity": "Medium to High",
+      "architecture_style": "Headless Shopify mobile commerce integration using React Native and Shopify GraphQL",
+      "overview": "React Native mobile commerce platform using headless Shopify and Shopify GraphQL with real-time inventory and order synchronization.",
+      "engineering_contributions": [
+        "Integrated React Native with Shopify GraphQL for product, inventory, and order workflows",
+        "Built mobile commerce experience over headless Shopify backend with real-time synchronization",
+        "Synchronized inventory and orders between mobile app and commerce backend"
       ],
-      "capability_tags": [
-        "Mobile Application Engineering",
-        "Full-Stack Product Engineering",
-        "API Integration",
-        "Commerce Workflow Integration"
-      ]
+      "technical_stack": ["React Native", "TypeScript", "Shopify GraphQL"],
+      "capability_tags": ["mobile_application_engineering", "full_stack_product_engineering", "api_integration", "commerce_workflow_integration"]
     }
   ],
-  "achievements": [
-    "Designed distributed scraping system with 20 parallel workers processing data from 50+ government portals in approximately 5-minute cycles",
-    "Built event-driven cloud platform with AWS CloudFormation, ECS Fargate, SNS/SQS, and observability stack",
-    "Automated CI/CD pipeline with Jenkins, GitLab CI/CD, Docker, SonarQube, and Snyk for security scanning",
-    "Built state-controlled financial workflow platform replacing manual processes and fragmented approvals",
-    "Implemented observability with OpenTelemetry, AWS X-Ray, Prometheus, and Loki for production monitoring",
-    "Built multi-tenant SaaS platforms with role-based access control and workflow automation"
+  "engineering_achievements": [
+    "Designed a distributed scraping system with 20 parallel workers completing full extraction and processing cycles in approximately 5 minutes per batch",
+    "Automated procurement data extraction across 50+ government portals using queue-based Playwright workers and ETL pipelines",
+    "Reduced full environment provisioning to single-command deployment using Infrastructure as Code with CloudFormation and Terraform",
+    "Built event-driven processing using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, Redis pub/sub, and distributed tracing",
+    "Implemented comprehensive observability using Prometheus, Grafana, OpenTelemetry, CloudWatch, AWS X-Ray, and Loki",
+    "Built controlled workflow systems for tax rebate processing, refund management, document lifecycle control, and multi-tenant SaaS workflow automation",
+    "Automated CI/CD pipeline with Jenkins, GitLab CI/CD, Docker, SonarQube, and Snyk for security scanning"
   ],
   "education": {
     "degree": "BS-EE (Electronics)",
     "institution": "National University of Computer and Emerging Sciences (NUCES LHR)",
     "location": "Lahore, Pakistan",
-    "graduation_year": "2013",
+    "graduation_year": 2013,
     "academic_focus_areas": [
-      "Software Engineering",
-      "Data Structures & Algorithms",
       "Object-Oriented Programming",
+      "Data Structures",
       "Database Systems"
-    ],
-    "certifications": [
-      {
-        "name": "DevOps on AWS",
-        "provider": "Coursera"
-      },
-      {
-        "name": "The Complete 2023 Web Development Bootcamp",
-        "provider": "Udemy"
-      },
-      {
-        "name": "Problem Solving (Basic)",
-        "provider": "HackerRank"
-      }
     ]
   },
-  "architecture_patterns": [
-    "Workflow State Machines",
-    "Multi-Tenant Architecture",
-    "Circuit Breaker Pattern",
-    "Failure Isolation"
+  "certifications": [
+    {
+      "name": "DevOps on AWS",
+      "provider": "Coursera"
+    },
+    {
+      "name": "The Complete 2023 Web Development Bootcamp",
+      "provider": "Udemy"
+    },
+    {
+      "name": "Problem Solving (Basic)",
+      "provider": "HackerRank"
+    }
   ],
-  "engineering_capabilities": [
-    "Structured Logging",
-    "Custom Metrics",
-    "Observability Design"
-  ],
-  "strategic_ranking": {
-    "resume_cv": [
-      "tender-procurement-intelligence-platform",
-      "event-driven-processing-platform-aws",
-      "devops-cicd-pipeline-system",
-      "tax-rebate-processing-platform",
-      "briefly-multi-tenant-saas",
-      "copyflow-workflow-management"
-    ],
-    "portfolio_website": [
-      "event-driven-processing-platform-aws",
-      "tender-procurement-intelligence-platform",
-      "tax-rebate-processing-platform",
-      "virtual-office-real-time-workspace",
-      "nutrifactor-mobile-commerce"
-    ],
-    "upwork": [
-      "event-driven-processing-platform-aws",
-      "devops-cicd-pipeline-system",
-      "tender-procurement-intelligence-platform",
-      "tax-rebate-processing-platform"
-    ],
-    "fiverr": [
-      "devops-cicd-pipeline-system",
-      "event-driven-processing-platform-aws",
-      "tender-procurement-intelligence-platform",
-      "handyman-marketplace-system"
-    ],
-    "freelancer": [
-      "tax-rebate-processing-platform",
-      "tender-procurement-intelligence-platform",
-      "handyman-marketplace-system",
-      "nutrifactor-mobile-commerce"
-    ],
-    "guru": [
-      "event-driven-processing-platform-aws",
-      "devops-cicd-pipeline-system",
-      "tax-rebate-processing-platform",
-      "tender-procurement-intelligence-platform"
-    ],
-    "linkedin": [
-      "event-driven-processing-platform-aws",
-      "tender-procurement-intelligence-platform",
-      "devops-cicd-pipeline-system",
-      "tax-rebate-processing-platform"
-    ]
+  "capabilities": {
+    "full_stack_product_engineering": {
+      "description": "Designing and building complete product systems across frontend, backend, data, workflow, and infrastructure layers",
+      "supporting_project_ids": ["handyman_marketplace_system", "virtual_office_real_time_workspace", "nutrifactor_mobile_commerce_platform", "briefly_multi_tenant_saas", "copyflow_workflow_management_system", "tax_rebate_processing_refund_management_platform"],
+      "supporting_technologies": ["React", "Next.js", "TypeScript", "React Native", "Node.js", "Express", "NestJS", "Python", "FastAPI", "Flask", "REST", "GraphQL", "WebSockets"]
+    },
+    "backend_systems": {
+      "description": "Building backend platforms with APIs, authentication, multi-tenant structures, workflow engines, data processing, and operational boundaries",
+      "supporting_project_ids": ["tax_rebate_processing_refund_management_platform", "handyman_marketplace_system", "briefly_multi_tenant_saas", "copyflow_workflow_management_system", "event_driven_processing_platform_aws"],
+      "supporting_technologies": ["Node.js", "Express", "NestJS", "Python", "FastAPI", "Flask", "REST", "GraphQL", "PostgreSQL", "MongoDB", "DynamoDB", "Redis"]
+    },
+    "distributed_systems": {
+      "description": "Designing systems that use parallel workers, asynchronous queues, event-driven processing, fault tolerance, and horizontal scaling",
+      "supporting_project_ids": ["tender_procurement_intelligence_platform", "event_driven_processing_platform_aws", "devops_cicd_pipeline_system"],
+      "supporting_technologies": ["Playwright", "Redis", "BullMQ", "Celery", "Kafka", "RabbitMQ", "SQS", "SNS", "EventBridge", "ECS Fargate"]
+    },
+    "cloud_infrastructure": {
+      "description": "Designing and operating secure, scalable, observable production environments on AWS",
+      "supporting_project_ids": ["event_driven_processing_platform_aws", "devops_cicd_pipeline_system"],
+      "supporting_technologies": ["AWS EC2", "AWS ECS", "AWS EKS", "AWS Lambda", "AWS RDS", "AWS DynamoDB", "AWS SQS", "AWS SNS", "AWS EventBridge", "AWS VPC", "AWS IAM", "AWS Secrets Manager", "AWS CloudWatch", "AWS SSM", "AWS CloudFormation", "Terraform"]
+    },
+    "devops_engineering": {
+      "description": "Automating build, test, security scanning, containerization, deployment, and environment provisioning workflows",
+      "supporting_project_ids": ["devops_cicd_pipeline_system", "event_driven_processing_platform_aws"],
+      "supporting_technologies": ["GitHub Actions", "Jenkins", "GitLab CI/CD", "Docker", "Kubernetes", "Terraform", "CloudFormation"]
+    },
+    "workflow_systems": {
+      "description": "Modeling operational processes as controlled workflows with explicit states, permissions, reviews, approvals, and reconciliation",
+      "supporting_project_ids": ["tax_rebate_processing_refund_management_platform", "copyflow_workflow_management_system", "handyman_marketplace_system", "briefly_multi_tenant_saas"],
+      "supporting_technologies": ["Node.js", "Python", "REST", "GraphQL", "Redis", "PostgreSQL", "MongoDB", "role_based_access_control", "workflow_state_machines"]
+    },
+    "event_driven_systems": {
+      "description": "Building asynchronous systems that communicate through queues, events, background workers, and pub/sub channels",
+      "supporting_project_ids": ["event_driven_processing_platform_aws", "tender_procurement_intelligence_platform"],
+      "supporting_technologies": ["SQS", "SNS", "EventBridge", "Redis pub/sub", "Kafka", "RabbitMQ", "BullMQ", "Celery"]
+    },
+    "real_time_systems": {
+      "description": "Building systems that communicate state changes to users through real-time interaction patterns",
+      "supporting_project_ids": ["virtual_office_real_time_workspace", "handyman_marketplace_system", "briefly_multi_tenant_saas"],
+      "supporting_technologies": ["WebSockets", "React", "Next.js", "TypeScript", "React Native", "Redis pub/sub"]
+    },
+    "data_processing_systems": {
+      "description": "Building extraction, aggregation, transformation, validation, and deduplication workflows for structured data pipelines",
+      "supporting_project_ids": ["tender_procurement_intelligence_platform", "event_driven_processing_platform_aws"],
+      "supporting_technologies": ["Playwright", "ETL pipelines", "Redis", "queues", "worker_fleets", "MongoDB", "PostgreSQL"]
+    },
+    "observability_production_operations": {
+      "description": "Making systems measurable, diagnosable, recoverable, and operable under production conditions",
+      "supporting_project_ids": ["event_driven_processing_platform_aws", "devops_cicd_pipeline_system"],
+      "supporting_technologies": ["Prometheus", "Grafana", "OpenTelemetry", "Loki", "CloudWatch", "AWS X-Ray", "structured_logging", "custom_metrics"]
+    }
+  },
+  "metadata": {
+    "schema_version": "3.0",
+    "generator_version": "1.0",
+    "generated_from": ["portfolio-index.md", "experience.md", "education.md", "contact.md"],
+    "created_date": "2026-06-29",
+    "updated_date": "2026-06-29"
   }
 }

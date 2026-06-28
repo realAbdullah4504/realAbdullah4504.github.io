@@ -8,7 +8,7 @@ This index is an evidence document, not a resume and not a complete project arch
 
 # 1. Engineering Identity
 
-I am a full-stack systems and DevOps engineer with 5 years of hands-on experience designing, building, deploying, and scaling production-grade systems. My strongest positioning is end-to-end systems ownership: application development, backend architecture, distributed processing, cloud infrastructure, DevOps automation, and production operations.
+I am a full-stack systems and DevOps engineer with 4 years of hands-on experience designing, building, deploying, and scaling production-grade systems. My strongest positioning is end-to-end systems ownership: application development, backend architecture, distributed processing, cloud infrastructure, DevOps automation, and production operations.
 
 My engineering approach is load-driven and operationally grounded. I start lean when the business problem calls for speed, then evolve systems toward modular or distributed architecture only when real scale, reliability, or operational needs justify the added complexity. Across projects, I emphasize observable systems, reproducible infrastructure, explicit failure handling, horizontal scalability, and recoverable production workflows.
 
@@ -39,9 +39,9 @@ Designing and building complete product systems across frontend, backend, data, 
 - Handyman Marketplace System
 - Virtual Office - Real-Time Workspace
 - Nutrifactor Mobile Commerce Platform
-- Briefly - Multi-Tenant SaaS
 - CopyFlow - Workflow Management System
 - Tax Rebate Processing & Refund Management Platform
+- Multi-Source AI News Aggregator
 
 **Engineering Evidence**
 
@@ -62,9 +62,9 @@ Building backend platforms with APIs, authentication, multi-tenant structures, w
 
 - Tax Rebate Processing & Refund Management Platform
 - Handyman Marketplace System
-- Briefly - Multi-Tenant SaaS
 - CopyFlow - Workflow Management System
 - Event-Driven Processing Platform on AWS
+- Multi-Source AI News Aggregator
 
 **Engineering Evidence**
 
@@ -148,7 +148,6 @@ Modeling operational processes as controlled workflows with explicit states, per
 - Tax Rebate Processing & Refund Management Platform
 - CopyFlow - Workflow Management System
 - Handyman Marketplace System
-- Briefly - Multi-Tenant SaaS
 
 **Engineering Evidence**
 
@@ -189,7 +188,6 @@ Building systems that communicate state changes to users through real-time inter
 
 - Virtual Office - Real-Time Workspace
 - Handyman Marketplace System
-- Briefly - Multi-Tenant SaaS
 
 **Engineering Evidence**
 
@@ -210,6 +208,7 @@ Building extraction, aggregation, transformation, validation, and deduplication 
 
 - Tender Procurement Intelligence Platform
 - Event-Driven Processing Platform on AWS
+- Multi-Source AI News Aggregator
 
 **Engineering Evidence**
 
@@ -581,53 +580,6 @@ Headless Shopify mobile commerce integration using React Native and Shopify Grap
 **Operational Improvements:** Synchronized inventory and orders between mobile app and commerce backend.  
 **Business Value:** Enabled mobile shopping and commerce operations.
 
-## Briefly - Multi-Tenant SaaS
-
-### Project Overview
-
-**Project Name:** Briefly - Multi-Tenant SaaS  
-**Business Domain:** SaaS workflow and structured reporting  
-**Complexity Level:** Medium to high, based on multi-workspace structure, role-based access, reporting, and real-time workflow automation.
-
-### Engineering Evidence
-
-**Primary Capabilities Demonstrated**
-
-- Multi-tenant SaaS engineering
-- Workflow automation
-- Role-based access control
-- Full-stack product engineering
-
-**Architecture Style**
-
-Multi-workspace SaaS platform with role-based access, structured reporting, and real-time workflow automation.
-
-**Core Engineering Challenges**
-
-- Supporting multiple workspaces.
-- Managing role-based access.
-- Structuring reporting and workflow automation.
-
-**Key Design Decisions**
-
-- Use a multi-workspace model.
-- Build role-based access into the product structure.
-- Support real-time workflow automation.
-
-### Production Characteristics
-
-**Scalability Features:** Multi-workspace platform structure; further scalability details are not specified.  
-**Reliability Features:** Structured reporting and workflow automation; further details are not specified.  
-**Security Features:** Role-based access is explicitly mentioned.  
-**DevOps Features:** Not specified for this project.  
-**Observability Features:** Not specified for this project.
-
-### Business Impact
-
-**Problem Solved:** Supported structured reporting and workflow automation across workspaces.  
-**Operational Improvements:** Centralized role-based workflow and reporting.  
-**Business Value:** Improved team workflow visibility and accountability.
-
 ## CopyFlow - Workflow Management System
 
 ### Project Overview
@@ -675,6 +627,56 @@ Role-based document lifecycle system with strict state transitions and permissio
 **Operational Improvements:** Reduced ambiguity in document lifecycle and permissions.  
 **Business Value:** More structured and auditable workflow management.
 
+## Multi-Source AI News Aggregator
+
+### Project Overview
+
+**Project Name:** Multi-Source AI News Aggregator  
+**Business Domain:** Content aggregation and intelligent news classification  
+**Complexity Level:** Medium to high, based on multi-source web scraping, AI classification, and unified timeline architecture.
+
+### Engineering Evidence
+
+**Primary Capabilities Demonstrated**
+
+- Data processing systems
+- Web scraping and browser automation
+- AI-based content classification
+- Full-stack product engineering
+- Backend systems
+
+**Architecture Style**
+
+Layered processing system with multi-source web scraping, AI classification engine, REST API layer, and unified timeline interface.
+
+**Core Engineering Challenges**
+
+- Extracting structured article data from heterogeneous news sources.
+- Normalizing inconsistent HTML structures across multiple publishers.
+- Classifying articles into standardized categories using AI.
+- Providing a unified chronological feed across all sources.
+
+**Key Design Decisions**
+
+- Use AI classification instead of rule-based tagging for scalability.
+- Decouple scraping layer from API layer for maintainability.
+- Build unified timeline abstraction instead of per-source feeds.
+- Normalize content schema to handle heterogeneous inputs.
+
+### Production Characteristics
+
+**Scalability Features:** Multi-source content ingestion architecture; further scalability details are not specified.  
+**Reliability Features:** Structured content lifecycle and normalized processing; further details are not specified.  
+**Security Features:** Not specified in source material.  
+**DevOps Features:** Not specified for this project.  
+**Observability Features:** Not specified for this project.
+
+### Business Impact
+
+**Problem Solved:** Unified access to multiple news sources with AI-driven categorization.  
+**Operational Improvements:** Reduced cognitive load in information consumption through structured, categorized feeds.  
+**Business Value:** Faster discovery of relevant news through intelligent classification and unified timeline interface.
+
 ---
 
 # 4. Strategic Project Ranking
@@ -685,7 +687,7 @@ Role-based document lifecycle system with strict state transitions and permissio
 2. **Event-Driven Processing Platform on AWS** - Strong cloud, distributed systems, observability, and production architecture signal.
 3. **DevOps CI/CD Pipeline System** - Direct evidence for DevOps automation, delivery systems, security scanning, rollback, and IaC.
 4. **Tax Rebate Processing & Refund Management Platform** - Strong workflow and business process automation evidence.
-5. **Briefly / CopyFlow** - Useful supporting SaaS and workflow evidence.
+5. **CopyFlow** - Useful supporting workflow evidence.
 
 ## Portfolio Website
 
@@ -753,7 +755,7 @@ Role-based document lifecycle system with strict state transitions and permissio
 
 Legend: Strong = primary evidence, Supported = secondary evidence, Not specified = no explicit support in source material.
 
-| Capability / Project | Tender Procurement | Tax Rebate | Event-Driven AWS | CI/CD Pipeline | Handyman | Virtual Office | Nutrifactor | Briefly | CopyFlow |
+| Capability / Project | Tender Procurement | Tax Rebate | Event-Driven AWS | CI/CD Pipeline | Handyman | Virtual Office | Nutrifactor | CopyFlow | AI News Aggregator |
 |---|---|---|---|---|---|---|---|---|---|
 | Full-Stack Product Engineering | Supported | Strong | Supported | Not specified | Strong | Strong | Strong | Strong | Strong |
 | Backend Systems | Strong | Strong | Strong | Supported | Strong | Supported | Supported | Strong | Strong |
@@ -761,10 +763,10 @@ Legend: Strong = primary evidence, Supported = secondary evidence, Not specified
 | Cloud Infrastructure | Not specified | Not specified | Strong | Supported | Supported | Not specified | Not specified | Not specified | Not specified |
 | DevOps Engineering | Not specified | Not specified | Strong | Strong | Supported | Not specified | Not specified | Not specified | Not specified |
 | Platform Engineering | Supported | Supported | Strong | Strong | Supported | Not specified | Not specified | Supported | Supported |
-| Workflow Systems | Supported | Strong | Supported | Supported | Strong | Supported | Supported | Strong | Strong |
+| Workflow Systems | Supported | Strong | Supported | Supported | Strong | Supported | Supported | Strong | Not specified |
 | Event-Driven Systems | Strong | Not specified | Strong | Supported | Not specified | Not specified | Not specified | Not specified | Not specified |
-| Real-Time Systems | Not specified | Not specified | Supported | Not specified | Strong | Strong | Supported | Strong | Not specified |
-| Data Processing Systems | Strong | Supported | Strong | Not specified | Not specified | Not specified | Not specified | Not specified | Supported |
+| Real-Time Systems | Not specified | Not specified | Supported | Not specified | Strong | Strong | Supported | Not specified | Not specified |
+| Data Processing Systems | Strong | Supported | Strong | Not specified | Not specified | Not specified | Not specified | Not specified | Strong |
 | Observability | Not specified | Not specified | Strong | Strong | Not specified | Not specified | Not specified | Not specified | Not specified |
 | Production Operations | Supported | Supported | Strong | Strong | Supported | Not specified | Supported | Supported | Supported |
 
@@ -773,7 +775,7 @@ Legend: Strong = primary evidence, Supported = secondary evidence, Not specified
 - Strongest evidence areas: backend systems, workflow systems, distributed processing, cloud infrastructure, DevOps automation, observability, and production operations.
 - Strongest flagship pair: Event-Driven Processing Platform on AWS plus Tender Procurement Intelligence Platform.
 - Strongest business automation pair: Tax Rebate Processing Platform plus CopyFlow.
-- Strongest product breadth: Handyman Marketplace, Virtual Office, Nutrifactor, Briefly, and CopyFlow.
+- Strongest product breadth: Handyman Marketplace, Virtual Office, Nutrifactor, and CopyFlow.
 
 ## Capability Gaps Revealed
 
@@ -790,7 +792,6 @@ Engineering
 |-- Backend Systems
 |   |-- Event-Driven Processing Platform on AWS
 |   |-- Tax Rebate Processing & Refund Management Platform
-|   |-- Briefly - Multi-Tenant SaaS
 |   |-- CopyFlow - Workflow Management System
 |
 |-- Distributed Systems
@@ -808,17 +809,16 @@ Engineering
 |-- Workflow Systems
 |   |-- Tax Rebate Processing & Refund Management Platform
 |   |-- CopyFlow - Workflow Management System
-|   |-- Briefly - Multi-Tenant SaaS
 |   |-- Handyman Marketplace System
 |
 |-- Real-Time Systems
 |   |-- Virtual Office - Real-Time Workspace
 |   |-- Handyman Marketplace System
-|   |-- Briefly - Multi-Tenant SaaS
 |
 |-- Data Processing
 |   |-- Tender Procurement Intelligence Platform
 |   |-- Event-Driven Processing Platform on AWS
+|   |-- Multi-Source AI News Aggregator
 |
 |-- Mobile & Commerce
 |   |-- Nutrifactor Mobile Commerce Platform
@@ -1065,37 +1065,6 @@ Priority scale: 5 = highest strategic value, 1 = lowest strategic value.
 **Client Keywords:** Shopify mobile app, ecommerce app, inventory sync, order sync  
 **System Design Keywords:** headless commerce, mobile client, GraphQL integration, inventory synchronization
 
-## Briefly - Multi-Tenant SaaS
-
-**Priority Scores**
-
-| Asset | Score |
-|---|---:|
-| Resume Priority | 3 |
-| Portfolio Priority | 3 |
-| Upwork Priority | 4 |
-| Fiverr Priority | 3 |
-| LinkedIn Priority | 3 |
-| Proposal Priority | 4 |
-| Architecture Showcase Priority | 3 |
-
-**Reusable Summaries**
-
-**One-Line Summary:** Multi-tenant SaaS platform with multi-workspace structure, role-based access, reporting, and real-time workflow automation.
-
-**Short Summary:** Built a SaaS workflow platform supporting multiple workspaces, role-based access, structured reporting, and real-time automation.
-
-**Executive Summary:** Delivered a multi-workspace SaaS system that improved structured reporting and workflow coordination.
-
-**Technical Summary:** Designed a multi-tenant SaaS architecture with workspace boundaries, role-based access, reporting workflows, and real-time automation.
-
-**Keywords**
-
-**ATS Keywords:** multi-tenant SaaS, role-based access, reporting, workflow automation, full-stack development  
-**Recruiter Keywords:** SaaS platform, multi-workspace system, RBAC, workflow automation  
-**Client Keywords:** SaaS app, team workflow, reporting platform, multi-workspace software  
-**System Design Keywords:** multi-tenancy, workspace isolation, RBAC, real-time workflow
-
 ## CopyFlow - Workflow Management System
 
 **Priority Scores**
@@ -1127,6 +1096,37 @@ Priority scale: 5 = highest strategic value, 1 = lowest strategic value.
 **Client Keywords:** document workflow, approval system, permission control, workflow automation  
 **System Design Keywords:** lifecycle state machine, RBAC, state transition rules, document processing workflow
 
+## Multi-Source AI News Aggregator
+
+**Priority Scores**
+
+| Asset | Score |
+|---|---:|
+| Resume Priority | 3 |
+| Portfolio Priority | 4 |
+| Upwork Priority | 4 |
+| Fiverr Priority | 3 |
+| LinkedIn Priority | 3 |
+| Proposal Priority | 4 |
+| Architecture Showcase Priority | 3 |
+
+**Reusable Summaries**
+
+**One-Line Summary:** Multi-source news aggregation system with web scraping, AI-based classification, and unified timeline interface.
+
+**Short Summary:** Built an intelligent content consolidation platform that scrapes multiple news sources, classifies articles using AI, and presents a unified categorized timeline.
+
+**Executive Summary:** Delivered a structured news consumption system that reduced cognitive load through AI-driven categorization and unified access across multiple sources.
+
+**Technical Summary:** Implemented a layered processing architecture with multi-source web scraping, AI classification engine, Flask REST API, and React-based unified timeline interface.
+
+**Keywords**
+
+**ATS Keywords:** web scraping, AI classification, Python, Flask, React, REST APIs, data aggregation, content processing  
+**Recruiter Keywords:** content aggregation, AI integration, web scraping, full-stack development, data processing  
+**Client Keywords:** news aggregation, content classification, multi-source scraping, unified timeline  
+**System Design Keywords:** layered architecture, content normalization, classification engine, unified abstraction, multi-source ingestion
+
 ---
 
 # 9. Portfolio Growth Roadmap
@@ -1153,7 +1153,7 @@ Create a before/after performance and reliability case study for the Tender Proc
 
 ## Production Operations Evidence Across Product Systems
 
-Add explicit observability, deployment, failure recovery, and security notes to product systems such as Handyman, Briefly, CopyFlow, Virtual Office, and Nutrifactor where supported by real implementation details.
+Add explicit observability, deployment, failure recovery, and security notes to product systems such as Handyman, CopyFlow, Virtual Office, and Nutrifactor where supported by real implementation details.
 
 **Why it matters:** These projects show product breadth, but their operational depth is less explicit in the current source material.
 

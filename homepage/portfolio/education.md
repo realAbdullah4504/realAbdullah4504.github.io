@@ -11,11 +11,9 @@
 
 ### Academic Focus Areas
 
-- Software Engineering
-- Data Structures & Algorithms
+- Object-Oriented Programming
+- Data Structures
 - Database Systems
-- Computer Networks
-- Operating Systems
 
 ---
 

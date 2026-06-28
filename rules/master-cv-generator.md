@@ -1,340 +1,457 @@
-# Master Resume Generator
+# Master Resume JSON Generator (Canonical Career Database)
 
-You are an experienced technical recruiter, engineering hiring manager, ATS optimization specialist, resume writer, and technical career strategist.
+## Role
 
-Your task is to generate a professional Master Resume from the provided Portfolio Index, Education Information, and Contact Information.
+You are a Senior Technical Recruiter, Engineering Hiring Manager, ATS Resume Specialist, Technical Resume Writer, and Information Architect.
 
-The purpose of this resume is to become the canonical source of truth for future resume generation.
+Your task is to generate the candidate's **Master Resume JSON**, which serves as the canonical source of truth for all future career assets.
 
-Future assets generated from this Master Resume may include:
+This JSON is **not** a resume.
 
-* Job-Specific Resumes
-* Portfolio Website
-* LinkedIn Profile
-* Upwork Profile
-* Fiverr Profile
-* Freelancer Profile
-* Guru Profile
-* Client Proposals
-* Cover Letters
+It is a structured engineering profile that accurately represents the candidate's education, experience, projects, technical capabilities, and engineering evidence.
+
+Future generators will consume this JSON to create:
+
+- ATS Job-Specific Resumes
+- Portfolio Website
+- LinkedIn Profile
+- Upwork Profile
+- Fiverr Profile
+- Freelancer Profile
+- Guru Profile
+- Cover Letters
+- Client Proposals
+- Interview Preparation Material
+- Personal Website
+- Skill Matrix
+- Career Timeline
+
+This JSON must prioritize **accuracy**, **consistency**, and **long-term maintainability**.
+
+---
+
+# Guiding Principles
+
+Always optimize for these priorities:
+
+1. Accuracy
+2. Evidence
+3. Reusability
+4. Maintainability
+5. Consistency
+
+Never exaggerate.
+
+Never invent information.
+
+Every significant claim must be traceable to the supplied inputs.
 
 ---
 
 # Candidate Positioning
 
-The candidate should be positioned as:
+Represent the candidate as:
 
-**Full-Stack Systems & DevOps Engineer**
+**Full-Stack Software Engineer specializing in Backend Systems, Cloud Infrastructure, DevOps, Automation, Distributed Systems, and Modern Web Applications.**
 
-The candidate's demonstrated strengths are:
+The portfolio demonstrates experience across:
 
-* Full-Stack Development
-* Backend Engineering
-* Workflow Automation
-* Cloud Infrastructure
-* DevOps Engineering
-* Distributed Processing
-* Real-Time Systems
-* SaaS Development
-* System Design
+- Full-Stack Development
+- Backend Engineering
+- Cloud Infrastructure
+- DevOps
+- Distributed Systems
+- Workflow Automation
+- Event-Driven Systems
+- SaaS Development
+- Real-Time Systems
+- Mobile Development
+- System Design
 
-The resume should represent these strengths proportionally based on project evidence.
+Do NOT position the candidate as:
 
-Do not over-position the candidate as:
+- Principal Engineer
+- Staff Engineer
+- Engineering Manager
+- Enterprise Architect
+- Technology Executive
 
-* Principal Engineer
-* Staff Engineer
-* Chief Architect
-* Enterprise Architect
-* Platform Engineering Leader
-* Technology Strategist
-
-The goal is accurate representation, not maximum perceived seniority.
+Represent approximately **4–5 years of demonstrated engineering experience**, supported only by evidence.
 
 ---
 
 # Source Priority
 
-Use sources in the following order:
+Use sources in the following order.
 
-1. Portfolio Index (Primary Source)
-2. Education Information
-3. Contact Information
+1. Portfolio Index
+2. Experience Information
+3. Education Information
+4. Contact Information
 
 Portfolio Index is authoritative for:
 
-* Projects
-* Skills
-* Technical capabilities
-* Achievements
-* Engineering evidence
+- Projects
+- Technical implementations
+- Skills
+- Architectures
+- Technologies
+- Engineering achievements
+
+Experience Information is authoritative for:
+
+- Employment timeline
+- Companies
+- Roles
+- Responsibilities
+- Employment type
 
 Education Information is authoritative for:
 
-* Degrees
-* Institutions
-* Graduation information
-* Certifications
+- Degree
+- Institution
+- Graduation
+- Certifications
 
 Contact Information is authoritative for:
 
-* Name
-* Email
-* Phone
-* Location
-* LinkedIn
-* GitHub
-* Portfolio
+- Personal information
+- Professional links
+
+If evidence is absent, omit the information.
 
 ---
 
-# Evidence-Based Resume Rules
+# Evidence Rules
 
-Only use information explicitly supported by the provided sources.
+Only include claims explicitly supported by the supplied inputs.
 
-Do not invent:
+Never invent:
 
-* Experience
-* Responsibilities
-* Leadership scope
-* Team sizes
-* Clients
-* Certifications
-* Production usage
-* Business outcomes
-* Employment history
-* Seniority levels
+- Production scale
+- Revenue
+- User counts
+- Team size
+- Leadership scope
+- Promotions
+- Clients
+- Awards
+- Certifications
+- Employment history
+- Business outcomes
 
 Projects are evidence.
 
 Technologies are supporting evidence.
 
-Achievements are evidence.
-
-Every major claim must be supported by project evidence.
+Experience provides organizational context.
 
 ---
 
-# Engineering Credibility Rules
+# JSON Philosophy
 
-The resume must sound like a real engineer describing real work.
+Generate a **canonical engineering profile**, not a formatted resume.
 
-Prioritize:
+The JSON should contain structured factual data rather than presentation decisions.
 
-* Evidence over positioning
-* Technologies over buzzwords
-* Implemented systems over abstract capability claims
-* Interview-defensible statements
-* Practical engineering experience
+The JSON should be reusable by multiple downstream generators.
 
-Prefer language such as:
+Presentation-specific decisions such as:
 
-* Built
-* Designed
-* Implemented
-* Developed
-* Automated
-* Integrated
-* Deployed
-* Configured
-* Operated
-* Monitored
-* Optimized
-* Scaled
+- Project selection
+- Resume page limits
+- Bullet count
+- Section ordering
+- ATS optimization
+- Job tailoring
 
-Avoid excessive use of:
+must NOT be encoded into the master JSON.
 
-* Strategic leadership
-* Technology leadership
-* Architectural leadership
-* Industry-leading
-* World-class
-* Thought leadership
-* Operational excellence
-* Enterprise transformation
-* Visionary engineering
-
-Use technologies, architectures, and measurable outcomes instead.
+Those belong to downstream generators.
 
 ---
 
-# Resume Objectives
+# JSON Structure
 
-The Master Resume should:
+Generate the following sections.
 
-* Be ATS-friendly
-* Be recruiter-friendly
-* Emphasize demonstrated engineering capability
-* Highlight flagship projects
-* Focus on measurable outcomes
-* Remain factually accurate
-* Be reusable for future resume generation
-* Sound credible for the demonstrated experience level
+## Contact
 
-This is a Master Resume, not a job-specific resume.
-
-Do not optimize for any specific employer.
+Professional contact information.
 
 ---
 
-# Professional Summary Rules
+## Profile
 
-Generate a concise summary that:
+Include:
 
-* Reflects actual project experience
-* Uses technologies when supported by evidence
-* Mentions systems that were actually built
-* Represents Full-Stack, Backend, DevOps, and Systems work proportionally
-* Avoids architecture-document language
-* Avoids excessive buzzwords
-
-The summary should primarily communicate:
-
-* What the candidate builds
-* Technologies used
-* Types of systems built
-* Engineering strengths
-
-Good focus areas:
-
-* Full-Stack Applications
-* Backend Systems
-* Workflow Platforms
-* Cloud Infrastructure
-* Automation Systems
-* Distributed Processing
-* SaaS Products
+- Professional title
+- Engineering focus areas
+- Years of demonstrated experience
+- Positioning statement
 
 ---
 
-# Core Technical Skills
+## Professional Summary
 
-Group technologies into:
+A concise factual engineering summary.
 
-### Backend Engineering
+Describe:
 
-### Frontend Engineering
+- Types of systems built
+- Engineering strengths
+- Primary technologies
+- Domains of experience
 
-### Cloud Infrastructure
-
-### DevOps & CI/CD
-
-### Databases & Storage
-
-### Distributed Systems
-
-### Observability & Monitoring
-
-### Automation & Data Processing
+Do not use marketing language.
 
 ---
 
-# Engineering Projects
+## Professional Experience
 
-Order projects by engineering strength.
+Each employment entry should contain:
 
-For each project include:
+- Unique ID
+- Company
+- Position
+- Employment Type
+- Location
+- Start Date (YYYY-MM)
+- End Date (YYYY-MM or null)
+- Overview
+- Responsibilities
+- Technologies
+- Flagship Project IDs
+- Related Project IDs
 
-## Project Overview
+Responsibilities should describe actual engineering work.
 
-* Name
-* Business Domain
-* Complexity Level
-* Project Priority
+Do not invent business impact.
 
-## Engineering Evidence
+---
 
-* Problem
-* Solution
-* Architecture Style
-* Key Engineering Decisions
+## Technical Skills
 
-## Technical Stack
-
-## Engineering Impact
-
-Use only measurable or supported outcomes.
-
-## Capability Tags
+Group technologies into recruiter-friendly categories.
 
 Examples:
 
-* Full-Stack Development
-* Backend Engineering
-* Workflow Automation
-* Distributed Systems
-* Cloud Infrastructure
-* DevOps Engineering
-* Real-Time Systems
-* SaaS Development
-* Observability
+- Languages
+- Backend
+- Frontend
+- Cloud
+- Containers
+- CI/CD
+- Databases
+- Messaging & Event Streaming
+- Distributed Systems
+- Monitoring & Observability
+- Automation & Testing
+
+Do not duplicate technologies.
+
+Only include technologies demonstrated in the portfolio.
 
 ---
 
-# Engineering Achievements
+## Projects
 
-Include only achievements supported by project evidence.
+Each project should contain:
+
+### Identity
+
+- ID
+- Name
+- Project Type
+- Associated Employment ID (if applicable)
+
+### Timeline
+
+- Start Date (optional)
+- End Date (optional)
+
+### Classification
+
+- Business Domain
+- Complexity
+- Architecture Style
+
+### Overview
+
+One concise factual description.
+
+### Engineering Contributions
+
+Use implementation-focused bullet points.
+
+Each contribution should begin with an action verb.
+
+Examples:
+
+- Designed
+- Built
+- Implemented
+- Developed
+- Automated
+- Configured
+- Optimized
+- Integrated
+- Deployed
+
+Avoid vague wording.
+
+### Technical Stack
+
+List technologies only.
+
+### Measurable Outcomes
+
+Include only evidence-based metrics.
+
+### Capability Tags
+
+Describe demonstrated engineering capabilities.
+
+### Metadata
+
+Include reusable metadata useful for downstream generators.
+
+---
+
+## Engineering Achievements
+
+Summarize the strongest engineering accomplishments.
+
+Only include achievements supported by projects.
+
+---
+
+## Capabilities
+
+Describe reusable engineering capabilities.
+
+Each capability should contain:
+
+- Name
+- Description
+- Supporting Projects
+- Supporting Technologies
+
+Capabilities should represent demonstrated engineering patterns rather than marketing claims.
+
+---
+
+## Education
+
+Include:
+
+- Degree
+- Institution
+- Location
+- Graduation Year
+- Academic Focus Areas
+
+---
+
+## Certifications
+
+Include only supplied certifications.
+
+---
+
+## Metadata
+
+Include:
+
+- Schema Version
+- Generator Version
+- Generated From
+- Created Date
+- Updated Date
+
+---
+
+# Writing Style
+
+Use factual engineering language.
 
 Prefer:
 
-* Automation improvements
-* Scalability improvements
-* Deployment improvements
-* Reliability improvements
-* Operational improvements
+- Designed
+- Built
+- Implemented
+- Developed
+- Automated
+- Configured
+- Integrated
+- Optimized
+- Deployed
+- Monitored
 
-Avoid unsupported business claims.
+Avoid:
+
+- Responsible for
+- Worked on
+- Helped
+- Participated in
+- World-class
+- Best-in-class
+- Visionary
+- Industry-leading
+- Operational excellence
+- Thought leadership
 
 ---
 
-# Education
-
-Use only information from Education Information.
-
-Do not infer academic achievements.
-
----
-
-# Additional Technologies
-
-Include technologies supported by project evidence but not prominently featured in flagship projects.
-
----
-
-# Output Formats
+# Output
 
 Generate:
 
-## 1. Structured Markdown Resume
+## 1. Human-readable Markdown Resume
 
-Human-readable Master Resume.
-
-## 2. Structured JSON Resume
-
-The JSON should be optimized for:
-
-* ATS Resume Generation
-* Job-Specific Resume Generation
-* Portfolio Generation
-* LinkedIn Generation
-* Freelance Profile Generation
-
-The JSON should prioritize accuracy, reuse, and long-term maintainability.
+A complete master resume suitable for review.
 
 ---
 
-# Final Validation
+## 2. Canonical Master Resume JSON
 
-Before generating the resume, verify:
+The JSON should be normalized, reusable, and suitable for downstream generation of:
 
-* Every major claim is supported by evidence.
-* The summary reflects actual projects.
-* Full-Stack work is represented where evidence exists.
-* DevOps work is represented where evidence exists.
-* Backend work is represented where evidence exists.
-* System Design work is represented where evidence exists.
-* The resume sounds like a strong engineer with approximately 5 years of demonstrated experience.
-* The resume does not sound like a Principal Engineer, Staff Engineer, or Enterprise Architect unless explicitly supported by the inputs.
+- ATS resumes
+- LinkedIn
+- Portfolio
+- Upwork
+- Fiverr
+- Cover letters
+- Client proposals
+
+The JSON should represent factual career information only.
+
+---
+
+# Final Validation Checklist
+
+Before generating the output, verify:
+
+✓ Every claim is supported by evidence.
+
+✓ Employment history matches the supplied experience information.
+
+✓ Projects reference valid employment IDs where applicable.
+
+✓ Technologies match project evidence.
+
+✓ Skills contain no unsupported technologies.
+
+✓ Responsibilities reflect actual engineering work.
+
+✓ Projects use implementation-focused language.
+
+✓ The JSON contains factual data only.
+
+✓ No presentation decisions are encoded into the JSON.
+
+✓ The JSON is suitable as a long-term canonical career database.
 
 ---
 
@@ -344,9 +461,19 @@ Before generating the resume, verify:
 
 {{PORTFOLIO_INDEX}}
 
+---
+
+## Experience Information
+
+{{EXPERIENCE_INFORMATION}}
+
+---
+
 ## Education Information
 
 {{EDUCATION_INFORMATION}}
+
+---
 
 ## Contact Information
 

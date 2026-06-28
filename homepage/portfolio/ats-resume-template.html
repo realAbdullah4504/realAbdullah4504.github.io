@@ -109,6 +109,14 @@
 
         .education-item {
             margin-bottom: 8pt;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .experience-item {
+            margin-bottom: 12pt;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
 
         @media print {
@@ -121,7 +129,7 @@
 <body>
     <header class="header">
         <h1>{{contact.name}}</h1>
-        <p class="header-title">{{positioning.title}}</p>
+        <p class="header-title">{{profile.title}}</p>
         <div class="contact-info">
             <p>{{contact.location}} | {{contact.phone}} | {{contact.email}}</p>
             <p>{{contact.linkedin}} | {{contact.github}} | {{contact.portfolio}}{% if contact.upwork %} | {{contact.upwork}}{% endif %}</p>
@@ -130,64 +138,73 @@
 
     <section class="section">
         <h2>Professional Summary</h2>
-        <p>{{summary}}</p>
+        <p>{{professional_summary}}</p>
     </section>
 
     <section class="section">
         <h2>Technical Skills</h2>
         {% for category, skill_list in technical_skills.items() %}
         <div class="skill-category">
-            <p><strong>{{category}}:</strong> {{skill_list | join(', ')}}</p>
+            <p><strong>{{snake_case_to_label(category)}}:</strong> {{skill_list | join(', ')}}</p>
         </div>
         {% endfor %}
     </section>
 
-    {% if selected_projects %}
+    {% if professional_experience %}
     <section class="section">
-        <h2>Engineering Projects</h2>
-        {% for project in selected_projects %}
-        <article class="project">
-            <h3 class="project-name">{{project.name}}</h3>
-            <p class="project-description">{{project.business_domain}}</p>
+        <h2>Professional Experience</h2>
+        {% for exp in professional_experience %}
+        <article class="experience-item">
+            <h3>{{exp.position}}</h3>
+            <p><strong>{{exp.company}}</strong> | {% if exp.start_date %}{{exp.start_date}}{% endif %}{% if exp.end_date %} – {{exp.end_date}}{% else %} – Present{% endif %}{% if exp.employment_type %} | {{exp.employment_type}}{% endif %}{% if exp.location %} | {{exp.location}}{% endif %}</p>
+            {% if exp.overview %}
+            <p>{{exp.overview}}</p>
+            {% endif %}
+            {% if exp.responsibilities %}
             <ul>
-                {% for impact in project.engineering_impact[:3] %}
-                <li>{{impact}}</li>
+                {% for responsibility in exp.responsibilities %}
+                <li>{{responsibility}}</li>
                 {% endfor %}
             </ul>
-            <p class="project-stack"><strong>Technical Stack:</strong> {{project.technical_stack | join(', ')}}</p>
-        </article>
-        {% endfor %}
-    </section>
-    {% else %}
-    <section class="section">
-        <h2>Engineering Projects</h2>
-        {% for project in projects[:4] %}
-        <article class="project">
-            <h3 class="project-name">{{project.name}}</h3>
-            <p class="project-description">{{project.business_domain}}</p>
-            <ul>
-                {% for impact in project.engineering_impact[:3] %}
-                <li>{{impact}}</li>
-                {% endfor %}
-            </ul>
-            <p class="project-stack"><strong>Technical Stack:</strong> {{project.technical_stack | join(', ')}}</p>
+            {% endif %}
+            {% if exp.technologies %}
+            <p class="project-stack"><strong>Primary Technologies:</strong> {{exp.technologies | join(', ')}}</p>
+            {% endif %}
+            {% if exp.flagship_project_ids %}
+            <p class="project-stack"><strong>Associated Flagship Projects:</strong> {{exp.flagship_project_ids | join(', ')}}</p>
+            {% endif %}
         </article>
         {% endfor %}
     </section>
     {% endif %}
 
     <section class="section">
+        <h2>Engineering Projects</h2>
+        {% for project in projects %}
+        <article class="project">
+            <h3 class="project-name">{{project.name}}</h3>
+            {% if project.business_domain %}
+            <p class="project-description">{{project.business_domain}}</p>
+            {% endif %}
+            {% if project.overview %}
+            <p>{{project.overview}}</p>
+            {% endif %}
+            <ul>
+                {% for contribution in project.engineering_contributions %}
+                <li>{{contribution}}</li>
+                {% endfor %}
+            </ul>
+            <p class="project-stack"><strong>Technical Stack:</strong> {{project.technical_stack | join(', ')}}</p>
+        </article>
+        {% endfor %}
+    </section>
+
+    <section class="section">
         <h2>Key Engineering Achievements</h2>
         <ul>
-            {% if selected_achievements %}
-                {% for achievement in selected_achievements %}
-                <li>{{achievement}}</li>
-                {% endfor %}
-            {% else %}
-                {% for achievement in achievements[:5] %}
-                <li>{{achievement}}</li>
-                {% endfor %}
-            {% endif %}
+            {% for achievement in engineering_achievements %}
+            <li>{{achievement}}</li>
+            {% endfor %}
         </ul>
     </section>
 
@@ -195,18 +212,32 @@
         <h2>Education</h2>
         <div class="education-item">
             <p><strong>{{education.degree}}</strong>, {{education.institution}} ({{education.graduation_year}})</p>
+            {% if education.location %}
+            <p>{{education.location}}</p>
+            {% endif %}
+            {% if education.academic_focus_areas %}
             <p>Focus: {{education.academic_focus_areas | join(', ')}}</p>
+            {% endif %}
         </div>
-        {% if education.certifications %}
-        <div class="education-item">
-            <p><strong>Certifications:</strong> 
-                {% for cert in education.certifications %}
-                {{cert.name}} ({{cert.provider}}){% if not loop.last %}, {% endif %}
-                {% endfor %}
-            </p>
-        </div>
-        {% endif %}
     </section>
+
+    {% if certifications %}
+    <section class="section">
+        <h2>Certifications</h2>
+        <ul>
+            {% for cert in certifications %}
+            <li>{{cert.name}} ({{cert.provider}})</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if additional_technologies %}
+    <section class="section">
+        <h2>Additional Technologies</h2>
+        <p>{{additional_technologies | join(', ')}}</p>
+    </section>
+    {% endif %}
 
 </body>
 </html>

@@ -136,6 +136,9 @@ Distributed data extraction system processing 50+ government portals using queue
 **Tax Rebate Processing & Refund Management Platform**
 Workflow-driven tax rebate lifecycle platform replacing manual forms, spreadsheet tracking, and fragmented approval processes. Built a state-controlled financial workflow engine for customer onboarding, identity verification, document processing, configurable tax calculations, staff review, refund approval, and refund reconciliation.
 
+**Multi-Source AI News Aggregator**
+Intelligent content consolidation system with web scraping, AI-based classification, and unified timeline interface for structured news consumption across multiple sources.
+
 **Event-Driven Processing Platform on AWS**
 Production-grade event-driven processing system using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, and Redis pub/sub with full observability (OpenTelemetry, X-Ray, Prometheus, Loki).
 
@@ -150,9 +153,6 @@ Presence-based collaboration platform with dynamic user states and WebSocket rea
 
 **Nutrifactor Mobile Commerce Platform**
 Headless Shopify integration using React Native and ShopifyGraphQL with real-time inventory and order synchronization.
-
-**Briefly — Multi-Tenant SaaS**
-Multi-workspace platform with role-based access, structured reporting, and real-time workflow automation.
 
 **CopyFlow — Workflow Management System**
 Role-based document lifecycle system with strict state transitions and permission control.
