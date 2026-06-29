@@ -1,4 +1,4 @@
-# Multi-Source AI News Aggregator (Intelligent Content System)
+# News Chunk (Intelligent Content System)
 
 ---
 

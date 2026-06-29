@@ -41,7 +41,7 @@ Designing and building complete product systems across frontend, backend, data, 
 - Nutrifactor Mobile Commerce Platform
 - CopyFlow - Workflow Management System
 - Tax Rebate Processing & Refund Management Platform
-- Multi-Source AI News Aggregator
+- News Chunk
 
 **Engineering Evidence**
 
@@ -64,7 +64,7 @@ Building backend platforms with APIs, authentication, multi-tenant structures, w
 - Handyman Marketplace System
 - CopyFlow - Workflow Management System
 - Event-Driven Processing Platform on AWS
-- Multi-Source AI News Aggregator
+- News Chunk
 
 **Engineering Evidence**
 
@@ -208,7 +208,7 @@ Building extraction, aggregation, transformation, validation, and deduplication 
 
 - Tender Procurement Intelligence Platform
 - Event-Driven Processing Platform on AWS
-- Multi-Source AI News Aggregator
+- News Chunk
 
 **Engineering Evidence**
 
@@ -627,11 +627,11 @@ Role-based document lifecycle system with strict state transitions and permissio
 **Operational Improvements:** Reduced ambiguity in document lifecycle and permissions.  
 **Business Value:** More structured and auditable workflow management.
 
-## Multi-Source AI News Aggregator
+## News Chunk
 
 ### Project Overview
 
-**Project Name:** Multi-Source AI News Aggregator  
+**Project Name:** News Chunk  
 **Business Domain:** Content aggregation and intelligent news classification  
 **Complexity Level:** Medium to high, based on multi-source web scraping, AI classification, and unified timeline architecture.
 
@@ -818,7 +818,7 @@ Engineering
 |-- Data Processing
 |   |-- Tender Procurement Intelligence Platform
 |   |-- Event-Driven Processing Platform on AWS
-|   |-- Multi-Source AI News Aggregator
+|   |-- News Chunk
 |
 |-- Mobile & Commerce
 |   |-- Nutrifactor Mobile Commerce Platform
@@ -1096,7 +1096,7 @@ Priority scale: 5 = highest strategic value, 1 = lowest strategic value.
 **Client Keywords:** document workflow, approval system, permission control, workflow automation  
 **System Design Keywords:** lifecycle state machine, RBAC, state transition rules, document processing workflow
 
-## Multi-Source AI News Aggregator
+## News Chunk
 
 **Priority Scores**
 

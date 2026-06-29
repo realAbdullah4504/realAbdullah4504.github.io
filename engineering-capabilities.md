@@ -136,7 +136,7 @@ Distributed data extraction system processing 50+ government portals using queue
 **Tax Rebate Processing & Refund Management Platform**
 Workflow-driven tax rebate lifecycle platform replacing manual forms, spreadsheet tracking, and fragmented approval processes. Built a state-controlled financial workflow engine for customer onboarding, identity verification, document processing, configurable tax calculations, staff review, refund approval, and refund reconciliation.
 
-**Multi-Source AI News Aggregator**
+**News Chunk**
 Intelligent content consolidation system with web scraping, AI-based classification, and unified timeline interface for structured news consumption across multiple sources.
 
 **Event-Driven Processing Platform on AWS**

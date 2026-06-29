@@ -2,14 +2,12 @@
 
 ## Formal Education
 
-### Degree Information
+**Degree:** Bachelor of Science in Electrical Engineering
+**Institution:** National University of Computer and Emerging Sciences (NUCES)
+**Location:** Lahore, Pakistan
+**Graduation Year:** 2013
 
-- Degree: BS-EE (electronics)
-- Institution: National University of Computer and Emerging Sciences (NUCES LHR)
-- Location: Lahore, Pakistan
-- Graduation Year: 2013
-
-### Academic Focus Areas
+**Academic Focus Areas:**
 
 - Object-Oriented Programming
 - Data Structures
@@ -17,35 +15,19 @@
 
 ---
 
-## Professional Development
-
-### Engineering Focus Areas
-
-- Backend Engineering
-- DevOps Engineering
-- Cloud Infrastructure
-- Distributed Systems
-- System Design
-- Platform Engineering
-
-### Learning Approach
-
-Focus on practical implementation through production systems, client projects, architecture design, and continuous self-directed learning.
-
----
-
 ## Certifications
 
-- DevOps on AWS - (Coursera)
-- The Complete 2023 Web Development Bootcamp - (Udemy)
-- Problem Solving (Basic) - HackerRank
+**DevOps on AWS**
 
----
+- Issuer: Coursera
+- Year: 2024
 
-## Resume Metadata
+**The Complete 2023 Web Development Bootcamp**
 
-Preferred Resume Placement: Education Section
+- Issuer: Udemy
+- Year: 2023
 
-Education Priority: Standard
+**Problem Solving (Basic)**
 
-Recruiter Relevance: Supporting Information
+- Issuer: HackerRank
+- Year: 2023

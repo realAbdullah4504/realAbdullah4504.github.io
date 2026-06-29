@@ -177,7 +177,16 @@ Generate the following sections.
 
 ## Contact
 
-Professional contact information.
+Each contact entry should contain:
+
+- Full Name
+- Email
+- Phone (optional)
+- Location (City, Country)
+- LinkedIn URL (optional)
+- GitHub URL (optional)
+- Portfolio Website URL (optional)
+- Other professional profiles (optional)
 
 ---
 
@@ -194,7 +203,7 @@ Include:
 
 ## Professional Summary
 
-A concise factual engineering summary.
+A concise factual engineering summary optimized for ATS keyword matching.
 
 Describe:
 
@@ -202,6 +211,8 @@ Describe:
 - Engineering strengths
 - Primary technologies
 - Domains of experience
+
+**ATS Optimization Note:** Include relevant keywords naturally throughout the summary. Focus on technical skills, technologies, and engineering capabilities that ATS systems scan for.
 
 Do not use marketing language.
 
@@ -211,7 +222,6 @@ Do not use marketing language.
 
 Each employment entry should contain:
 
-- Unique ID
 - Company
 - Position
 - Employment Type
@@ -221,8 +231,8 @@ Each employment entry should contain:
 - Overview
 - Responsibilities
 - Technologies
-- Flagship Project IDs
-- Related Project IDs
+- Flagship Projects (by name)
+- Related Projects (by name)
 
 Responsibilities should describe actual engineering work.
 
@@ -252,6 +262,8 @@ Do not duplicate technologies.
 
 Only include technologies demonstrated in the portfolio.
 
+**ATS Optimization Note:** Include standard technology names and variations that ATS systems commonly search for (e.g., both "Node.js" and "NodeJS", "React" and "React.js").
+
 ---
 
 ## Projects
@@ -260,10 +272,9 @@ Each project should contain:
 
 ### Identity
 
-- ID
 - Name
 - Project Type
-- Associated Employment ID (if applicable)
+- Associated Employment (company name, if applicable)
 
 ### Timeline
 
@@ -310,7 +321,9 @@ Include only evidence-based metrics.
 
 ### Capability Tags
 
-Describe demonstrated engineering capabilities.
+Describe demonstrated engineering capabilities using standard industry terminology that ATS systems and recruiters search for.
+
+**ATS Optimization Note:** Use common industry keywords such as: "API development", "cloud infrastructure", "CI/CD pipelines", "distributed systems", "microservices", "event-driven architecture", "DevOps", "containerization", "monitoring", "observability", "scalability", "reliability".
 
 ### Metadata
 
@@ -320,7 +333,9 @@ Include reusable metadata useful for downstream generators.
 
 ## Engineering Achievements
 
-Summarize the strongest engineering accomplishments.
+Summarize the strongest engineering accomplishments using quantifiable metrics where possible.
+
+**ATS Optimization Note:** Include numbers, percentages, and measurable outcomes (e.g., "reduced deployment time by 50%", "built system processing 50+ sources", "designed architecture with 20 parallel workers").
 
 Only include achievements supported by projects.
 
@@ -343,19 +358,24 @@ Capabilities should represent demonstrated engineering patterns rather than mark
 
 ## Education
 
-Include:
+Each education entry should contain:
 
-- Degree
+- Degree (full name, e.g., "Bachelor of Science in Electrical Engineering")
 - Institution
 - Location
-- Graduation Year
-- Academic Focus Areas
+- Graduation Year (YYYY or YYYY-MM)
+- Academic Focus Areas (optional)
 
 ---
 
 ## Certifications
 
-Include only supplied certifications.
+Each certification should contain:
+
+- Certification Name
+- Issuer (platform or organization)
+- Year (YYYY)
+- Credential ID or URL (optional)
 
 ---
 
@@ -417,13 +437,19 @@ A complete master resume suitable for review.
 
 The JSON should be normalized, reusable, and suitable for downstream generation of:
 
-- ATS resumes
-- LinkedIn
-- Portfolio
-- Upwork
-- Fiverr
-- Cover letters
-- Client proposals
+- ATS Job-Specific Resumes
+- LinkedIn Profile
+- Portfolio Website
+- Upwork Profile
+- Fiverr Profile
+- Freelancer Profile
+- Guru Profile
+- Cover Letters
+- Client Proposals
+- Interview Preparation Material
+- Personal Website
+- Skill Matrix
+- Career Timeline
 
 The JSON should represent factual career information only.
 
@@ -437,7 +463,7 @@ Before generating the output, verify:
 
 ✓ Employment history matches the supplied experience information.
 
-✓ Projects reference valid employment IDs where applicable.
+✓ Projects reference valid employment where applicable.
 
 ✓ Technologies match project evidence.
 

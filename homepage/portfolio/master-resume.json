@@ -1,0 +1,771 @@
+{
+  "contact": {
+    "fullName": "Abdullah Javed",
+    "email": "abdullahjaved4504@gmail.com",
+    "phone": "+92 310 7899989",
+    "location": "Faisalabad, Pakistan",
+    "linkedin": "https://www.linkedin.com/in/abdullah-javed-37a26a250/",
+    "github": "https://github.com/abdullahjaved4504",
+    "portfolioWebsite": "https://abdullahjaved4504.github.io/",
+    "otherProfiles": {
+      "upwork": "https://www.upwork.com/freelancers/~018fefaffd94fe0a54",
+      "fiverr": "https://www.fiverr.com/sellers/abdullahjaved46/edit",
+      "freelancer": "https://www.freelancer.com/u/JSTechSol",
+      "guru": "https://www.guru.com/freelancers/abdullah-javed-developer"
+    }
+  },
+  "profile": {
+    "professionalTitle": "Full-Stack Software Engineer",
+    "engineeringFocusAreas": [
+      "Backend Engineering",
+      "Full-Stack Systems",
+      "DevOps Engineering",
+      "Cloud Infrastructure",
+      "Distributed Systems",
+      "Platform Engineering",
+      "System Design",
+      "Workflow Automation",
+      "Production Operations"
+    ],
+    "yearsOfExperience": 4,
+    "positioningStatement": "Full-Stack Software Engineer specializing in Backend Systems, Cloud Infrastructure, DevOps, Automation, Distributed Systems, and Modern Web Applications. Delivers complete solutions across frontend, backend, distributed processing, cloud infrastructure, and DevOps automation — turning ideas into reliable, observable, and highly operable platforms."
+  },
+  "professionalSummary": "Full-Stack Software Engineer with 4 years of hands-on experience designing, building, deploying, and scaling production-grade systems. Specializes in backend systems, cloud infrastructure, DevOps automation, distributed systems, and modern web applications. Delivers complete solutions across frontend, backend, distributed processing, cloud infrastructure, and DevOps automation — turning ideas into reliable, observable, and highly operable platforms.",
+  "professionalExperience": [
+    {
+      "company": "Ateitis Corp",
+      "position": "DevSecOps & Full-Stack Engineer",
+      "employmentType": "Part-Time",
+      "location": "Remote",
+      "startDate": "2025-07",
+      "endDate": null,
+      "overview": "Design and implement cloud-native backend infrastructure, CI/CD pipelines, automation systems, distributed backend services, and production deployment workflows.",
+      "responsibilities": [
+        "Design and implement cloud-native backend infrastructure on AWS",
+        "Build and maintain CI/CD pipelines using Jenkins and GitLab CI/CD",
+        "Develop Infrastructure as Code solutions using CloudFormation and Terraform",
+        "Configure containerized deployments using Docker and AWS ECS",
+        "Build event-driven backend services using AWS SNS, SQS, and EventBridge",
+        "Implement observability using CloudWatch, OpenTelemetry, Prometheus, Grafana, and Loki",
+        "Automate software delivery, deployment, monitoring, and operational workflows",
+        "Improve security, deployment reliability, and production automation"
+      ],
+      "technologies": [
+        "Node.js",
+        "Python",
+        "AWS",
+        "Docker",
+        "ECS",
+        "CloudFormation",
+        "Terraform",
+        "Jenkins",
+        "GitLab CI/CD",
+        "MongoDB",
+        "Redis",
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana",
+        "Loki"
+      ],
+      "flagshipProjects": [
+        "Tender Procurement Intelligence Platform",
+        "Event-Driven Processing Platform on AWS",
+        "DevSecOps CI/CD Pipeline System"
+      ],
+      "relatedProjects": []
+    },
+    {
+      "company": "Sofrix",
+      "position": "Frontend Engineer",
+      "employmentType": "Full-Time",
+      "location": "Faisalabad, Pakistan",
+      "startDate": "2024-09",
+      "endDate": "2025-07",
+      "overview": "Develop modern React and React Native applications for multiple client projects, focusing on user experience, reusable components, API integration, and scalable frontend architecture.",
+      "responsibilities": [
+        "Develop React and React Native applications",
+        "Build reusable UI components and application layouts",
+        "Integrate REST APIs and backend services",
+        "Implement authentication and role-based workflows",
+        "Manage application state and frontend architecture",
+        "Optimize application performance and responsiveness",
+        "Collaborate with backend developers and designers"
+      ],
+      "technologies": [
+        "React",
+        "React Native",
+        "TypeScript",
+        "JavaScript",
+        "REST APIs"
+      ],
+      "flagshipProjects": [],
+      "relatedProjects": []
+    },
+    {
+      "company": "Nutrifactor",
+      "position": "React Native Developer",
+      "employmentType": "Full-Time",
+      "location": "Faisalabad, Pakistan",
+      "startDate": "2023-10",
+      "endDate": "2024-10",
+      "overview": "Develop a React Native mobile commerce application integrated with a headless Shopify backend.",
+      "responsibilities": [
+        "Develop mobile application features using React Native",
+        "Integrate Shopify GraphQL APIs",
+        "Build product catalog and order management workflows",
+        "Synchronize inventory and order information",
+        "Improve application performance and usability",
+        "Collaborate with backend and product teams"
+      ],
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "Shopify GraphQL"
+      ],
+      "flagshipProjects": [
+        "Nutrifactor Mobile Commerce Platform"
+      ],
+      "relatedProjects": []
+    },
+    {
+      "company": "Ghanisoft",
+      "position": "MERN Stack Developer",
+      "employmentType": "Full-Time",
+      "location": "Faisalabad, Pakistan",
+      "startDate": "2023-06",
+      "endDate": "2023-10",
+      "overview": "Work on full-stack web applications across e-commerce, restaurant management, and financial workflow systems using the MERN stack.",
+      "responsibilities": [
+        "Develop backend APIs using Node.js and Express",
+        "Build React-based frontend applications",
+        "Design MongoDB data models",
+        "Implement authentication and authorization",
+        "Integrate third-party services and cloud storage",
+        "Develop workflow-based business applications"
+      ],
+      "technologies": [
+        "Node.js",
+        "Express",
+        "React",
+        "MongoDB",
+        "AWS S3"
+      ],
+      "flagshipProjects": [
+        "Tax Rebate Processing & Refund Management Platform"
+      ],
+      "relatedProjects": []
+    },
+    {
+      "company": "Upwork & Fiverr",
+      "position": "Freelance Full-Stack MERN Developer",
+      "employmentType": "Freelance",
+      "location": "Faisalabad, Pakistan",
+      "startDate": "2022-07",
+      "endDate": null,
+      "overview": "Deliver freelance MERN stack projects for international clients, building responsive web applications and REST APIs while managing complete project lifecycles from requirements to deployment.",
+      "responsibilities": [
+        "Build full-stack MERN applications",
+        "Develop REST APIs using Node.js and Express",
+        "Build React user interfaces",
+        "Design MongoDB database schemas",
+        "Deploy client applications",
+        "Maintain client communication and project delivery"
+      ],
+      "technologies": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "JavaScript"
+      ],
+      "flagshipProjects": [
+        "News Chunk"
+      ],
+      "relatedProjects": []
+    }
+  ],
+  "technicalSkills": {
+    "languages": [
+      "JavaScript",
+      "TypeScript",
+      "Python"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "NestJS",
+      "FastAPI",
+      "Flask"
+    ],
+    "frontend": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TypeScript"
+    ],
+    "cloud": [
+      "AWS EC2",
+      "AWS ECS",
+      "AWS EKS",
+      "AWS Lambda",
+      "AWS RDS",
+      "AWS SQS",
+      "AWS SNS",
+      "AWS EventBridge",
+      "AWS VPC",
+      "AWS IAM",
+      "AWS Secrets Manager",
+      "AWS CloudWatch",
+      "AWS SSM"
+    ],
+    "containers": [
+      "Docker",
+      "Kubernetes"
+    ],
+    "cicd": [
+      "GitHub Actions",
+      "Jenkins",
+      "GitLab CI/CD",
+      "Terraform",
+      "CloudFormation"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "DynamoDB",
+      "Redis"
+    ],
+    "messaging": [
+      "SQS",
+      "SNS",
+      "EventBridge",
+      "Kafka",
+      "RabbitMQ",
+      "Celery",
+      "BullMQ"
+    ],
+    "distributedSystems": [
+      "Playwright",
+      "ETL pipelines",
+      "Distributed processing"
+    ],
+    "monitoring": [
+      "Prometheus",
+      "Grafana",
+      "OpenTelemetry",
+      "Loki",
+      "CloudWatch",
+      "AWS X-Ray"
+    ],
+    "apis": [
+      "REST",
+      "GraphQL",
+      "WebSockets"
+    ]
+  },
+  "projects": [
+    {
+      "identity": {
+        "name": "Tender Procurement Intelligence Platform",
+        "projectType": "Distributed Data Processing System",
+        "associatedEmployment": "Ateitis Corp"
+      },
+      "classification": {
+        "businessDomain": "Procurement intelligence and government tender data extraction",
+        "complexity": "High",
+        "architectureStyle": "Queue-based distributed worker system with Playwright automation and ETL pipelines"
+      },
+      "overview": "Distributed data extraction system processing 50+ government portals using queue-based Playwright workers and ETL pipelines. Delivered automated ~5-minute cycles with 20 parallel workers.",
+      "engineeringContributions": [
+        "Designed distributed scraping system with 20 parallel workers completing extraction and processing cycles in ~5 minutes per batch",
+        "Built queue-based Playwright workers and ETL pipelines for transformation and processing",
+        "Implemented validation, deduplication, and checkpoint recovery patterns"
+      ],
+      "technicalStack": [
+        "Playwright",
+        "Redis",
+        "BullMQ",
+        "ETL pipelines",
+        "AWS SQS",
+        "AWS SNS",
+        "AWS EventBridge",
+        "AWS ECS Fargate"
+      ],
+      "measurableOutcomes": [
+        "Reduced processing from hours of manual effort to ~5-minute automated cycles with 20 parallel workers",
+        "Processed data from 50+ government portals"
+      ],
+      "capabilityTags": [
+        "Distributed systems",
+        "Data processing systems",
+        "Backend automation",
+        "Queue-driven processing",
+        "Browser automation",
+        "API development",
+        "Cloud infrastructure"
+      ],
+      "metadata": {
+        "resumePriority": 1,
+        "portfolioPriority": 2,
+        "upworkPriority": 3,
+        "fiverrPriority": 3,
+        "linkedinPriority": 2
+      }
+    },
+    {
+      "identity": {
+        "name": "Event-Driven Processing Platform on AWS",
+        "projectType": "Cloud Event-Driven Platform",
+        "associatedEmployment": "Ateitis Corp"
+      },
+      "classification": {
+        "businessDomain": "Cloud processing platform and asynchronous backend operations",
+        "complexity": "High",
+        "architectureStyle": "Event-driven cloud platform using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, Redis pub/sub, and full observability"
+      },
+      "overview": "Production-grade event-driven processing system using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, and Redis pub/sub with full observability (OpenTelemetry, X-Ray, Prometheus, Loki).",
+      "engineeringContributions": [
+        "Built production-grade event-driven processing system using AWS CloudFormation, ECS Fargate, SNS/SQS",
+        "Implemented Redis pub/sub for real-time communication",
+        "Designed comprehensive observability with OpenTelemetry, X-Ray, Prometheus, and Loki",
+        "Configured retry logic, dead-letter queues, circuit breakers, and failure isolation"
+      ],
+      "technicalStack": [
+        "AWS CloudFormation",
+        "AWS ECS Fargate",
+        "AWS SNS",
+        "AWS SQS",
+        "MongoDB",
+        "Redis",
+        "OpenTelemetry",
+        "AWS X-Ray",
+        "Prometheus",
+        "Loki"
+      ],
+      "measurableOutcomes": [
+        "Improved failure isolation, monitoring, traceability, and recoverability for production workloads"
+      ],
+      "capabilityTags": [
+        "Event-driven systems",
+        "Cloud infrastructure",
+        "Backend systems",
+        "DevOps engineering",
+        "Observability",
+        "Production operations",
+        "API development",
+        "Microservices"
+      ],
+      "metadata": {
+        "resumePriority": 2,
+        "portfolioPriority": 1,
+        "upworkPriority": 1,
+        "fiverrPriority": 2,
+        "linkedinPriority": 1
+      }
+    },
+    {
+      "identity": {
+        "name": "Tax Rebate Processing & Refund Management Platform",
+        "projectType": "Workflow Automation System",
+        "associatedEmployment": "Ghanisoft"
+      },
+      "classification": {
+        "businessDomain": "Tax rebate processing, financial workflow, refund management",
+        "complexity": "High",
+        "architectureStyle": "State-controlled workflow platform for onboarding, verification, document processing, calculation, review, approval, and reconciliation"
+      },
+      "overview": "Workflow-driven tax rebate lifecycle platform replacing manual forms, spreadsheet tracking, and fragmented approval processes. Built a state-controlled financial workflow engine for customer onboarding, identity verification, document processing, configurable tax calculations, staff review, refund approval, and refund reconciliation.",
+      "engineeringContributions": [
+        "Built state-controlled financial workflow engine for customer onboarding, identity verification, document processing, tax calculations, staff review, refund approval, and reconciliation",
+        "Replaced manual forms, spreadsheet tracking, and fragmented approval processes",
+        "Implemented strict state transitions and permission control"
+      ],
+      "technicalStack": [
+        "Node.js",
+        "Express",
+        "React",
+        "MongoDB",
+        "Role-based access control",
+        "Workflow state machines"
+      ],
+      "measurableOutcomes": [
+        "Centralized onboarding, document processing, review, approval, and reconciliation for more reliable and auditable refund workflow execution"
+      ],
+      "capabilityTags": [
+        "Workflow systems",
+        "Backend systems",
+        "Full-stack product engineering",
+        "Financial process automation",
+        "Role-based operations",
+        "API development"
+      ],
+      "metadata": {
+        "resumePriority": 4,
+        "portfolioPriority": 3,
+        "upworkPriority": 4,
+        "fiverrPriority": 4,
+        "linkedinPriority": 4
+      }
+    },
+    {
+      "identity": {
+        "name": "DevOps CI/CD Pipeline System",
+        "projectType": "DevOps Automation Platform",
+        "associatedEmployment": "Ateitis Corp"
+      },
+      "classification": {
+        "businessDomain": "Software delivery automation and release operations",
+        "complexity": "High",
+        "architectureStyle": "Automated delivery pipeline covering build, test, security scanning, containerization, deployment, monitoring, and rollback"
+      },
+      "overview": "Automated build, test, security scanning, containerization (Docker), and deployment pipeline with full observability and rollback.",
+      "engineeringContributions": [
+        "Automated build, test, security scanning, Docker containerization, and deployment pipeline",
+        "Implemented Infrastructure as Code using Terraform and CloudFormation",
+        "Configured rollback support and zero-downtime deployment patterns",
+        "Built full observability with monitoring and rollback capabilities"
+      ],
+      "technicalStack": [
+        "Jenkins",
+        "GitLab CI/CD",
+        "Docker",
+        "Terraform",
+        "CloudFormation",
+        "OpenTelemetry",
+        "Prometheus"
+      ],
+      "measurableOutcomes": [
+        "Reduced manual deployment effort and improved release repeatability with automated delivery pipeline"
+      ],
+      "capabilityTags": [
+        "DevOps engineering",
+        "Platform engineering",
+        "Production operations",
+        "Cloud infrastructure",
+        "Observability",
+        "CI/CD pipelines",
+        "Infrastructure as Code"
+      ],
+      "metadata": {
+        "resumePriority": 3,
+        "portfolioPriority": 4,
+        "upworkPriority": 2,
+        "fiverrPriority": 1,
+        "linkedinPriority": 3
+      }
+    },
+    {
+      "identity": {
+        "name": "News Chunk",
+        "projectType": "Content Aggregation Platform",
+        "associatedEmployment": "Upwork & Fiverr"
+      },
+      "classification": {
+        "businessDomain": "Content aggregation and intelligent news classification",
+        "complexity": "Medium to High",
+        "architectureStyle": "Layered processing system with multi-source web scraping, AI classification engine, REST API layer, and unified timeline interface"
+      },
+      "overview": "Intelligent content consolidation system with web scraping, AI-based classification, and unified timeline interface for structured news consumption across multiple sources.",
+      "engineeringContributions": [
+        "Built intelligent content consolidation system with web scraping and AI-based classification",
+        "Designed unified timeline interface for structured news consumption across multiple sources",
+        "Implemented multi-source data aggregation and transformation pipelines"
+      ],
+      "technicalStack": [
+        "React",
+        "Python",
+        "Flask",
+        "REST APIs",
+        "AI classification",
+        "Web scraping"
+      ],
+      "measurableOutcomes": [
+        "Unified access to multiple news sources with AI-driven categorization",
+        "Reduced cognitive load in information consumption through structured, categorized feeds"
+      ],
+      "capabilityTags": [
+        "Data processing systems",
+        "Web scraping and browser automation",
+        "AI-based content classification",
+        "Full-stack product engineering",
+        "Backend systems",
+        "API development"
+      ],
+      "metadata": {
+        "resumePriority": 5,
+        "portfolioPriority": 5,
+        "upworkPriority": 4,
+        "fiverrPriority": 3,
+        "linkedinPriority": 5
+      }
+    },
+    {
+      "identity": {
+        "name": "Nutrifactor Mobile Commerce Platform",
+        "projectType": "Mobile Commerce Application",
+        "associatedEmployment": "Nutrifactor"
+      },
+      "classification": {
+        "businessDomain": "Mobile commerce and headless ecommerce",
+        "complexity": "Medium to High",
+        "architectureStyle": "Headless Shopify mobile commerce integration using React Native and Shopify GraphQL"
+      },
+      "overview": "Headless Shopify integration using React Native and ShopifyGraphQL with real-time inventory and order synchronization.",
+      "engineeringContributions": [
+        "Developed React Native mobile commerce application integrated with headless Shopify backend",
+        "Implemented Shopify GraphQL APIs for commerce data integration",
+        "Built real-time inventory and order synchronization"
+      ],
+      "technicalStack": [
+        "React Native",
+        "TypeScript",
+        "Shopify GraphQL"
+      ],
+      "measurableOutcomes": [
+        "Delivered mobile commerce experience over a headless Shopify backend",
+        "Synchronized inventory and orders between mobile app and commerce backend"
+      ],
+      "capabilityTags": [
+        "Mobile application engineering",
+        "Full-stack product engineering",
+        "API integration",
+        "Commerce workflow integration"
+      ],
+      "metadata": {
+        "resumePriority": 6,
+        "portfolioPriority": 5,
+        "upworkPriority": 5,
+        "fiverrPriority": 5,
+        "linkedinPriority": 6
+      }
+    }
+  ],
+  "engineeringAchievements": [
+    "Designed distributed scraping system with 20 parallel workers completing full extraction + processing cycles in ~5 minutes per batch (down from hours of manual effort)",
+    "Reduced full environment provisioning to single-command deployment using Infrastructure-as-Code (Terraform/CloudFormation)",
+    "Built stateless architectures enabling seamless horizontal scaling with zero downtime",
+    "Implemented comprehensive observability (Prometheus, Grafana, OpenTelemetry, CloudWatch) that reduced mean time to detection on production issues"
+  ],
+  "capabilities": [
+    {
+      "name": "Full-Stack Product Engineering",
+      "description": "Designing and building complete product systems across frontend, backend, data, workflow, and infrastructure layers",
+      "supportingProjects": [
+        "Nutrifactor Mobile Commerce Platform",
+        "News Chunk",
+        "Tax Rebate Processing & Refund Management Platform"
+      ],
+      "supportingTechnologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "React Native",
+        "Node.js",
+        "Express",
+        "NestJS",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "REST",
+        "GraphQL",
+        "WebSockets"
+      ]
+    },
+    {
+      "name": "Backend Systems",
+      "description": "Building backend platforms with APIs, authentication, multi-tenant structures, workflow engines, data processing, and operational boundaries",
+      "supportingProjects": [
+        "Tax Rebate Processing & Refund Management Platform",
+        "Event-Driven Processing Platform on AWS",
+        "News Chunk"
+      ],
+      "supportingTechnologies": [
+        "Node.js",
+        "Express",
+        "NestJS",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "REST",
+        "GraphQL",
+        "PostgreSQL",
+        "MongoDB",
+        "DynamoDB",
+        "Redis"
+      ]
+    },
+    {
+      "name": "Distributed Systems",
+      "description": "Designing systems that use parallel workers, asynchronous queues, event-driven processing, fault tolerance, and horizontal scaling",
+      "supportingProjects": [
+        "Tender Procurement Intelligence Platform",
+        "Event-Driven Processing Platform on AWS",
+        "DevOps CI/CD Pipeline System"
+      ],
+      "supportingTechnologies": [
+        "Playwright",
+        "Redis",
+        "BullMQ",
+        "Celery",
+        "Kafka",
+        "RabbitMQ",
+        "SQS",
+        "SNS",
+        "EventBridge",
+        "ECS Fargate"
+      ]
+    },
+    {
+      "name": "Cloud Infrastructure",
+      "description": "Designing and operating secure, scalable, observable production environments on AWS",
+      "supportingProjects": [
+        "Event-Driven Processing Platform on AWS",
+        "DevOps CI/CD Pipeline System"
+      ],
+      "supportingTechnologies": [
+        "AWS EC2",
+        "AWS ECS",
+        "AWS EKS",
+        "AWS Lambda",
+        "AWS RDS",
+        "AWS DynamoDB",
+        "AWS SQS",
+        "AWS SNS",
+        "AWS EventBridge",
+        "AWS VPC",
+        "AWS IAM",
+        "AWS Secrets Manager",
+        "AWS CloudWatch",
+        "AWS SSM",
+        "CloudFormation",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "DevOps Engineering",
+      "description": "Automating build, test, security scanning, containerization, deployment, and environment provisioning workflows",
+      "supportingProjects": [
+        "DevOps CI/CD Pipeline System",
+        "Event-Driven Processing Platform on AWS"
+      ],
+      "supportingTechnologies": [
+        "GitHub Actions",
+        "Jenkins",
+        "GitLab CI/CD",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "CloudFormation"
+      ]
+    },
+    {
+      "name": "Workflow Systems",
+      "description": "Modeling operational processes as controlled workflows with explicit states, permissions, reviews, approvals, and reconciliation",
+      "supportingProjects": [
+        "Tax Rebate Processing & Refund Management Platform"
+      ],
+      "supportingTechnologies": [
+        "Node.js",
+        "Python",
+        "REST",
+        "GraphQL",
+        "Redis",
+        "PostgreSQL",
+        "MongoDB",
+        "Role-based access control",
+        "Workflow state machines"
+      ]
+    },
+    {
+      "name": "Event-Driven Systems",
+      "description": "Building asynchronous systems that communicate through queues, events, background workers, and pub/sub channels",
+      "supportingProjects": [
+        "Event-Driven Processing Platform on AWS",
+        "Tender Procurement Intelligence Platform"
+      ],
+      "supportingTechnologies": [
+        "SQS",
+        "SNS",
+        "EventBridge",
+        "Redis pub/sub",
+        "Kafka",
+        "RabbitMQ",
+        "BullMQ",
+        "Celery"
+      ]
+    },
+    {
+      "name": "Data Processing Systems",
+      "description": "Building extraction, aggregation, transformation, validation, and deduplication workflows for structured data pipelines",
+      "supportingProjects": [
+        "Tender Procurement Intelligence Platform",
+        "Event-Driven Processing Platform on AWS",
+        "News Chunk"
+      ],
+      "supportingTechnologies": [
+        "Playwright",
+        "ETL pipelines",
+        "Redis",
+        "Queues",
+        "Worker fleets",
+        "MongoDB",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Observability & Production Operations",
+      "description": "Making systems measurable, diagnosable, recoverable, and operable under production conditions",
+      "supportingProjects": [
+        "Event-Driven Processing Platform on AWS",
+        "DevOps CI/CD Pipeline System"
+      ],
+      "supportingTechnologies": [
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "Loki",
+        "CloudWatch",
+        "AWS X-Ray",
+        "Structured logging",
+        "Custom metrics"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Electrical Engineering",
+      "institution": "National University of Computer and Emerging Sciences (NUCES)",
+      "location": "Lahore, Pakistan",
+      "graduationYear": "2013",
+      "academicFocusAreas": [
+        "Object-Oriented Programming",
+        "Data Structures",
+        "Database Systems"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "certificationName": "DevOps on AWS",
+      "issuer": "Coursera",
+      "year": "2024"
+    },
+    {
+      "certificationName": "The Complete 2023 Web Development Bootcamp",
+      "issuer": "Udemy",
+      "year": "2023"
+    },
+    {
+      "certificationName": "Problem Solving (Basic)",
+      "issuer": "HackerRank",
+      "year": "2023"
+    }
+  ],
+  "metadata": {
+    "schemaVersion": "1.0",
+    "generatorVersion": "1.0",
+    "generatedFrom": "master-cv-generator.md",
+    "createdDate": "2026-06-29",
+    "updatedDate": "2026-06-29"
+  }
+}
