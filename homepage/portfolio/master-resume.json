@@ -185,25 +185,25 @@
     }
   ],
   "technicalSkills": {
-    "languages": [
+    "Languages": [
       "JavaScript",
       "TypeScript",
       "Python"
     ],
-    "backend": [
+    "Backend": [
       "Node.js",
       "Express",
       "NestJS",
       "FastAPI",
       "Flask"
     ],
-    "frontend": [
+    "Frontend": [
       "React",
       "Next.js",
       "React Native",
       "TypeScript"
     ],
-    "cloud": [
+    "Cloud": [
       "AWS EC2",
       "AWS ECS",
       "AWS EKS",
@@ -218,24 +218,24 @@
       "AWS CloudWatch",
       "AWS SSM"
     ],
-    "containers": [
+    "Containers": [
       "Docker",
       "Kubernetes"
     ],
-    "cicd": [
+    "CI/CD": [
       "GitHub Actions",
       "Jenkins",
       "GitLab CI/CD",
       "Terraform",
       "CloudFormation"
     ],
-    "databases": [
+    "Databases": [
       "PostgreSQL",
       "MongoDB",
       "DynamoDB",
       "Redis"
     ],
-    "messaging": [
+    "Messaging": [
       "SQS",
       "SNS",
       "EventBridge",
@@ -244,12 +244,12 @@
       "Celery",
       "BullMQ"
     ],
-    "distributedSystems": [
+    "Distributed Systems": [
       "Playwright",
       "ETL pipelines",
       "Distributed processing"
     ],
-    "monitoring": [
+    "Monitoring": [
       "Prometheus",
       "Grafana",
       "OpenTelemetry",
@@ -257,7 +257,7 @@
       "CloudWatch",
       "AWS X-Ray"
     ],
-    "apis": [
+    "APIs": [
       "REST",
       "GraphQL",
       "WebSockets"

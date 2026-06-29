@@ -148,7 +148,7 @@
         <h2>Technical Skills</h2>
         {% for category, skill_list in technicalSkills.items() %}
         <div class="skill-category">
-            <p><strong>{{snake_case_to_label(category)}}:</strong> {{skill_list | join(', ')}}</p>
+            <p><strong>{{category}}:</strong> {{skill_list | join(', ')}}</p>
         </div>
         {% endfor %}
     </section>
