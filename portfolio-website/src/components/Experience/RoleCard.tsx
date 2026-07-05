@@ -1,6 +1,7 @@
 import { ResponsibilitiesList } from './ResponsibilitiesList';
 import { TechnologyTags } from './TechnologyTags';
 import { FlagshipProjects } from './FlagshipProjects';
+import { HoverCard } from '../../utils/animations';
 import type { RoleCardProps } from './types';
 
 export function RoleCard({ experience }: RoleCardProps) {
@@ -13,7 +14,7 @@ export function RoleCard({ experience }: RoleCardProps) {
   const endDate = experience.endDate ? formatDate(experience.endDate) : 'Present';
 
   return (
-    <div className="bg-card border border-border rounded-2xl p-6 ml-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+    <HoverCard className="bg-card border border-border rounded-2xl p-6 ml-6 shadow-sm">
       <div className="flex flex-wrap justify-between items-start mb-3">
         <div>
           <h3 className="text-xl font-bold text-text-primary">{experience.position}</h3>
@@ -41,6 +42,6 @@ export function RoleCard({ experience }: RoleCardProps) {
       </div>
       
       <FlagshipProjects projects={experience.flagshipProjects} />
-    </div>
+    </HoverCard>
   );
 }

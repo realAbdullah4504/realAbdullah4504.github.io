@@ -1,4 +1,5 @@
 import { CTAButtons } from './CTAButtons';
+import { FadeInSection } from '../../utils/animations';
 import resumeData from '../../../../homepage/portfolio/master-resume.json';
 
 export function Contact() {
@@ -6,7 +7,7 @@ export function Contact() {
 
   return (
     <section className="py-24 px-6 bg-surface" id="contact">
-      <div className="max-w-4xl mx-auto text-center">
+      <FadeInSection className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-text-primary mb-4">Get In Touch</h2>
         <p className="text-lg text-text-secondary mb-12">
           Interested in working together? Let's discuss your project.
@@ -16,7 +17,7 @@ export function Contact() {
           email={data.contact.email}
           linkedin={data.contact.linkedin}
         />
-      </div>
+      </FadeInSection>
     </section>
   );
 }

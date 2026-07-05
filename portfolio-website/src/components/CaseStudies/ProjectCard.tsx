@@ -1,11 +1,12 @@
 import { ComplexityBadge } from './ComplexityBadge';
 import { TechStackTags } from './TechStackTags';
 import { OutcomesList } from './OutcomesList';
+import { HoverCard } from '../../utils/animations';
 import type { ProjectCardProps } from './types';
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+    <HoverCard className="bg-card border border-border rounded-2xl p-6 shadow-sm">
       <div className="flex justify-between items-start mb-4">
         <div>
           <h3 className="text-xl font-bold text-text-primary mb-1">{project.identity.name}</h3>
@@ -33,6 +34,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </span>
         ))}
       </div>
-    </div>
+    </HoverCard>
   );
 }
