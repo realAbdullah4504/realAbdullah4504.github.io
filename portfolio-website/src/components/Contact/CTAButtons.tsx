@@ -1,9 +1,14 @@
 import { Mail, Link } from 'lucide-react';
-import type { CTAButtonsProps } from './types';
+import type { ComponentPropsWithoutRef } from 'react';
 
-export function CTAButtons({ email, linkedin }: CTAButtonsProps) {
+type CTAButtonsProps = {
+  email: string;
+  linkedin: string;
+} & ComponentPropsWithoutRef<'div'>;
+
+export function CTAButtons({ email, linkedin, className = '', ...props }: CTAButtonsProps) {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <div className={`flex flex-col sm:flex-row gap-4 justify-center ${className}`} {...props}>
       <a
         href={`mailto:${email}`}
         className="flex items-center justify-center gap-2 px-8 py-3 bg-accent hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"

@@ -72,6 +72,19 @@ portfolio-website/
 │   ├── main.tsx                   # React mount
 │   ├── App.tsx                    # Root layout: dark bg + section flow
 │   ├── index.css                  # Global theme tokens + base styles
+│   ├── layout/
+│   │   ├── Navbar/
+│   │   │   ├── index.tsx          # Sticky header + mobile menu + smooth scroll
+│   │   │   ├── NavLinks.tsx       # Desktop navigation with active state
+│   │   │   ├── MobileMenu.tsx     # Full-screen mobile overlay
+│   │   │   └── ResumeButton.tsx   # Conditional CV download link
+│   │   │
+│   │   └── Footer/
+│   │       ├── index.tsx          # Footer layout + back-to-top
+│   │       ├── FooterLinks.tsx    # Quick links column
+│   │       ├── SocialLinks.tsx    # Social profiles column
+│   │       └── ContactInfo.tsx    # Email/phone/location column
+│   │
 │   └── components/
 │       ├── Hero/                  # Landing section
 │       │   ├── index.tsx          # Section layout + CTA handlers

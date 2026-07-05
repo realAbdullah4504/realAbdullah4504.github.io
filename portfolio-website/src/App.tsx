@@ -5,11 +5,14 @@ import { CaseStudies } from './components/CaseStudies'
 import { Skills } from './components/Skills'
 import { Experience } from './components/Experience'
 import { Contact } from './components/Contact'
+import { Navbar } from './layout/Navbar'
+import { Footer } from './layout/Footer'
 
 function App() {
   return (
     <div className="bg-background min-h-screen antialiased">
-      <main className="px-6">
+      <Navbar />
+      <main className="pt-16">
         <Hero />
         <About />
         <Capabilities />
@@ -18,6 +21,7 @@ function App() {
         <Experience />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
