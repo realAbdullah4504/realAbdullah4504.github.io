@@ -34,7 +34,7 @@ export function Navbar() {
               {fullName}
             </a>
 
-            <NavLinks onLinkClick={handleLinkClick} />
+            <NavLinks onLinkClick={handleLinkClick} className="hidden md:flex" />
 
             <div className="hidden md:flex items-center gap-4">
               <ResumeButton />
@@ -42,7 +42,7 @@ export function Navbar() {
 
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="md:hidden p-2 text-text-secondary hover:text-text-primary transition-colors duration-200"
+              className="md:hidden p-2 -mr-2 text-text-secondary hover:text-text-primary transition-colors duration-200"
               aria-label="Open menu"
             >
               <Menu className="w-6 h-6" />
