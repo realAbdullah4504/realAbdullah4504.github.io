@@ -19,7 +19,7 @@ export function ResumeButton({ className = '', ...props }: ResumeButtonProps) {
       {...props}
     >
       <Download className="w-4 h-4" />
-      Download CV
+      Download Resume
     </a>
   );
 }

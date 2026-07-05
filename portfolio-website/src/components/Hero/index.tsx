@@ -13,10 +13,6 @@ export function Hero() {
     console.log('View Projects clicked');
   };
 
-  const handleSecondaryCTA = () => {
-    console.log('Contact Me clicked');
-  };
-
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-16 bg-gradient-to-b from-background to-surface">
       <FadeInSection className="max-w-4xl mx-auto text-center" delay={0}>
@@ -32,13 +28,9 @@ export function Hero() {
         <SocialLinks
           linkedin={data.contact.linkedin}
           github={data.contact.github}
-          portfolioWebsite={data.contact.portfolioWebsite}
           email={data.contact.email}
         />
-        <CTAButtons
-          onPrimaryCTA={handlePrimaryCTA}
-          onSecondaryCTA={handleSecondaryCTA}
-        />
+        <CTAButtons onPrimaryCTA={handlePrimaryCTA} />
       </FadeInSection>
     </section>
   );

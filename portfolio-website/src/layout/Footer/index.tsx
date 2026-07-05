@@ -1,50 +1,66 @@
 import resumeData from '../../../../homepage/portfolio/master-resume.json';
-import { ArrowUp } from 'lucide-react';
-import { FooterLinks } from './FooterLinks';
-import { SocialLinks } from './SocialLinks';
-import { ContactInfo } from './ContactInfo';
+import { FaGithub, FaLinkedin, FaDownload, FaEnvelope } from 'react-icons/fa';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
   const fullName = resumeData.contact.fullName;
-  const tagline = (resumeData.profile as { tagline?: string }).tagline;
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const currentYear = new Date().getFullYear();
+  const contact = resumeData.contact as { resumeUrl?: string };
+  const resumeUrl = contact.resumeUrl;
 
   return (
-    <footer className="bg-surface border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div className="md:col-span-1">
-            <h4 className="text-text-primary text-xl font-bold mb-2">{fullName}</h4>
-            {tagline && (
-              <p className="text-text-secondary text-sm font-medium mb-4">{tagline}</p>
-            )}
-            <p className="text-text-muted text-sm">
-              Full-Stack Software Engineer specializing in Backend Systems, Cloud Infrastructure, and DevOps.
-            </p>
+    <footer className="bg-background border-t border-border">
+      <div className="max-w-7xl mx-auto px-6 py-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3">
+            <span className="text-text-primary font-semibold text-sm">{fullName}</span>
+            <span className="hidden md:inline text-text-muted">·</span>
+            <span className="text-text-muted text-sm">Full-Stack Systems & DevOps Engineer</span>
           </div>
 
-          <FooterLinks />
-          <SocialLinks />
-          <ContactInfo />
+          <div className="flex items-center gap-6">
+            <a
+              href={resumeData.contact.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-muted hover:text-accent transition-colors duration-200"
+              aria-label="GitHub"
+            >
+              <FaGithub className="w-4 h-4" />
+            </a>
+            <a
+              href={resumeData.contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-muted hover:text-accent transition-colors duration-200"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className="w-4 h-4" />
+            </a>
+            {resumeUrl && (
+              <a
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-muted hover:text-accent transition-colors duration-200"
+                aria-label="Resume"
+              >
+                <FaDownload className="w-4 h-4" />
+              </a>
+            )}
+            <a
+              href={`mailto:${resumeData.contact.email}`}
+              className="text-text-muted hover:text-accent transition-colors duration-200"
+              aria-label="Email"
+            >
+              <FaEnvelope className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-text-muted text-sm">
+        <div className="mt-4 pt-4 border-t border-border text-center">
+          <p className="text-text-muted text-xs">
             © {currentYear} {fullName}. All rights reserved.
           </p>
-
-          <button
-            onClick={scrollToTop}
-            className="inline-flex items-center gap-2 px-4 py-2 text-text-secondary hover:text-accent text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface rounded-lg"
-            aria-label="Back to top"
-          >
-            <ArrowUp className="w-4 h-4" />
-            Back to Top
-          </button>
         </div>
       </div>
     </footer>

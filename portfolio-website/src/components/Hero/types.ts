@@ -7,7 +7,6 @@ export interface HeroProps {
   socialLinks: {
     linkedin: string;
     github: string;
-    portfolioWebsite: string;
     email: string;
   };
   onPrimaryCTA: () => void;
@@ -31,7 +30,6 @@ export interface HeroPositioningProps {
 export interface SocialLinksProps {
   linkedin: string;
   github: string;
-  portfolioWebsite: string;
   email: string;
 }
 

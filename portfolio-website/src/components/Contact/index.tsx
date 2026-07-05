@@ -7,10 +7,13 @@ export function Contact() {
 
   return (
     <section className="py-24 px-6 bg-surface" id="contact">
-      <FadeInSection className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-text-primary mb-4">Get In Touch</h2>
-        <p className="text-lg text-text-secondary mb-12">
-          Interested in working together? Let's discuss your project.
+      <FadeInSection className="max-w-3xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
+          Let's Build Something Together
+        </h2>
+        <p className="text-lg text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed">
+          I'm interested in full-time roles, contract engagements, and collaborations 
+          with engineering teams that value reliable systems and clean architecture.
         </p>
 
         <CTAButtons

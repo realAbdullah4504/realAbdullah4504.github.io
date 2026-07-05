@@ -131,10 +131,7 @@ portfolio-website/
 │       │   ├── FlagshipProjects.tsx
 │       │   └── TechnologyTags.tsx
 │       │
-│       └── Contact/               # Footer / contact
-│           ├── index.tsx
-│           ├── ContactInfo.tsx
-│           ├── SocialLinks.tsx
+│       └── Contact/               # Contact CTAs
 │           └── CTAButtons.tsx
 ```
 

@@ -1,11 +1,11 @@
-import { Link, Globe, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import type { SocialLinksProps } from './types';
 
-export function SocialLinks({ linkedin, github, portfolioWebsite, email }: SocialLinksProps) {
+export function SocialLinks({ linkedin, github, email }: SocialLinksProps) {
   const socialItems = [
-    { icon: Link, href: linkedin, label: 'LinkedIn' },
-    { icon: Link, href: github, label: 'GitHub' },
-    { icon: Globe, href: portfolioWebsite, label: 'Portfolio' },
+    { icon: FaLinkedin, href: linkedin, label: 'LinkedIn' },
+    { icon: FaGithub, href: github, label: 'GitHub' },
     { icon: Mail, href: `mailto:${email}`, label: 'Email' },
   ];
 
