@@ -9,6 +9,7 @@ Single-page portfolio website built with React 19, TypeScript, Vite, and Tailwin
 - **Build Tool:** Vite 8 with `@vitejs/plugin-react`
 - **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`) with CSS-based theme tokens
 - **Icons:** Lucide React
+- **Animations:** Motion (formerly Framer Motion)
 - **Linting:** ESLint 10 with TypeScript ESLint, React Hooks, React Refresh
 - **Font:** Inter (Google Fonts)
 
@@ -85,6 +86,10 @@ portfolio-website/
 │   │       ├── SocialLinks.tsx    # Social profiles column
 │   │       └── ContactInfo.tsx    # Email/phone/location column
 │   │
+│   ├── utils/
+│   │   ├── animations.tsx         # FadeInSection, HoverCard, AnimatedButton
+│   │   └── animation-variants.ts  # fadeInUp, cardHover, buttonHover variants
+│   │
 │   └── components/
 │       ├── Hero/                  # Landing section
 │       │   ├── index.tsx          # Section layout + CTA handlers
@@ -157,6 +162,26 @@ portfolio-website/
 - Subtle hover states: `hover:shadow-md hover:-translate-y-1`
 - Focus rings use `focus-visible:ring-accent`
 - Alternating section backgrounds (`background` / `surface`) for visual rhythm
+
+## Animations
+Subtle motion courtesy of Motion. Philosophy: enhance usability without becoming the focus.
+
+### Principles
+- 70% clean typography and whitespace
+- 20% thoughtful layout and visual hierarchy
+- 10% subtle motion
+
+### Patterns Used
+- **FadeInSection** — Sections fade up (`opacity: 0 → 1`, `y: 16 → 0`) when they enter the viewport. Applied to all major sections.
+- **Stagger** — Grid items in Capabilities, Case Studies, Skills, and Experience stagger in with `0.05s` delay increments.
+- **HoverCard** — Cards gently scale to `1.02` and lift `4px` on hover.
+- **Smooth Scrolling** — Navbar links use `scrollIntoView({ behavior: 'smooth' })`.
+- **Nav Transitions** — Navigation links use Tailwind `transition-colors duration-200` for smooth color shifts.
+
+### Avoided
+- No bouncing, floating, or parallax
+- No animated backgrounds or particles
+- No long entrance animations
 
 ## Scripts
 - `npm run dev` - Development server
