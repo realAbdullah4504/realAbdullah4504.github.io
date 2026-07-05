@@ -18,7 +18,7 @@ export function SocialLinks({ linkedin, github, portfolioWebsite, email }: Socia
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="p-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-all duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+          className="p-3 bg-surface hover:bg-card text-text-secondary border border-border rounded-full transition-all duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           <Icon className="w-6 h-6" />
         </a>

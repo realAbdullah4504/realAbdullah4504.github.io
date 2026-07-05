@@ -11,8 +11,8 @@ export function SocialLinks({ linkedin, github, portfolioWebsite, otherProfiles 
   ];
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-      <h3 className="text-xl font-bold text-gray-900 mb-4">Social Profiles</h3>
+    <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+      <h3 className="text-xl font-bold text-text-primary mb-4">Social Profiles</h3>
       <div className="flex flex-wrap gap-3">
         {socialItems.map(({ icon: Icon, href, label }) => (
           <a
@@ -21,7 +21,7 @@ export function SocialLinks({ linkedin, github, portfolioWebsite, otherProfiles 
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            className="flex items-center gap-2 px-4 py-2 bg-surface hover:bg-background text-text-secondary border border-border rounded-xl transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
           >
             <Icon className="w-4 h-4" />
             <span className="text-sm font-medium">{label}</span>

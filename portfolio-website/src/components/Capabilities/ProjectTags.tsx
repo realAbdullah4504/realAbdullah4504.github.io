@@ -4,12 +4,12 @@ export function ProjectTags({ projects }: ProjectTagsProps) {
   return (
     <div className="flex flex-wrap gap-2">
       {projects.slice(0, 3).map((project, index) => (
-        <span key={index} className="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full hover:bg-purple-200 transition-colors duration-200">
+        <span key={index} className="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full border border-accent/20 hover:bg-accent/20 transition-colors duration-200">
           {project}
         </span>
       ))}
       {projects.length > 3 && (
-        <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+        <span className="px-3 py-1 bg-card text-text-muted text-xs rounded-full border border-border">
           +{projects.length - 3} more
         </span>
       )}

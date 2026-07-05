@@ -7,10 +7,10 @@ export function Contact() {
   const data = resumeData;
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 px-4 bg-white" id="contact">
+    <section className="py-24 px-6 bg-surface" id="contact">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Get In Touch</h2>
-        <p className="text-lg text-gray-600 text-center mb-12">
+        <h2 className="text-4xl font-bold text-text-primary mb-4 text-center">Get In Touch</h2>
+        <p className="text-lg text-text-secondary text-center mb-12">
           Interested in working together? Let's discuss your project.
         </p>
         

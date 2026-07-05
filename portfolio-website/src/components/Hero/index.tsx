@@ -19,7 +19,7 @@ export function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="min-h-screen flex items-center justify-center px-4 py-16 bg-gradient-to-b from-background to-surface">
       <div className="max-w-4xl mx-auto text-center">
         <HeroHeader
           fullName={data.contact.fullName}

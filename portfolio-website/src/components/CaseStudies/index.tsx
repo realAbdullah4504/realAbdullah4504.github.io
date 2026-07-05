@@ -10,9 +10,9 @@ export function CaseStudies() {
     .sort((a, b) => a.metadata.portfolioPriority - b.metadata.portfolioPriority);
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 px-4 bg-white" id="case-studies">
+    <section className="py-24 px-6 bg-surface" id="case-studies">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Case Studies</h2>
+        <h2 className="text-4xl font-bold text-text-primary mb-12 text-center">Case Studies</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {featuredProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />

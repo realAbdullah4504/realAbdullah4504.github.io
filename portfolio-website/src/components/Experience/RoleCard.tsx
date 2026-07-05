@@ -13,30 +13,30 @@ export function RoleCard({ experience }: RoleCardProps) {
   const endDate = experience.endDate ? formatDate(experience.endDate) : 'Present';
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 ml-6 shadow-sm hover:shadow-md transition-all duration-200">
+    <div className="bg-card border border-border rounded-2xl p-6 ml-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
       <div className="flex flex-wrap justify-between items-start mb-3">
         <div>
-          <h3 className="text-xl font-bold text-gray-900">{experience.position}</h3>
-          <p className="text-lg font-semibold text-gray-800">{experience.company}</p>
+          <h3 className="text-xl font-bold text-text-primary">{experience.position}</h3>
+          <p className="text-lg font-semibold text-text-secondary">{experience.company}</p>
         </div>
-        <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">
+        <span className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full border border-accent/20">
           {experience.employmentType}
         </span>
       </div>
       
-      <p className="text-gray-600 text-sm mb-3">
+      <p className="text-text-muted text-sm mb-3">
         {experience.location} • {formatDate(experience.startDate)} - {endDate}
       </p>
       
-      <p className="text-gray-700 text-sm mb-4 leading-relaxed">{experience.overview}</p>
+      <p className="text-text-secondary text-sm mb-4 leading-relaxed">{experience.overview}</p>
       
       <div className="mb-4">
-        <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Key Responsibilities</h4>
+        <h4 className="text-xs font-semibold text-text-muted uppercase tracking-wide mb-2">Key Responsibilities</h4>
         <ResponsibilitiesList responsibilities={experience.responsibilities} />
       </div>
       
       <div className="mb-4">
-        <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Technologies</h4>
+        <h4 className="text-xs font-semibold text-text-muted uppercase tracking-wide mb-2">Technologies</h4>
         <TechnologyTags technologies={experience.technologies} />
       </div>
       
