@@ -1,6 +1,6 @@
 # Engineering Capabilities — Full-Stack Systems & DevOps Engineer
 
-**5 years of hands-on experience** designing, building, deploying, and scaling production-grade systems. I deliver complete solutions across frontend, backend, distributed processing, cloud infrastructure, and DevOps automation — turning ideas into reliable, observable, and highly operable platforms.
+**4 years of hands-on experience** designing, building, deploying, and scaling production-grade systems. I deliver complete solutions across frontend, backend, distributed processing, cloud infrastructure, and DevOps automation — turning ideas into reliable, observable, and highly operable platforms.
 
 ---
 

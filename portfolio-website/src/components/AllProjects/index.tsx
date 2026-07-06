@@ -1,10 +1,11 @@
-import { ComplexityBadge } from './ComplexityBadge';
-import { TechStackTags } from './TechStackTags';
-import { OutcomesList } from './OutcomesList';
+import { ComplexityBadge } from '../CaseStudies/ComplexityBadge';
+import { TechStackTags } from '../CaseStudies/TechStackTags';
+import { OutcomesList } from '../CaseStudies/OutcomesList';
 import { HoverCard } from '../../utils/animations';
-import type { ProjectCardProps } from './types';
+import { FadeInSection } from '../../utils/animations';
+import resumeData from '../../../../homepage/portfolio/master-resume.json';
 
-export function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project }: any) {
   return (
     <HoverCard className="bg-card border border-border rounded-2xl p-6 shadow-sm">
       <div className="flex justify-between items-start mb-4">
@@ -28,12 +29,35 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
       
       <div className="flex flex-wrap gap-2">
-        {project.capabilityTags.slice(0, 3).map((tag, index) => (
+        {project.capabilityTags.slice(0, 3).map((tag: string, index: number) => (
           <span key={index} className="px-2 py-1 bg-surface text-text-muted text-xs rounded border border-border hover:border-accent hover:text-accent transition-colors duration-200">
             {tag}
           </span>
         ))}
       </div>
     </HoverCard>
+  );
+}
+
+export function AllProjects() {
+  const data = resumeData;
+  
+  const allProjects = data.projects.sort((a, b) => 
+    a.metadata.portfolioPriority - b.metadata.portfolioPriority
+  );
+
+  return (
+    <section className="py-24 px-6 bg-background" id="all-projects">
+      <FadeInSection className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-text-primary mb-12 text-center">All Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {allProjects.map((project, index) => (
+            <FadeInSection key={index} delay={index * 0.05}>
+              <ProjectCard project={project} />
+            </FadeInSection>
+          ))}
+        </div>
+      </FadeInSection>
+    </section>
   );
 }

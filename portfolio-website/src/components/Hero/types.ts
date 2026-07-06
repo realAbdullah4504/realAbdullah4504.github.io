@@ -21,6 +21,7 @@ export interface HeroHeaderProps {
 export interface HeroBadgesProps {
   yearsOfExperience: number;
   location: string;
+  availability?: string;
 }
 
 export interface HeroPositioningProps {

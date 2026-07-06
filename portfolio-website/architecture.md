@@ -8,7 +8,7 @@ Single-page portfolio website built with React 19, TypeScript, Vite, and Tailwin
 - **Language:** TypeScript ~6.0.2
 - **Build Tool:** Vite 8 with `@vitejs/plugin-react`
 - **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`) with CSS-based theme tokens
-- **Icons:** Lucide React
+- **Icons:** Lucide React + React Icons (mixed usage across components)
 - **Animations:** Motion (formerly Framer Motion)
 - **Linting:** ESLint 10 with TypeScript ESLint, React Hooks, React Refresh
 - **Font:** Inter (Google Fonts)
@@ -54,8 +54,9 @@ Defined in `src/index.css` using Tailwind CSS v4 `@theme` directive.
 - No heavy glow effects
 
 ### Buttons
-- **Primary:** `bg-accent` / `text-white` / `rounded-2xl` / hover darker
+- **Primary:** `bg-accent` / `text-white` / `rounded-xl` / hover darker (`hover:bg-blue-600`)
 - **Secondary:** `bg-transparent` / `border-border` / `text-text-secondary` / hover `bg-surface`
+- Focus rings: `focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background`
 
 ## File Architecture
 
@@ -75,20 +76,17 @@ portfolio-website/
 │   ├── index.css                  # Global theme tokens + base styles
 │   ├── layout/
 │   │   ├── Navbar/
-│   │   │   ├── index.tsx          # Sticky header + mobile menu + smooth scroll
+│   │   │   ├── index.tsx          # Fixed header + mobile menu + smooth scroll
 │   │   │   ├── NavLinks.tsx       # Desktop navigation with active state
 │   │   │   ├── MobileMenu.tsx     # Full-screen mobile overlay
 │   │   │   └── ResumeButton.tsx   # Conditional CV download link
 │   │   │
 │   │   └── Footer/
-│   │       ├── index.tsx          # Footer layout + back-to-top
-│   │       ├── FooterLinks.tsx    # Quick links column
-│   │       ├── SocialLinks.tsx    # Social profiles column
-│   │       └── ContactInfo.tsx    # Email/phone/location column
+│   │       └── index.tsx          # Monolithic footer (no subcomponents)
 │   │
 │   ├── utils/
 │   │   ├── animations.tsx         # FadeInSection, HoverCard, AnimatedButton
-│   │   └── animation-variants.ts  # fadeInUp, cardHover, buttonHover variants
+│   │   └── animation-variants.ts  # fadeInUp, staggerContainer, cardHover, buttonHover variants
 │   │
 │   └── components/
 │       ├── Hero/                  # Landing section
@@ -96,56 +94,64 @@ portfolio-website/
 │       │   ├── HeroHeader.tsx     # Name + professional title
 │       │   ├── HeroBadges.tsx     # Experience + location pills
 │       │   ├── HeroPositioning.tsx # Positioning statement
-│       │   ├── SocialLinks.tsx    # LinkedIn, GitHub, Portfolio, Email
-│       │   └── CTAButtons.tsx     # Primary/secondary actions
+│       │   ├── SocialLinks.tsx    # LinkedIn, GitHub, Email (uses lucide-react + react-icons)
+│       │   ├── CTAButtons.tsx     # Primary/secondary actions with resume link
+│       │   └── types.ts           # Prop types
 │       │
 │       ├── About/                 # Background section
 │       │   ├── index.tsx
 │       │   ├── ProfessionalSummary.tsx
 │       │   ├── EngineeringAchievements.tsx
 │       │   ├── Education.tsx
-│       │   └── Certifications.tsx
+│       │   ├── Certifications.tsx
+│       │   └── types.ts
 │       │
 │       ├── Capabilities/          # Services / capabilities grid
 │       │   ├── index.tsx
 │       │   ├── CapabilityCard.tsx
 │       │   ├── ProjectTags.tsx
-│       │   └── TechnologyTags.tsx
+│       │   ├── TechnologyTags.tsx
+│       │   └── types.ts
 │       │
 │       ├── CaseStudies/           # Featured projects
 │       │   ├── index.tsx
 │       │   ├── ProjectCard.tsx
 │       │   ├── ComplexityBadge.tsx
 │       │   ├── OutcomesList.tsx
-│       │   └── TechStackTags.tsx
+│       │   ├── TechStackTags.tsx
+│       │   └── types.ts
 │       │
 │       ├── Skills/                # Technical skills grid
 │       │   ├── index.tsx
 │       │   ├── SkillCategory.tsx
-│       │   └── SkillTags.tsx
+│       │   ├── SkillTags.tsx
+│       │   └── types.ts
 │       │
 │       ├── Experience/            # Timeline
 │       │   ├── index.tsx
 │       │   ├── RoleCard.tsx
 │       │   ├── ResponsibilitiesList.tsx
+│       │   ├── TechnologyTags.tsx
 │       │   ├── FlagshipProjects.tsx
-│       │   └── TechnologyTags.tsx
+│       │   └── types.ts
 │       │
 │       └── Contact/               # Contact CTAs
-│           └── CTAButtons.tsx
+│           ├── index.tsx
+│           ├── CTAButtons.tsx
+│           └── types.ts
 ```
 
 ## Section Breakdown
 
 | Section | Component | Background | Purpose |
 |---------|-----------|-----------|---------|
-| Hero | `Hero` | `bg-gradient-to-b from-background to-surface` | Name, title, badges, positioning, socials, CTAs |
-| About | `About` | `bg-surface` | Professional summary, achievements, education, certifications |
+| Hero | `Hero` | `bg-gradient-to-b from-background to-surface` | Name, title, badges, positioning, socials, CTAs. **Note:** section lacks `id="hero"`. |
+| About | `About` | `bg-surface` | Professional summary, achievements, education (first entry only), certifications |
 | Capabilities | `Capabilities` | `bg-background` | Engineering capability cards with supporting projects and tech |
 | Case Studies | `CaseStudies` | `bg-surface` | Featured projects filtered by `portfolioPriority <= 4` |
 | Skills | `Skills` | `bg-background` | Technical skills grouped by category |
-| Experience | `Experience` | `bg-background` | Timeline of professional experience |
-| Contact | `Contact` | `bg-surface` | Contact details, social profiles, CTA buttons |
+| Experience | `Experience` | `bg-background` | Timeline of professional experience with absolute center line |
+| Contact | `Contact` | `bg-surface` | Headline, description paragraph, and CTA buttons (Email, Resume, LinkedIn) |
 
 ## Data Flow
 - All components import `master-resume.json` directly from `../../../../homepage/portfolio/master-resume.json`
@@ -156,8 +162,8 @@ portfolio-website/
 ## Styling Conventions
 - Use semantic theme tokens (`bg-background`, `text-text-primary`, `border-border`, etc.) instead of raw Tailwind colors
 - Cards use `bg-card border border-border rounded-2xl`
-- Subtle hover states: `hover:shadow-md hover:-translate-y-1`
-- Focus rings use `focus-visible:ring-accent`
+- Subtle hover states: `hover:shadow-md hover:-translate-y-1` via `HoverCard` motion wrapper
+- Focus rings use `focus-visible:ring-accent focus-visible:ring-offset-background`
 - Alternating section backgrounds (`background` / `surface`) for visual rhythm
 
 ## Animations
@@ -169,9 +175,9 @@ Subtle motion courtesy of Motion. Philosophy: enhance usability without becoming
 - 10% subtle motion
 
 ### Patterns Used
-- **FadeInSection** — Sections fade up (`opacity: 0 → 1`, `y: 16 → 0`) when they enter the viewport. Applied to all major sections.
-- **Stagger** — Grid items in Capabilities, Case Studies, Skills, and Experience stagger in with `0.05s` delay increments.
-- **HoverCard** — Cards gently scale to `1.02` and lift `4px` on hover.
+- **FadeInSection** — Sections fade up (`opacity: 0 → 1`, `y: 16 → 0`) when they enter the viewport. Applied to all major sections and grid items.
+- **Manual Stagger** — Grid items in Capabilities, Case Studies, Skills, and Experience stagger in with explicit `delay={index * 0.05}` (or `0.1` for Experience) on `FadeInSection` wrappers. The `staggerContainer` variant is defined but not currently used.
+- **HoverCard** — Cards gently scale to `1.02` and lift `4px` on hover via Motion variants. Used in CapabilityCard, ProjectCard, SkillCategory, and RoleCard.
 - **Smooth Scrolling** — Navbar links use `scrollIntoView({ behavior: 'smooth' })`.
 - **Nav Transitions** — Navigation links use Tailwind `transition-colors duration-200` for smooth color shifts.
 

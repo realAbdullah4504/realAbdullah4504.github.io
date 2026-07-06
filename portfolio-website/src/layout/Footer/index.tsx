@@ -28,7 +28,7 @@ export function Footer() {
               <FaGithub className="w-4 h-4" />
             </a>
             <a
-              href={resumeData.contact.linkedin}
+              href={resumeData.contact.linkedIn}
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-accent transition-colors duration-200"

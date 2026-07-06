@@ -1,14 +1,12 @@
 export interface Project {
-  identity: {
-    name: string;
-    projectType: string;
-    associatedEmployment: string;
-  };
-  classification: {
-    businessDomain: string;
-    complexity: string;
-    architectureStyle: string;
-  };
+  name: string;
+  projectType: string;
+  associatedEmployment: string;
+  startDate: string;
+  endDate: string;
+  businessDomain: string;
+  complexity: string;
+  architectureStyle: string;
   overview: string;
   engineeringContributions: string[];
   technicalStack: string[];

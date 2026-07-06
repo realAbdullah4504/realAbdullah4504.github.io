@@ -1,15 +1,15 @@
 export interface TechnicalSkills {
-  Languages: string[];
-  Backend: string[];
-  Frontend: string[];
-  Cloud: string[];
-  Containers: string[];
-  'CI/CD': string[];
-  Databases: string[];
-  Messaging: string[];
-  'Distributed Systems': string[];
-  Monitoring: string[];
-  APIs: string[];
+  languages: string[];
+  backend: string[];
+  frontend: string[];
+  cloud: string[];
+  containers: string[];
+  cicd: string[];
+  databases: string[];
+  messagingEventStreaming: string[];
+  distributedSystems: string[];
+  monitoringObservability: string[];
+  automationTesting: string[];
 }
 
 export interface SkillsProps {

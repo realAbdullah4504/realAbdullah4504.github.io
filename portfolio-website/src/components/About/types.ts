@@ -5,13 +5,13 @@ export interface AboutProps {
     degree: string;
     institution: string;
     location: string;
-    graduationYear: string;
+    graduationYear: number;
     academicFocusAreas: string[];
   };
   certifications: {
     certificationName: string;
     issuer: string;
-    year: string;
+    year: number;
   }[];
 }
 
@@ -28,7 +28,7 @@ export interface EducationProps {
     degree: string;
     institution: string;
     location: string;
-    graduationYear: string;
+    graduationYear: number;
     academicFocusAreas: string[];
   };
 }
@@ -37,6 +37,34 @@ export interface CertificationsProps {
   certifications: {
     certificationName: string;
     issuer: string;
-    year: string;
+    year: number;
   }[];
+}
+
+export interface LanguagesProps {
+  languages: string[];
+}
+
+export interface SoftSkillsProps {
+  softSkills: string[];
+}
+
+export interface IndustryExperienceProps {
+  industryExperience: string[];
+}
+
+export interface ProfessionalProfilesProps {
+  profiles: {
+    platform: string;
+    url: string;
+  }[];
+}
+
+export interface WorkPreferencesProps {
+  employmentTypes: string[];
+  workArrangement: string;
+}
+
+export interface EngineeringFocusAreasProps {
+  focusAreas: string[];
 }

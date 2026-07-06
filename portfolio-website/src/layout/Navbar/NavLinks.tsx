@@ -8,6 +8,7 @@ const navLinks: NavLinkItem[] = [
   { label: 'About', href: '#about' },
   { label: 'Capabilities', href: '#capabilities' },
   { label: 'Case Studies', href: '#case-studies' },
+  { label: 'All Projects', href: '#all-projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
