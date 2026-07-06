@@ -1,151 +1,56 @@
 # Engineering Capabilities — Full-Stack Systems & DevOps Engineer
 
-**4 years of hands-on experience** designing, building, deploying, and scaling production-grade systems. I deliver complete solutions across frontend, backend, distributed processing, cloud infrastructure, and DevOps automation — turning ideas into reliable, observable, and highly operable platforms.
-
----
-
-# Core Technologies
-
-**Frontend**
-React, Next.js, TypeScript, React Native
-
-**Backend**
-Node.js (Express, NestJS), Python (FastAPI, Flask)
-
-**Databases & Caching**
-PostgreSQL, MongoDB, DynamoDB, Supabase, Firebase, Redis (caching, queues, pub/sub)
-
-**Cloud & Infrastructure (AWS)**
-EC2, ECS, EKS, Lambda, RDS, SQS, SNS, EventBridge, VPC, IAM, Secrets Manager, CloudWatch, SSM
-
-**Containerization & Orchestration**
-Docker, Kubernetes
-
-**DevOps & Infrastructure as Code**
-GitHub Actions, Jenkins, GitLab CI/CD, Terraform, CloudFormation
-
-**Queue & Event-Driven Systems**
-SQS, SNS, EventBridge, Kafka, RabbitMQ, Celery, BullMQ
-
-**Observability & Monitoring**
-Prometheus, Grafana, OpenTelemetry, Loki, CloudWatch, AWS Xray
-
-**Data & Processing**
-ETL pipelines, distributed processing systems
-
-**APIs & Communication**
-REST, GraphQL, WebSockets
-
-**System & Automation**
-Linux scripting, backend automation, distributed systems design
+**4 years of hands-on experience** designing, building, deploying, and scaling production-grade systems. I deliver complete solutions across frontend, backend, distributed processing, cloud infrastructure, and DevOps automation—turning ideas into reliable, observable, and highly operable platforms.
 
 ---
 
 # What I Bring
 
-* **Systems ownership** — Equal focus on application development and production infrastructure. Every system is observable, operable, and recoverable from failure.
-* **Balanced evolution** — Start lean (Supabase/Firebase MVPs) and scale to distributed systems only when justified by real load.
-* **Reliability-first design** — Idempotency, circuit breakers, dead-letter queues, retry logic, and graceful degradation built in from day one.
-* **Full DevOps automation** — CI/CD pipelines, Infrastructure as Code, zero-downtime deployments, and reproducible environments.
+* **Systems ownership** — Deliver end-to-end solutions from application development through cloud infrastructure, deployment, monitoring, and production operations.
+* **Balanced evolution** — Start with lean architectures for rapid delivery and evolve systems incrementally as business needs and operational demands grow.
+* **Reliability-first engineering** — Design systems with fault tolerance, idempotency, retry strategies, graceful degradation, and recovery mechanisms as foundational principles.
+* **Operational excellence** — Build observable, maintainable, and automated production environments with CI/CD, Infrastructure as Code, monitoring, and reproducible deployments.
 
 ---
 
 # Quantifiable Engineering Impact
 
-* Designed a distributed scraping system with**20 parallel workers** completing full extraction + processing cycles in**~5 minutes per batch** (down from hours of manual effort).
-* Reduced full environment provisioning to a**single-command deployment** using Infrastructure-as-Code (Terraform/CloudFormation).
-* Built stateless architectures enabling**seamless horizontal scaling** with zero downtime.
-* Implemented comprehensive observability (Prometheus, Grafana, OpenTelemetry, CloudWatch) that reduced mean time to detection on production issues.
+* Designed a distributed scraping platform with **20 parallel workers**, reducing complete extraction and processing cycles to **approximately 5 minutes per batch**.
+* Reduced infrastructure provisioning to a **single-command deployment** through Infrastructure as Code.
+* Designed stateless architectures enabling **horizontal scaling** and zero-downtime deployments.
+* Implemented comprehensive observability practices that significantly improved production visibility and reduced issue detection time.
 
 ---
 
-# Production Infrastructure & DevOps Engineering
+# System Design & Architecture
 
-**Core focus area:** Designing and operating secure, scalable, and observable production environments.
-
-**Cloud Engineering (AWS)**
-
-* Compute: EC2, ECS, EKS, Lambda
-* Databases: RDS, DynamoDB
-* Networking: VPC, Load Balancers, Route 53
-* Messaging: SQS, SNS, EventBridge
-* Security: IAM, Secrets Manager, SSM
-
-**Containerization & Orchestration**
-
-* Docker and Kubernetes
-
-**DevOps & Delivery**
-
-* CI/CD pipelines (GitHub Actions, Jenkins, GitLab CI/CD)
-* Infrastructure as Code (Terraform, CloudFormation)
-* Zero-downtime deployments with rollback support
-* Environment consistency across dev, staging, and production
-
-**Observability & Monitoring**
-
-* Prometheus, Grafana, OpenTelemetry, Loki, structured logging, and custom metrics
-
-**Scalability & Operations**
-
-* Horizontal scaling, load balancing, auto-scaling
-* Redis caching and performance tuning
+* Design architectures driven by business requirements, operational constraints, and expected system growth.
+* Apply an evolutionary architecture approach from **Monolith → Modular Services → Distributed Systems** when justified by scale.
+* Maintain clear separation between presentation, business logic, data, and infrastructure layers.
+* Design for resilience using failure isolation, retry mechanisms, checkpoint recovery, and graceful degradation.
 
 ---
 
-# System Design & Architecture Approach
+# Application Engineering
 
-* Architecture decisions driven by business needs and actual load
-* Balanced evolution: Monolith (MVP) → Modular → Distributed
-* Clear separation between frontend, backend, data, and infrastructure layers
-* Reliability patterns: idempotency, failure isolation, graceful degradation, checkpoint recovery
-
----
-
-# Application Layer (Full-Stack Systems)
-
-**Frontend Engineering**
-React, Next.js, TypeScript, React Native — Responsive SaaS dashboards and real-time mobile experiences.
-
-**Backend Engineering**
-Node.js (Express, NestJS), Python (FastAPI, Flask) — REST & GraphQL APIs, authentication, and multi-tenant systems.
+* Design responsive web applications and real-time user experiences with maintainability and scalability in mind.
+* Build secure backend services, APIs, authentication systems, and business workflows.
+* Prioritize clean architecture, modularity, testability, and long-term maintainability.
 
 ---
 
-# Backend & Distributed Processing Systems
+# Distributed Systems Engineering
 
-* Queue & Event-Driven systems (Redis, Celery, BullMQ, Kafka, RabbitMQ, SQS, SNS, EventBridge)
-* Distributed worker fleets and resilient ETL pipelines
-* Fault-tolerant design with retry and dead-letter handling
-
----
-
-# Data Systems & Processing
-
-* Web scraping and browser automation (Playwright)
-* Multi-source data aggregation and transformation pipelines
-* Queue-driven distributed processing with validation and deduplication
+* Design asynchronous and event-driven systems for scalable background processing.
+* Build resilient processing pipelines capable of handling failures and retries.
+* Engineer distributed worker architectures that improve throughput while maintaining reliability.
+* Apply queue-based communication patterns to decouple services and improve scalability.
 
 ---
 
-# Case Studies
+# Data Engineering & Automation
 
-**News Chunk**
-Built an AI-powered news platform that consolidates articles from multiple sources into a unified timeline. Automatically classifies content into categories, enables personalized filtering, and tracks saved articles across sessions. Eliminated manual browsing across websites by delivering structured, searchable news in one place. Built with React and Python.
-
-**Tender Discovery & Procurement Intelligence Platform**
-Built a system that continuously monitors government portals to discover procurement opportunities. Processes tenders through managed stages from detection to enrichment, assigning relevance scores and storing them in a centralized database. Eliminated manual tender fetching by automating discovery across dozens of sources in parallel.
-
-**Tax Rebate Processing Platform**
-Built a tax processing platform that guides customers through rebate applications from registration to refund. Automates document extraction, tax calculations, and staff review workflows checking every case through defined lifecycle stages. Reduced manual processing and improved accuracy through structured financial workflows. Built with Node.js and MongoDB.
-
-**Team Briefing & Accountability System**
-Built a platform for daily team updates where admins configure questions and employees submit structured progress reports. Tracks submissions in real-time with deadline enforcement and sends automatic reminders. Replaced scattered standup meetings with centralized visibility into team status and blockers.
-
-**Handyman Repair Service**
-A user-friendly interface for homeowners to post jobs, track offers, and manage contracts seamlessly. Handyman Dashboard provides a dedicated space for professionals to browse job opportunities, send quotes, and communicate with clients. Secure in-app payment integration ensures hassle-free transactions for both parties. Real-time notifications keep users updated with job statuses, offers, and messages instantly. Rating system builds trust with transparent reviews.
-
-**Property Data Extraction Automation**
-Built an automated system that extracts property records from government portals and compiles them into structured Excel datasets. Navigates complex web interfaces, captures ownership and financial data, and handles failures through checkpoint recovery. Eliminated manual data entry by producing large-scale, consistent property databases.
-
----
+* Design automated data collection and processing workflows.
+* Build extraction, transformation, validation, and enrichment pipelines for structured data.
+* Develop browser automation and workflow automation solutions that replace repetitive manual processes.
+* Focus on data quality, consistency, and operational reliability throughout processing pipelines.
