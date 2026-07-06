@@ -53,13 +53,6 @@ export interface IndustryExperienceProps {
   industryExperience: string[];
 }
 
-export interface ProfessionalProfilesProps {
-  profiles: {
-    platform: string;
-    url: string;
-  }[];
-}
-
 export interface WorkPreferencesProps {
   employmentTypes: string[];
   workArrangement: string;

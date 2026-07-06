@@ -5,7 +5,6 @@ import { Education } from './Education';
 import { Certifications } from './Certifications';
 import { Languages } from './Languages';
 import { SoftSkills } from './SoftSkills';
-import { ProfessionalProfiles } from './ProfessionalProfiles';
 import { WorkPreferences } from './WorkPreferences';
 import { FadeInSection } from '../../utils/animations';
 import resumeData from '../../../../homepage/portfolio/master-resume.json';
@@ -40,10 +39,6 @@ export function About() {
         <Education education={data.education[0]} />
         
         <Certifications certifications={data.certifications} />
-        
-        {data.contact.otherProfessionalProfiles && (
-          <ProfessionalProfiles profiles={data.contact.otherProfessionalProfiles} />
-        )}
       </FadeInSection>
     </section>
   );

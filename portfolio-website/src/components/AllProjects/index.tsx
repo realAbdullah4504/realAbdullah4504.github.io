@@ -5,7 +5,18 @@ import { HoverCard } from '../../utils/animations';
 import { FadeInSection } from '../../utils/animations';
 import resumeData from '../../../../homepage/portfolio/master-resume.json';
 
-function ProjectCard({ project }: any) {
+type Project = {
+  name: string;
+  projectType: string;
+  complexity: string;
+  overview: string;
+  technicalStack: string[];
+  measurableOutcomes: string[];
+  capabilityTags: string[];
+  metadata: { portfolioPriority: number };
+};
+
+function ProjectCard({ project }: { project: Project }) {
   return (
     <HoverCard className="bg-card border border-border rounded-2xl p-6 shadow-sm">
       <div className="flex justify-between items-start mb-4">

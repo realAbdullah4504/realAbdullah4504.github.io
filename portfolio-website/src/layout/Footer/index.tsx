@@ -1,11 +1,12 @@
 import resumeData from '../../../../homepage/portfolio/master-resume.json';
-import { FaGithub, FaLinkedin, FaDownload, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export function Footer() {
   const fullName = resumeData.contact.fullName;
   const currentYear = new Date().getFullYear();
-  const contact = resumeData.contact as { resumeUrl?: string };
-  const resumeUrl = contact.resumeUrl;
+  const profiles = resumeData.contact.otherProfessionalProfiles as { platform: string; url: string }[];
+  const upwork = profiles.find(p => p.platform === 'Upwork');
+  const fiverr = profiles.find(p => p.platform === 'Fiverr');
 
   return (
     <footer className="bg-background border-t border-border">
@@ -36,24 +37,26 @@ export function Footer() {
             >
               <FaLinkedin className="w-4 h-4" />
             </a>
-            {resumeUrl && (
+            {upwork && (
               <a
-                href={resumeUrl}
+                href={upwork.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-muted hover:text-accent transition-colors duration-200"
-                aria-label="Resume"
+                className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
               >
-                <FaDownload className="w-4 h-4" />
+                Upwork
               </a>
             )}
-            <a
-              href={`mailto:${resumeData.contact.email}`}
-              className="text-text-muted hover:text-accent transition-colors duration-200"
-              aria-label="Email"
-            >
-              <FaEnvelope className="w-4 h-4" />
-            </a>
+            {fiverr && (
+              <a
+                href={fiverr.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
+              >
+                Fiverr
+              </a>
+            )}
           </div>
         </div>
 

@@ -2,10 +2,10 @@ import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Capabilities } from './components/Capabilities'
 import { CaseStudies } from './components/CaseStudies'
-import { AllProjects } from './components/AllProjects'
 import { Skills } from './components/Skills'
 import { Experience } from './components/Experience'
 import { Contact } from './components/Contact'
+import { ProfessionalProfiles } from './components/ProfessionalProfiles'
 import { Navbar } from './layout/Navbar'
 import { Footer } from './layout/Footer'
 
@@ -21,6 +21,7 @@ function App() {
         <Skills />
         <Experience />
         <Contact />
+        <ProfessionalProfiles />
       </main>
       <Footer />
     </div>

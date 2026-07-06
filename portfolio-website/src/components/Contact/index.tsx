@@ -19,6 +19,7 @@ export function Contact() {
         <CTAButtons
           email={data.contact.email}
           linkedin={data.contact.linkedIn}
+          github={data.contact.github}
         />
       </FadeInSection>
     </section>

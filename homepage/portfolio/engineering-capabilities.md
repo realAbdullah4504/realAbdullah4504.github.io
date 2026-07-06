@@ -31,7 +31,7 @@ SQS, SNS, EventBridge, Kafka, RabbitMQ, Celery, BullMQ
 Prometheus, Grafana, OpenTelemetry, Loki, CloudWatch, AWS Xray
 
 **Data & Processing**
-Playwright (browser automation), ETL pipelines, distributed processing systems
+ETL pipelines, distributed processing systems
 
 **APIs & Communication**
 REST, GraphQL, WebSockets
@@ -130,31 +130,22 @@ Node.js (Express, NestJS), Python (FastAPI, Flask) — REST & GraphQL APIs, auth
 
 # Case Studies
 
-**Tender Procurement Intelligence Platform**
-Distributed data extraction system processing 50+ government portals using queue-based Playwright workers and ETL pipelines. Delivered automated ~5-minute cycles with 20 parallel workers.
-
-**Tax Rebate Processing & Refund Management Platform**
-Workflow-driven tax rebate lifecycle platform replacing manual forms, spreadsheet tracking, and fragmented approval processes. Built a state-controlled financial workflow engine for customer onboarding, identity verification, document processing, configurable tax calculations, staff review, refund approval, and refund reconciliation.
-
 **News Chunk**
-Intelligent content consolidation system with web scraping, AI-based classification, and unified timeline interface for structured news consumption across multiple sources.
+Built an AI-powered news platform that consolidates articles from multiple sources into a unified timeline. Automatically classifies content into categories, enables personalized filtering, and tracks saved articles across sessions. Eliminated manual browsing across websites by delivering structured, searchable news in one place. Built with React and Python.
 
-**Event-Driven Processing Platform on AWS**
-Production-grade event-driven processing system using AWS CloudFormation, ECS Fargate, SNS/SQS, MongoDB, and Redis pub/sub with full observability (OpenTelemetry, X-Ray, Prometheus, Loki).
+**Tender Discovery & Procurement Intelligence Platform**
+Built a system that continuously monitors government portals to discover procurement opportunities. Processes tenders through managed stages from detection to enrichment, assigning relevance scores and storing them in a centralized database. Eliminated manual tender fetching by automating discovery across dozens of sources in parallel.
 
-**DevOps CI/CD Pipeline System**
-Automated build, test, security scanning, containerization (Docker), and deployment pipeline with full observability and rollback.
+**Tax Rebate Processing Platform**
+Built a tax processing platform that guides customers through rebate applications from registration to refund. Automates document extraction, tax calculations, and staff review workflows checking every case through defined lifecycle stages. Reduced manual processing and improved accuracy through structured financial workflows. Built with Node.js and MongoDB.
 
-**Handyman Marketplace System**
-Full-stack marketplace with real-time workflows, authentication, payments, and scalable backend + infrastructure.
+**Team Briefing & Accountability System**
+Built a platform for daily team updates where admins configure questions and employees submit structured progress reports. Tracks submissions in real-time with deadline enforcement and sends automatic reminders. Replaced scattered standup meetings with centralized visibility into team status and blockers.
 
-**Virtual Office — Real-Time Workspace**
-Presence-based collaboration platform with dynamic user states and WebSocket real-time interactions.
+**Handyman Repair Service**
+A user-friendly interface for homeowners to post jobs, track offers, and manage contracts seamlessly. Handyman Dashboard provides a dedicated space for professionals to browse job opportunities, send quotes, and communicate with clients. Secure in-app payment integration ensures hassle-free transactions for both parties. Real-time notifications keep users updated with job statuses, offers, and messages instantly. Rating system builds trust with transparent reviews.
 
-**Nutrifactor Mobile Commerce Platform**
-Headless Shopify integration using React Native and ShopifyGraphQL with real-time inventory and order synchronization.
-
-**CopyFlow — Workflow Management System**
-Role-based document lifecycle system with strict state transitions and permission control.
+**Property Data Extraction Automation**
+Built an automated system that extracts property records from government portals and compiles them into structured Excel datasets. Navigates complex web interfaces, captures ownership and financial data, and handles failures through checkpoint recovery. Eliminated manual data entry by producing large-scale, consistent property databases.
 
 ---
