@@ -18,7 +18,6 @@ function App() {
         <About />
         <Capabilities />
         <CaseStudies />
-        <AllProjects />
         <Skills />
         <Experience />
         <Contact />
