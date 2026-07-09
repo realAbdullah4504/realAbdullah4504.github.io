@@ -10,7 +10,7 @@ export function Certifications({ certifications }: CertificationsProps) {
           <div key={index} className="flex items-center gap-3 bg-card p-4 rounded-xl border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
             <Award className="w-6 h-6 text-warning flex-shrink-0" />
             <div className="flex-1">
-              <h4 className="font-semibold text-text-primary">{cert.certificationName}</h4>
+              <h4 className="font-semibold text-text-primary">{cert.name}</h4>
               <p className="text-text-muted text-sm">{cert.issuer} • {cert.year}</p>
             </div>
           </div>

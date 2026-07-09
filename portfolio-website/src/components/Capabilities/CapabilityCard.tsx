@@ -1,23 +1,19 @@
-import { ProjectTags } from './ProjectTags';
-import { TechnologyTags } from './TechnologyTags';
 import { HoverCard } from '../../utils/animations';
 import type { CapabilityCardProps } from './types';
 
 export function CapabilityCard({ capability }: CapabilityCardProps) {
   return (
     <HoverCard className="bg-card border border-border rounded-2xl p-6 shadow-sm">
-      <h3 className="text-xl font-bold text-text-primary mb-3">{capability.name}</h3>
-      <p className="text-text-secondary text-sm mb-4 leading-relaxed">{capability.description}</p>
+      <h3 className="text-xl font-bold text-text-primary mb-4">{capability.name}</h3>
       
-      <div className="mb-4">
-        <h4 className="text-xs font-semibold text-text-muted uppercase tracking-wide mb-2">Supporting Projects</h4>
-        <ProjectTags projects={capability.supportingProjects} />
-      </div>
-      
-      <div>
-        <h4 className="text-xs font-semibold text-text-muted uppercase tracking-wide mb-2">Technologies</h4>
-        <TechnologyTags technologies={capability.supportingTechnologies} />
-      </div>
+      <ul className="space-y-3">
+        {capability.points.map((point, index) => (
+          <li key={index} className="flex items-start gap-2 text-text-secondary text-sm leading-relaxed">
+            <span className="text-accent mt-1 flex-shrink-0">•</span>
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
     </HoverCard>
   );
 }

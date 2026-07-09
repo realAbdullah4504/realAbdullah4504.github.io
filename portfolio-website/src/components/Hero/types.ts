@@ -1,7 +1,7 @@
 export interface HeroProps {
   fullName: string;
   professionalTitle: string;
-  yearsOfExperience: number;
+  yearsOfExperience: string;
   location: string;
   positioningStatement: string;
   socialLinks: {
@@ -19,7 +19,7 @@ export interface HeroHeaderProps {
 }
 
 export interface HeroBadgesProps {
-  yearsOfExperience: number;
+  yearsOfExperience: string;
   location: string;
   availability?: string;
 }

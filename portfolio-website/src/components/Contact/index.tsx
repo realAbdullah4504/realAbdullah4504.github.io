@@ -1,9 +1,9 @@
 import { CTAButtons } from './CTAButtons';
 import { FadeInSection } from '../../utils/animations';
-import resumeData from '../../../../homepage/portfolio/master-resume.json';
+import { useResumeData } from '../../hooks/useResumeData';
 
 export function Contact() {
-  const data = resumeData;
+  const { data } = useResumeData();
 
   return (
     <section className="py-24 px-6 bg-surface" id="contact">
@@ -18,7 +18,7 @@ export function Contact() {
 
         <CTAButtons
           email={data.contact.email}
-          linkedin={data.contact.linkedIn}
+          linkedin={data.contact.linkedin}
           github={data.contact.github}
         />
       </FadeInSection>

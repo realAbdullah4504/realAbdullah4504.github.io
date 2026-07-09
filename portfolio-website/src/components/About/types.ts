@@ -5,13 +5,13 @@ export interface AboutProps {
     degree: string;
     institution: string;
     location: string;
-    graduationYear: number;
+    graduationYear: string;
     academicFocusAreas: string[];
   };
   certifications: {
-    certificationName: string;
+    name: string;
     issuer: string;
-    year: number;
+    year: string;
   }[];
 }
 
@@ -23,21 +23,30 @@ export interface EngineeringAchievementsProps {
   achievements: string[];
 }
 
+export interface EngineeringPhilosophyProps {
+  philosophy: {
+    systems_ownership: string[];
+    balanced_evolution: string[];
+    reliability_first_engineering: string[];
+    operational_excellence: string[];
+  };
+}
+
 export interface EducationProps {
   education: {
     degree: string;
     institution: string;
     location: string;
-    graduationYear: number;
+    graduationYear: string;
     academicFocusAreas: string[];
   };
 }
 
 export interface CertificationsProps {
   certifications: {
-    certificationName: string;
+    name: string;
     issuer: string;
-    year: number;
+    year: string;
   }[];
 }
 

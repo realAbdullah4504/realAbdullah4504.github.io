@@ -1,8 +1,7 @@
 export interface Capability {
   name: string;
   description: string;
-  supportingProjects: string[];
-  supportingTechnologies: string[];
+  points: string[];
 }
 
 export interface CapabilitiesProps {

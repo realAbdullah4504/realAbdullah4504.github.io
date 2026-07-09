@@ -1,22 +1,48 @@
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Menu } from 'lucide-react';
-import resumeData from '../../../../homepage/portfolio/master-resume.json';
+import { useResumeData } from '../../hooks/useResumeData';
 import { NavLinks } from './NavLinks';
 import { MobileMenu } from './MobileMenu';
 import { ResumeButton } from './ResumeButton';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { data } = useResumeData();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLinkClick = (href: string) => {
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+    // If we're on a project detail page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation then scroll
+      setTimeout(() => {
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMobileMenuOpen(false);
   };
 
-  const fullName = resumeData.contact.fullName;
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (location.pathname !== '/') {
+      // Let the default Link behavior work
+      return;
+    }
+    // If already on home, scroll to top
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const fullName = data.identity.name;
 
   return (
     <>
@@ -24,11 +50,8 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <a
-              href="#hero"
-              onClick={(e) => {
-                e.preventDefault();
-                handleLinkClick('#hero');
-              }}
+              href="/"
+              onClick={handleHomeClick}
               className="text-xl font-bold text-text-primary hover:text-accent transition-colors duration-200"
             >
               {fullName}

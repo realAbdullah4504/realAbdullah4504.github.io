@@ -1,15 +1,4 @@
-export interface Experience {
-  company: string;
-  position: string;
-  employmentType: string;
-  location: string;
-  startDate: string;
-  endDate: string | null;
-  overview: string;
-  responsibilities: string[];
-  technologies: string[];
-  flagshipProjects: string[];
-}
+import type { Experience } from '../../types/resume.types';
 
 export interface ExperienceProps {
   experiences: Experience[];

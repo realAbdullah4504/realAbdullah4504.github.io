@@ -1,21 +1,4 @@
-export interface Project {
-  name: string;
-  projectType: string;
-  associatedEmployment: string;
-  startDate: string;
-  endDate: string;
-  businessDomain: string;
-  complexity: string;
-  architectureStyle: string;
-  overview: string;
-  engineeringContributions: string[];
-  technicalStack: string[];
-  measurableOutcomes: string[];
-  capabilityTags: string[];
-  metadata: {
-    portfolioPriority: number;
-  };
-}
+import type { Project } from '../../types/resume.types';
 
 export interface CaseStudiesProps {
   projects: Project[];

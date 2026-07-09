@@ -1,12 +1,10 @@
-import resumeData from '../../../../homepage/portfolio/master-resume.json';
+import { useResumeData } from '../../hooks/useResumeData';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export function Footer() {
-  const fullName = resumeData.contact.fullName;
+  const { data } = useResumeData();
+  const fullName = data.identity.name;
   const currentYear = new Date().getFullYear();
-  const profiles = resumeData.contact.otherProfessionalProfiles as { platform: string; url: string }[];
-  const upwork = profiles.find(p => p.platform === 'Upwork');
-  const fiverr = profiles.find(p => p.platform === 'Fiverr');
 
   return (
     <footer className="bg-background border-t border-border">
@@ -15,12 +13,12 @@ export function Footer() {
           <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3">
             <span className="text-text-primary font-semibold text-sm">{fullName}</span>
             <span className="hidden md:inline text-text-muted">·</span>
-            <span className="text-text-muted text-sm">Full-Stack Systems & DevOps Engineer</span>
+            <span className="text-text-muted text-sm">{data.identity.professional_title}</span>
           </div>
 
           <div className="flex items-center gap-6">
             <a
-              href={resumeData.contact.github}
+              href={data.contact.github}
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-accent transition-colors duration-200"
@@ -29,7 +27,7 @@ export function Footer() {
               <FaGithub className="w-4 h-4" />
             </a>
             <a
-              href={resumeData.contact.linkedIn}
+              href={data.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-accent transition-colors duration-200"
@@ -37,26 +35,22 @@ export function Footer() {
             >
               <FaLinkedin className="w-4 h-4" />
             </a>
-            {upwork && (
-              <a
-                href={upwork.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
-              >
-                Upwork
-              </a>
-            )}
-            {fiverr && (
-              <a
-                href={fiverr.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
-              >
-                Fiverr
-              </a>
-            )}
+            <a
+              href={data.contact.freelance_platforms.upwork}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
+            >
+              Upwork
+            </a>
+            <a
+              href={data.contact.freelance_platforms.fiverr}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
+            >
+              Fiverr
+            </a>
           </div>
         </div>
 

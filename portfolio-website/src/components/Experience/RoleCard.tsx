@@ -2,31 +2,26 @@ import { ResponsibilitiesList } from './ResponsibilitiesList';
 import { TechnologyTags } from './TechnologyTags';
 import { FlagshipProjects } from './FlagshipProjects';
 import { HoverCard } from '../../utils/animations';
+import { formatDuration } from '../../utils/dataUtils';
 import type { RoleCardProps } from './types';
 
 export function RoleCard({ experience }: RoleCardProps) {
-  const formatDate = (date: string) => {
-    const [year, month] = date.split('-');
-    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    return `${monthNames[parseInt(month) - 1]} ${year}`;
-  };
-
-  const endDate = experience.endDate ? formatDate(experience.endDate) : 'Present';
+  const duration = formatDuration(experience.duration.start, experience.duration.end);
 
   return (
     <HoverCard className="bg-card border border-border rounded-2xl p-6 ml-6 shadow-sm">
       <div className="flex flex-wrap justify-between items-start mb-3">
         <div>
-          <h3 className="text-xl font-bold text-text-primary">{experience.position}</h3>
+          <h3 className="text-xl font-bold text-text-primary">{experience.title}</h3>
           <p className="text-lg font-semibold text-text-secondary">{experience.company}</p>
         </div>
         <span className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full border border-accent/20">
-          {experience.employmentType}
+          {experience.employment_type}
         </span>
       </div>
       
       <p className="text-text-muted text-sm mb-3">
-        {experience.location} • {formatDate(experience.startDate)} - {endDate}
+        {experience.location} • {duration}
       </p>
       
       <p className="text-text-secondary text-sm mb-4 leading-relaxed">{experience.overview}</p>
@@ -41,7 +36,9 @@ export function RoleCard({ experience }: RoleCardProps) {
         <TechnologyTags technologies={experience.technologies} />
       </div>
       
-      <FlagshipProjects projects={experience.flagshipProjects} />
+      {experience.featured_projects.length > 0 && (
+        <FlagshipProjects projects={experience.featured_projects} />
+      )}
     </HoverCard>
   );
 }

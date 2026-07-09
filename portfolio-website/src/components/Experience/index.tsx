@@ -1,13 +1,17 @@
 import { RoleCard } from './RoleCard';
 import { FadeInSection } from '../../utils/animations';
-import resumeData from '../../../../homepage/portfolio/master-resume.json';
+import { useResumeData } from '../../hooks/useResumeData';
 
 export function Experience() {
-  const data = resumeData;
+  const { data } = useResumeData();
   
-  const sortedExperiences = [...data.professionalExperience].sort((a, b) => 
-    new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
-  );
+  // Sort by start date (most recent first)
+  const sortedExperiences = [...data.experience].sort((a, b) => {
+    // Handle "Present" end dates
+    const dateA = a.duration.end === 'Present' ? new Date() : new Date(a.duration.start);
+    const dateB = b.duration.end === 'Present' ? new Date() : new Date(b.duration.start);
+    return dateB.getTime() - dateA.getTime();
+  });
 
   return (
     <section className="py-24 px-6 bg-background" id="experience">

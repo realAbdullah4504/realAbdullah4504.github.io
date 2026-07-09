@@ -1,31 +1,19 @@
-import { Hero } from './components/Hero'
-import { About } from './components/About'
-import { Capabilities } from './components/Capabilities'
-import { CaseStudies } from './components/CaseStudies'
-import { Skills } from './components/Skills'
-import { Experience } from './components/Experience'
-import { Contact } from './components/Contact'
-import { ProfessionalProfiles } from './components/ProfessionalProfiles'
-import { Navbar } from './layout/Navbar'
-import { Footer } from './layout/Footer'
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './layout/Layout';
+import { HomePage } from './pages/HomePage';
+import { ProjectDetail } from './pages/ProjectDetail';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen antialiased">
-      <Navbar />
-      <main className="pt-16">
-        <Hero />
-        <About />
-        <Capabilities />
-        <CaseStudies />
-        <Skills />
-        <Experience />
-        <Contact />
-        <ProfessionalProfiles />
-      </main>
-      <Footer />
-    </div>
-  )
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="projects/:slug" element={<ProjectDetail />} />
+        </Route>
+      </Routes>
+    </HashRouter>
+  );
 }
 
 export default App

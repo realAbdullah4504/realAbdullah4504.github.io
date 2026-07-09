@@ -4,10 +4,10 @@ import { HeroPositioning } from './HeroPositioning';
 import { SocialLinks } from './SocialLinks';
 import { CTAButtons } from './CTAButtons';
 import { FadeInSection } from '../../utils/animations';
-import resumeData from '../../../../homepage/portfolio/master-resume.json';
+import { useResumeData } from '../../hooks/useResumeData';
 
 export function Hero() {
-  const data = resumeData;
+  const { data } = useResumeData();
 
   const handlePrimaryCTA = () => {
     const target = document.querySelector('#case-studies');
@@ -18,17 +18,17 @@ export function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center px-4 py-16 bg-gradient-to-b from-background to-surface">
       <FadeInSection className="max-w-4xl mx-auto text-center" delay={0}>
         <HeroHeader
-          fullName={data.contact.fullName}
-          professionalTitle={data.profile.professionalTitle}
+          fullName={data.identity.name}
+          professionalTitle={data.identity.professional_title}
         />
         <HeroBadges
-          yearsOfExperience={data.profile.yearsOfDemonstratedExperience}
-          location={data.contact.location}
-          availability={data.professionalInformation.availabilityStatus}
+          yearsOfExperience={data.identity.years_of_experience}
+          location={data.identity.location}
+          availability={data.identity.availability}
         />
-        <HeroPositioning positioningStatement={data.profile.positioningStatement} />
+        <HeroPositioning positioningStatement={data.positioning.summary} />
         <SocialLinks
-          linkedin={data.contact.linkedIn}
+          linkedin={data.contact.linkedin}
           github={data.contact.github}
           email={data.contact.email}
         />
