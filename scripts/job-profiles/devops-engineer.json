@@ -1,0 +1,59 @@
+{
+  "job_title": "DevOps Engineer",
+  "target_companies": [],
+  "priority_skills": [
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Terraform",
+    "CloudFormation",
+    "Jenkins",
+    "GitLab CI/CD",
+    "Monitoring",
+    "Observability"
+  ],
+  "priority_experience_keywords": [
+    "cloud infrastructure",
+    "deployment automation",
+    "CI/CD pipelines",
+    "Infrastructure as Code",
+    "monitoring",
+    "observability",
+    "AWS",
+    "containerization"
+  ],
+  "priority_project_keywords": [
+    "AWS",
+    "DevOps",
+    "CI/CD",
+    "Infrastructure",
+    "Automation",
+    "Monitoring",
+    "Event-Driven",
+    "Distributed Systems"
+  ],
+  "content_limits": {
+    "max_experience_entries": 4,
+    "max_projects": 3,
+    "max_skills_per_category": 8,
+    "include_summary": true,
+    "include_education": true,
+    "include_certifications": true
+  },
+  "summary_customization": {
+    "use_custom_summary": false,
+    "custom_summary": null,
+    "highlight_keywords": ["DevOps", "AWS", "CI/CD", "Infrastructure", "Automation"]
+  },
+  "experience_filtering": {
+    "min_relevance_score": 0.3,
+    "prioritize_recent": true,
+    "prioritize_relevant": true
+  },
+  "project_filtering": {
+    "min_relevance_score": 0.4,
+    "prioritize_featured": true,
+    "prioritize_relevant": true
+  }
+}

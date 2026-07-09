@@ -1,0 +1,60 @@
+{
+  "job_title": "Full-Stack Developer",
+  "target_companies": [],
+  "priority_skills": [
+    "React",
+    "Node.js",
+    "TypeScript",
+    "Next.js",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "REST APIs",
+    "GraphQL",
+    "Docker"
+  ],
+  "priority_experience_keywords": [
+    "full-stack",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "web development",
+    "API development",
+    "frontend",
+    "backend",
+    "database"
+  ],
+  "priority_project_keywords": [
+    "React",
+    "Node.js",
+    "Full-Stack",
+    "Web Development",
+    "API",
+    "TypeScript",
+    "Next.js",
+    "MongoDB"
+  ],
+  "content_limits": {
+    "max_experience_entries": 4,
+    "max_projects": 3,
+    "max_skills_per_category": 8,
+    "include_summary": true,
+    "include_education": true,
+    "include_certifications": true
+  },
+  "summary_customization": {
+    "use_custom_summary": false,
+    "custom_summary": null,
+    "highlight_keywords": ["Full-Stack", "React", "Node.js", "TypeScript", "Web Development"]
+  },
+  "experience_filtering": {
+    "min_relevance_score": 0.3,
+    "prioritize_recent": true,
+    "prioritize_relevant": true
+  },
+  "project_filtering": {
+    "min_relevance_score": 0.4,
+    "prioritize_featured": true,
+    "prioritize_relevant": true
+  }
+}

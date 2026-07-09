@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "generate-ats-resume": "node scripts/generate-ats-resume.js"
+    "generate-ats-resume": "node scripts/generate-ats-resume.js",
+    "generate-job-resume": "node scripts/generate-job-resume.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
