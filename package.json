@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "generate-ats-resume": "node scripts/generate-ats-resume.js"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "tailwindcss": "^4.3.2"

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - {{NAME}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .job-header {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .job-meta {
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .job-overview {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        .skills-list {
+            display: inline;
+            padding-left: 0;
+        }
+        .skills-list li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .project-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>{{NAME}}</h1>
+        <p>{{PROFESSIONAL_TITLE}}</p>
+        <div class="contact-info">
+            {{EMAIL}} | {{PHONE}} | {{LOCATION}}
+            <br>
+            {{LINKEDIN}} | {{GITHUB}}
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+        <h2>Professional Summary</h2>
+        <p>{{SUMMARY}}</p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2>Technical Skills</h2>
+        <h3>Programming Languages</h3>
+        <ul class="skills-list">
+            {{PROGRAMMING_LANGUAGES}}
+        </ul>
+        <h3>Frontend Development</h3>
+        <ul class="skills-list">
+            {{FRONTEND_DEVELOPMENT}}
+        </ul>
+        <h3>Backend Development</h3>
+        <ul class="skills-list">
+            {{BACKEND_DEVELOPMENT}}
+        </ul>
+        <h3>Databases & Data Storage</h3>
+        <ul class="skills-list">
+            {{DATABASES}}
+        </ul>
+        <h3>Cloud Platforms (AWS)</h3>
+        <ul class="skills-list">
+            {{AWS_SERVICES}}
+        </ul>
+        <h3>Containerization & Orchestration</h3>
+        <ul class="skills-list">
+            {{CONTAINERIZATION}}
+        </ul>
+        <h3>CI/CD</h3>
+        <ul class="skills-list">
+            {{CI_CD}}
+        </ul>
+        <h3>Infrastructure as Code</h3>
+        <ul class="skills-list">
+            {{IAC}}
+        </ul>
+        <h3>Event-Driven Systems & Messaging</h3>
+        <ul class="skills-list">
+            {{MESSAGING}}
+        </ul>
+        <h3>Observability & Monitoring</h3>
+        <ul class="skills-list">
+            {{OBSERVABILITY}}
+        </ul>
+        <h3>Data Processing & Automation</h3>
+        <ul class="skills-list">
+            {{DATA_PROCESSING}}
+        </ul>
+        <h3>APIs & Communication</h3>
+        <ul class="skills-list">
+            {{APIS}}
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section>
+        <h2>Professional Experience</h2>
+        {{EXPERIENCE}}
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2>Featured Projects</h2>
+        {{PROJECTS}}
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        {{EDUCATION}}
+    </section>
+
+    <!-- Certifications -->
+    <section>
+        <h2>Certifications</h2>
+        {{CERTIFICATIONS}}
+    </section>
+</body>
+</html>
