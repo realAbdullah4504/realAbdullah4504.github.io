@@ -1,5 +1,7 @@
 import { useResumeData } from '../../hooks/useResumeData';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import upworkIcon from '../../assets/upwork-icon.png';
+import fiverrIcon from '../../assets/fiverr-icon.svg';
 
 export function Footer() {
   const { data } = useResumeData();
@@ -41,7 +43,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
             >
-              Upwork
+              <img src={upworkIcon} alt="Upwork" className="w-4 h-4" />
             </a>
             <a
               href={data.contact.freelance_platforms.fiverr}
@@ -49,7 +51,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-sm font-medium text-text-muted hover:text-accent transition-colors duration-200"
             >
-              Fiverr
+              <img src={fiverrIcon} alt="Fiverr" className="w-4 h-4" />
             </a>
           </div>
         </div>
