@@ -64,7 +64,7 @@ export function AllProjects() {
   const allProjects = getAllProjects();
 
   return (
-    <section className="py-24 px-6 bg-background" id="all-projects">
+    <section className="py-16 px-6 bg-background" id="all-projects">
       <FadeInSection className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-text-primary mb-12 text-center">All Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -8,7 +8,7 @@ const path = require('path');
     const page = await browser.newPage();
 
     const htmlPath = 'file://' +
-        path.resolve('../output/resume.html');
+        path.resolve('../homepage/portfolio/job-resumes/full-stack-developer.html');
 
     await page.goto(htmlPath, {
         waitUntil: 'networkidle'

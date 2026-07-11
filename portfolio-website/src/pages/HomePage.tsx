@@ -1,7 +1,7 @@
 import { Hero } from '../components/Hero';
+import { CaseStudies } from '../components/CaseStudies';
 import { About } from '../components/About';
 import { Capabilities } from '../components/Capabilities';
-import { CaseStudies } from '../components/CaseStudies';
 import { Skills } from '../components/Skills';
 import { Experience } from '../components/Experience';
 import { Contact } from '../components/Contact';
@@ -11,9 +11,9 @@ export function HomePage() {
   return (
     <>
       <Hero />
+      <CaseStudies />
       <About />
       <Capabilities />
-      <CaseStudies />
       <Skills />
       <Experience />
       <Contact />

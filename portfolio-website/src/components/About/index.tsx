@@ -11,7 +11,7 @@ export function About() {
   const { data } = useResumeData();
 
   return (
-    <section className="py-32 px-6 bg-gradient-to-b from-surface via-surface to-surface/95 relative overflow-hidden" id="about">
+    <section className="px-4 py-16 bg-gradient-to-b from-surface via-surface to-surface/95 relative overflow-hidden" id="about">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(var(--accent-rgb),0.05),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_50%,rgba(var(--accent-rgb),0.03),transparent_30%)]" />

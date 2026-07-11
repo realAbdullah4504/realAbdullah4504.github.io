@@ -1,4 +1,4 @@
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import type { ProfessionalProfile } from './types';
 
 

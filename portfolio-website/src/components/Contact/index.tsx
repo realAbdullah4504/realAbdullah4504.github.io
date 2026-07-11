@@ -6,7 +6,7 @@ export function Contact() {
   const { data } = useResumeData();
 
   return (
-    <section className="py-24 px-6 bg-surface" id="contact">
+    <section className="py-16 px-6 bg-surface" id="contact">
       <FadeInSection className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
           Let's Build Something Together
@@ -20,6 +20,7 @@ export function Contact() {
           email={data.contact.email}
           linkedin={data.contact.linkedin}
           github={data.contact.github}
+          phone={data.contact.phone}
         />
       </FadeInSection>
     </section>

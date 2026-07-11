@@ -18,7 +18,7 @@ export function ProfessionalProfiles() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-gradient-to-b from-background via-background to-background/95 relative overflow-hidden" id="professional-profiles">
+    <section className="py-16 px-6 bg-gradient-to-b from-background via-background to-background/95 relative overflow-hidden" id="professional-profiles">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(var(--accent-rgb),0.05),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_50%,rgba(var(--accent-rgb),0.03),transparent_30%)]" />

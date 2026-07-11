@@ -14,7 +14,7 @@ export function Experience() {
   });
 
   return (
-    <section className="py-24 px-6 bg-background" id="experience">
+    <section className="py-16 px-6 bg-background" id="experience">
       <FadeInSection className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-text-primary mb-12 text-center">Professional Experience</h2>
         
