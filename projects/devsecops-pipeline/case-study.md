@@ -2,188 +2,35 @@
 
 ## Business Impact
 
-* Faster and more predictable deployments
-* Reduced production failures and rollback incidents
-* Early detection of security and dependency vulnerabilities
-* Standardized release process across teams and environments
-* Full traceability from code commit → production release
-* Reduced manual intervention in deployment workflows
+- Faster and more predictable deployments through automated pipelines
+- Reduced production failures and rollback incidents with enforced quality gates
+- Early detection of security and dependency vulnerabilities before production
+- Standardized release process across teams and environments
+- Full traceability from code commit to production release
+- Reduced manual intervention in deployment workflows
 
----
+## Engineering Challenges
 
-## What This System Replaces
+- Fragmented CI/CD pipelines across multiple tools and manual steps
+- Lack of unified visibility across software delivery lifecycle stages
+- Inconsistent deployment workflows leading to environment drift
+- Late-stage security validation increasing deployment risk
+- Slow feedback loops between development and QA
 
-* Manual deployment processes
-* Uncontrolled CI/CD scripts
-* Late-stage QA and security checks
-* Environment inconsistency issues
-* Fragmented DevOps tooling pipelines
+## Architecture Overview
 
----
+The system models software delivery as a state transition pipeline where code moves through controlled stages: Task Created → Code Commit → Build Stage → Security Validation → Testing Layer (API/UI/Performance) → Deployment Stage → Production Release.
 
-# 2. System Overview (Engineering View)
+The system is structured into five execution planes: Control Plane (Redmine for task tracking, GitLab for source control and triggers), Execution Plane (Jenkins CI/CD orchestration), Validation Plane (SonarQube, Snyk, Gitleaks for code quality and security), Testing Plane (Cypress, Newman, JMeter for automated testing), and Deployment Plane (Docker-based containerized deployment).
 
-## System Problem
+## Key Engineering Decisions
 
-Traditional software delivery pipelines are fragmented across multiple tools and manual steps, leading to:
+- Event-driven pipeline execution triggered by GitLab commits for real-time delivery
+- Multi-stage quality gates as mandatory validation checkpoints before production
+- Containerized deployment strategy using Docker for reproducible environments
+- Parallel validation execution (API, UI, performance) to reduce feedback cycle time
+- Policy-based release control enforcing rules before production deployment
 
-* lack of unified visibility across SDLC stages
-* inconsistent deployment workflows
-* late-stage security validation
-* slow feedback loops between development and QA
-* absence of enforced quality gates before production release
+## Technologies
 
-This system unifies the entire SDLC into a **controlled, state-driven execution pipeline** .
-
----
-
-## System Architecture
-
-The system models software delivery as a **state transition pipeline** , where code moves through controlled stages before reaching production.
-
-Task Created
-    ↓
-Code Commit
-    ↓
-Build Stage
-    ↓
-Security Validation
-    ↓
-Testing Layer (API / UI / Performance)
-    ↓
-Deployment Stage
-    ↓
-Production Release
-
----
-
-## Execution Planes
-
-The system is structured into five execution planes:
-
-### 🔹 Control Plane
-
-* Redmine (task tracking and workflow visibility)
-* GitLab (source control + pipeline trigger source)
-
-### 🔹 Execution Plane
-
-* Jenkins CI/CD orchestration engine
-* Multi-stage pipeline execution system
-
-### 🔹 Validation Plane
-
-* SonarQube (code quality analysis)
-* Snyk (dependency vulnerability scanning)
-* Gitleaks (secret detection)
-
-### 🔹 Testing Plane
-
-* Cypress (UI testing)
-* Newman (API testing)
-* JMeter (performance testing)
-
-### 🔹 Deployment Plane
-
-* Docker-based containerized deployment
-* Isolated multi-service environments
-
----
-
-## System Flow
-
-Redmine Task Created
-    ↓
-GitLab Commit
-    ↓
-Jenkins Pipeline Trigger
-    ↓
-Build Stage
-    ↓
-Security Scanning Stage
-    ↓
-Automated Testing Stage
-    ↓
-Docker Image Build
-    ↓
-Container Deployment
-    ↓
-Pipeline Status Feedback
-
----
-
-## Core Design Principles
-
-### 1. Event-Driven Pipeline Execution
-
-Pipeline execution is triggered by GitLab commits, enabling real-time, event-based delivery instead of scheduled workflows.
-
----
-
-### 2. Multi-Stage Quality Gates
-
-Each stage acts as a **mandatory validation checkpoint** , ensuring:
-
-* code quality enforcement
-* security validation before deployment
-* automated test verification
-
----
-
-### 3. Containerized Deployment Strategy
-
-Docker ensures:
-
-* reproducible environments
-* isolation between services
-* consistent deployment across environments
-
----
-
-### 4. Parallel Validation Execution
-
-Testing layers run in parallel (API, UI, performance) to reduce feedback cycle time.
-
----
-
-### 5. Policy-Based Release Control
-
-Each stage enforces policy-as-code rules to prevent unverified code from reaching production.
-
----
-
-## Engineering Decisions
-
-* Separation of execution, validation, and deployment layers improves maintainability and scalability
-* Containerization removes environment drift issues
-* Event-driven triggers eliminate manual pipeline execution
-* Multi-tool validation increases reliability and security coverage
-* Structured pipeline stages enforce predictable software delivery lifecycle
-
----
-
-## Outcome
-
-The system enables:
-
-* fully automated software delivery lifecycle
-* reduced deployment risk through enforced quality gates
-* faster feedback loops between development and QA
-* improved production stability and reliability
-* early detection of security vulnerabilities
-* complete traceability from task creation to production release
-
----
-
-## Technologies Used
-
-* GitLab (source control & triggers)
-* Jenkins (CI/CD orchestration)
-* Docker / Docker Compose (containerization)
-* Redmine (project tracking)
-* SonarQube (code quality analysis)
-* Snyk (dependency security scanning)
-* Gitleaks (secret detection)
-* Cypress (UI testing)
-* Newman (API testing)
-* JMeter (performance testing)
+GitLab, Jenkins, Docker/Docker Compose, Redmine, SonarQube, Snyk, Gitleaks, Cypress, Newman, JMeter

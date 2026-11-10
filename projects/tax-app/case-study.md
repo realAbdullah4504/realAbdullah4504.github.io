@@ -2,215 +2,38 @@
 
 ## Business Impact
 
-* significantly reduced manual processing effort
-* faster tax rebate evaluation and approval cycles
-* improved visibility into application status
-* standardized refund workflows across cases
-* reduced errors in tax calculations and documentation handling
-* improved operational control for staff teams
-* scalable handling of high-volume tax applications
+- Significantly reduced manual processing effort through automation
+- Faster tax rebate evaluation and approval cycles
+- Improved visibility into application status with tracking
+- Standardized refund workflows across cases for consistency
+- Reduced errors in tax calculations and documentation handling
+- Improved operational control for staff teams
+- Scalable handling of high-volume tax applications
 
----
+## Engineering Challenges
 
-## What This System Replaces
+- Manual tax filing and spreadsheet tracking leading to errors
+- Lack of structured workflow for tax rebate applications
+- Difficulty tracking application status through complex approval processes
+- Manual tax calculations prone to human error
+- Inconsistent document handling and verification
 
-* manual tax filing and spreadsheet tracking systems
-* fragmented document handling workflows
-* email-based approval and communication processes
-* inconsistent refund processing procedures
-* non-standardized tax calculation workflows
+## Architecture Overview
 
----
+The system is a workflow-driven state management engine managing the full tax rebate lifecycle: Customer Registration → Identity Verification → Tax Information Collection → Document Upload → Document Processing → Tax Calculation → Staff Review → Refund Approval → Refund Processing → Completed Case.
 
-# 2. System Overview (Engineering View)
+The workflow state model enforces controlled transitions: Registration Started → Profile Completed → Documents Submitted → Tax Calculation Completed → Under Review → Refund Approved → Refund Processed, with role-based system design separating customer, staff, and system engine responsibilities.
 
-## System Problem
+## Key Engineering Decisions
 
-Tax processing workflows are complex due to:
+- State-controlled financial workflow engine with enforced transitions
+- Customer onboarding system with identity verification
+- Tax information engine for structured financial data capture
+- Document processing system with AI-based extraction (Mindee AI)
+- Tax calculation engine with configurable tax rules
+- Refund management system for approval and processing tracking
+- Staff operations dashboard for monitoring and review
 
-* multi-stage data collection requirements
-* document-heavy validation processes
-* dependency on tax rules and calculations
-* need for staff review and compliance checks
-* lack of structured lifecycle tracking
+## Technologies
 
-This system solves it using a:
-
-> **workflow-driven state management engine for tax processing**
-
----
-
-## System Architecture
-
-The platform manages the full lifecycle of a tax rebate application through a structured processing pipeline.
-
----
-
-## Core System Flow
-
-Customer Registration
-→ Identity Verification
-→ Tax Information Collection
-→ Document Upload
-→ Document Processing
-→ Tax Calculation
-→ Staff Review
-→ Refund Approval
-→ Refund Processing
-→ Completed Case
-
----
-
-## Workflow State Model
-
-Registration Started
-→ Profile Completed
-→ Documents Submitted
-→ Tax Calculation Completed
-→ Under Review
-→ Refund Approved
-→ Refund Processed
-
----
-
-## System Design Principle
-
-The system is built as a:
-
-> **state-controlled financial workflow engine**
-
-Every application moves through strictly defined stages with enforced transitions.
-
----
-
-# 3. State Model (Core System Abstraction)
-
-## Key Idea
-
-Each tax rebate application is treated as a **stateful financial workflow entity** , not a simple form submission.
-
----
-
-## State Behavior
-
-* each stage represents a validation checkpoint
-* progression is dependent on data completeness + verification
-* staff actions influence state transitions
-* system ensures no bypass of critical processing steps
-
----
-
-## Why State Model Matters
-
-This enables:
-
-* predictable processing lifecycle for every case
-* audit-friendly workflow tracking
-* structured handling of financial operations
-* elimination of inconsistent manual processing paths
-
----
-
-# 4. System Flow (Execution Behavior)
-
-Customer submits data
-→ System validates input completeness
-→ Documents uploaded
-→ AI/document engine extracts data
-→ Tax calculation engine processes rules
-→ Staff reviews case
-→ Refund approved
-→ Payment processed
-→ Case closed
-
----
-
-# 5. Core Components
-
-## Customer Onboarding System
-
-* structured registration flow
-* identity verification
-* secure account creation
-
----
-
-## Tax Information Engine
-
-* captures structured financial and personal data
-* organizes tax-relevant information domains
-* ensures completeness before processing
-
----
-
-## Document Processing System
-
-* extracts structured data from uploaded tax documents
-* supports automated parsing of financial documents
-* integrates AI-based extraction tools
-
----
-
-## Tax Calculation Engine
-
-* applies configurable tax rules
-* computes deductions, credits, and refunds
-* supports structured financial computation workflow
-
----
-
-## Refund Management System
-
-* tracks refund lifecycle
-* manages approval and processing steps
-* ensures audit-ready financial flow
-
----
-
-## Staff Operations Dashboard
-
-* monitors application progress
-* reviews pending cases
-* manages exceptions and approvals
-
----
-
-# 6. Engineering Decisions
-
-* workflow-based architecture instead of form-based system design
-* separation of tax rules from application logic for flexibility
-* state-driven processing for auditability and traceability
-* modular document processing pipeline for scalability
-* role-based system design (customer vs staff vs system engine)
-* structured data domains for validation consistency
-
----
-
-# 7. Outcome
-
-The system enables:
-
-* structured end-to-end tax rebate processing workflow
-* reduced manual intervention in financial processing
-* improved visibility into application lifecycle
-* faster tax evaluation and refund processing
-* standardized operational workflows for staff teams
-* scalable handling of high-volume financial cases
-* improved accuracy and consistency in tax processing
-
----
-
-# 8. Technologies Used
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* JWT Authentication
-* bcrypt
-* Twilio Verify
-* Mindee AI (document processing)
-* PDF-Lib
-* AWS S3
-* Revolut Business API
-* Mailgun
+Node.js, Express.js, MongoDB, Mongoose, JWT Authentication, bcrypt, Twilio Verify, Mindee AI (document processing), PDF-Lib, AWS S3, Revolut Business API, Mailgun

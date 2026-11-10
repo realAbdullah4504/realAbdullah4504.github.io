@@ -1,162 +1,35 @@
 # News Chunk (Intelligent Content System)
 
----
-
 ## Business Impact
 
-* faster access to relevant news across multiple sources
-* reduced time spent switching between platforms
-* improved content discoverability through AI classification
-* unified view of global information streams
-* personalized filtering and saved content workflow
-* structured consumption of unstructured information
+- Faster access to relevant news across multiple sources in unified timeline
+- Reduced time spent switching between platforms for content consumption
+- Improved content discoverability through AI-based classification
+- Personalized filtering and saved content workflow for structured consumption
+- Unified view of global information streams from heterogeneous sources
 
----
+## Engineering Challenges
 
-## What This System Replaces
+- Manual browsing across multiple independent news websites
+- Traditional RSS readers without intelligence layer for categorization
+- Static news feeds lacking personalized filtering
+- Fragmented content consumption workflows across platforms
+- Lack of structured way to organize and retrieve saved content
 
-* manual browsing across multiple news websites
-* traditional RSS readers without intelligence layer
-* static news feeds without categorization
-* fragmented content consumption workflows
+## Architecture Overview
 
----
+The system follows a layered processing model: Input Layer (multi-source web scraping with structured extraction) → Processing Layer (REST APIs for ingestion and retrieval with filtering logic) → Intelligence Layer (AI-based classification engine for normalization into consistent categories) → Output Layer (React-based unified timeline interface with filtering and saved articles system).
 
-# 2. System Overview (Engineering View)
+The article lifecycle progresses through controlled states: Raw → Classified → Indexed → Displayed → Archived, ensuring consistent classification and retrieval across all sources.
 
-## System Problem
+## Key Engineering Decisions
 
-News consumption is fragmented across multiple independent sources, leading to:
+- AI classification instead of rule-based tagging for scalability and consistency
+- Decoupled scraping layer from API layer for maintainability and independent evolution
+- REST architecture for flexible data access patterns
+- Unified timeline abstraction instead of per-source feeds for consistent user experience
+- Normalized content schema to handle heterogeneous input formats from different publishers
 
-* duplicated effort in browsing multiple platforms
-* inconsistent categorization of content
-* lack of unified timeline or prioritization
-* no structured way to organize saved content
+## Technologies
 
-This system solves it by introducing an **AI-driven content consolidation pipeline** .
-
----
-
-## System Architecture
-
-The system follows a layered processing model:
-
-### Input Layer
-
-* multi-source web scraping
-* structured extraction of articles and metadata
-
-### Processing Layer
-
-* REST APIs for ingestion and retrieval
-* filtering logic for category and source queries
-
-### Intelligence Layer
-
-* AI-based classification engine
-* normalization into consistent categories
-
-### Output Layer
-
-* React-based unified timeline interface
-* filtering + saved articles system
-
----
-
-# 3. State Model (Content Lifecycle)
-
-## Article Lifecycle
-
-Raw → Classified → Indexed → Displayed → Archived
-
----
-
-## Category Lifecycle
-
-Unclassified → General / Sports / Lifestyle
-
----
-
-## System Behavior
-
-Each article transitions through controlled states from ingestion to user interaction, ensuring consistent classification and retrieval.
-
----
-
-# 4. System Flow
-
-External News Sources
-→ Web Scraping
-→ Structured Extraction
-→ AI Classification
-→ Indexed Repository
-→ Unified Timeline API
-→ Client UI Filtering & Display
-
----
-
-# 5. Core Components
-
-## Multi-Source Scraper
-
-* extracts structured article data from heterogeneous sources
-* normalizes inconsistent HTML structures
-* handles multiple publisher formats
-
----
-
-## Classification Engine (AI Layer)
-
-* classifies articles into standardized categories
-* ensures consistency across different news sources
-* removes dependency on manual tagging
-
----
-
-## Unified Timeline System
-
-* combines all sources into a single chronological feed
-* enables category and source filtering
-* provides consistent content experience layer
-
----
-
-## Saved Articles System
-
-* persistent bookmarking of articles
-* cross-session retention of saved content
-* supports user-driven content curation
-
----
-
-# 6. Engineering Decisions
-
-* AI classification used instead of rule-based tagging for scalability
-* decoupled scraping layer from API layer for maintainability
-* REST architecture used for flexible data access
-* unified timeline abstraction instead of per-source feeds
-* normalized content schema to handle heterogeneous inputs
-
----
-
-# 7. Outcome
-
-The system delivers:
-
-* unified access to multiple news sources
-* reduced cognitive load in information consumption
-* AI-driven categorization of unstructured content
-* faster discovery of relevant news
-* structured and persistent content saving system
-* scalable multi-source content ingestion architecture
-
----
-
-# 8. Technologies Used
-
-* React
-* TypeScript
-* Python (Scraping + AI Classification)
-* Flask (API Layer)
-* REST APIs
-* Responsive UI Architecture
+React, TypeScript, Python (Scraping + AI Classification), Flask (API Layer), REST APIs, Responsive UI Architecture
