@@ -1,0 +1,12 @@
+Full-Stack & DevOps Engineer with 4+ years of hands-on experience building SaaS platforms, web and mobile applications, backend systems, cloud infrastructure, and AI-powered workflows. Experienced in React, React Native, Node.js, Python, AWS, GCP, Docker, Terraform, and CI/CD pipelines. I deliver end-to-end solutions spanning application development, backend architecture, AI integrations, and cloud deployment.
+
+I specialize in:
+- Full-stack development (React, Next.js, Node.js,Python, NestJS, PostgreSQL)
+- Mobile application development (React Native for Android and iOS)
+- AI-powered applications, LLM integrations, and workflow automation
+- Cloud infrastructure (AWS, GCP, Terraform, Docker)
+- CI/CD automation (GitHub Actions, GitLab CI/CD, Jenkins)
+- API integrations, event-driven architecture, and background processing
+- SaaS platforms, multi-tenant architecture, authentication, and authorization
+
+Whether you need a complete web application, cross-platform mobile app, AI-powered workflow, scalable backend services, or cloud infrastructure, I can help deliver the solution from design through deployment.
