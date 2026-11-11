@@ -1,0 +1,258 @@
+{
+  "name": "Abdullah Javed",
+  "headline": "Full-Stack Engineer | DevOps & Cloud Engineer",
+  "contact": "Faisalabad, Pakistan | +92-330-7189989 | abdullahjavaid1@live.com | linkedin.com/in/abdullah-javed-37a26a250 | github.com/realAbdullah450",
+  "summary": "Full-Stack and DevOps Engineer with 4+ years of hands-on experience developing web and mobile applications, SaaS platforms, backend services, and cloud-based solutions. Skilled in frontend and backend development using React, React Native, and Node.js, API integrations, database-driven applications, cloud infrastructure, and CI/CD automation. Experienced across the software development lifecycle, from application development and system implementation to testing, deployment, and infrastructure management.",
+  "skills": {
+    "Programming Languages": ["JavaScript", "TypeScript", "Python", "SQL"],
+    "Frontend and Mobile": [
+      "React",
+      "Next.js",
+      "React Native",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Material UI",
+      "Bootstrap"
+    ],
+    "Backend and APIs": [
+      "Node.js",
+      "Express.js",
+      "NestJS",
+      "Deno",
+      "REST APIs",
+      "GraphQL",
+      "FastAPI",
+      "Flask"
+    ],
+    "AI and Automation": [
+      "AI-powered workflows",
+      "LLM integrations",
+      "Natural-language processing",
+      "AI classification engines",
+      "Workflow automation",
+      "Tool-based integrations"
+    ],
+    "Databases and ORM": [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "SQL Server",
+      "DynamoDB",
+      "Redis",
+      "Prisma"
+    ],
+    "Amazon Web Services (AWS)": [
+      "EC2",
+      "ECS",
+      "EKS",
+      "Lambda",
+      "S3",
+      "SQS",
+      "SNS",
+      "EventBridge",
+      "CloudWatch",
+      "X-Ray"
+    ],
+    "Google Cloud Platform (GCP)": [
+      "Cloud Run",
+      "Cloud SQL",
+      "Cloud Storage",
+      "IAM"
+    ],
+    "DevOps and Infrastructure": [
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "GitHub Actions",
+      "GitLab CI/CD",
+      "Jenkins",
+      "Infrastructure as Code (IaC)",
+      "CI/CD pipelines",
+      "Workload Identity Federation"
+    ],
+    "Distributed Processing and Integration": [
+      "Celery",
+      "RabbitMQ",
+      "Apache Kafka",
+      "asynchronous processing",
+      "message queues",
+      "background workers",
+      "event-driven architecture",
+      "third-party API integrations"
+    ],
+    "Testing and Quality": [
+      "Jest",
+      "Cypress",
+      "Playwright",
+      "API testing",
+      "end-to-end testing",
+      "security scanning (SonarQube, Snyk, Gitleaks)",
+      "CI quality gates"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Full-Stack & DevOps Engineer",
+      "company": "Ateitis Corp",
+      "description": "Business consultancy specialized in information security strategies.",
+      "location": "Remote",
+      "dates": "July 2025 - Present",
+      "type": "Contract",
+      "projects": [
+        {
+          "name": "Enterprise Management Workflows",
+          "bullets": [
+            "Designed relational database schemas for enterprise management workflows.",
+            "Developed backend services supporting core enterprise management workflows.",
+            "Implemented identity and access management controls to support secure user access.",
+            "Designed and maintained cloud infrastructure and automated deployment pipelines, supported by automated unit and end-to-end testing."
+          ]
+        },
+        {
+          "name": "DevSecOps and CI/CD",
+          "bullets": [
+            "Implemented an end-to-end DevSecOps pipeline supporting engineering delivery workflows.",
+            "Integrated Jenkins and GitLab CI/CD with commit-triggered execution, automated ticket creation, and multi-stage delivery workflows.",
+            "Implemented automated security scanning and CI/CD quality gates.",
+            "Automated Docker-based development deployments and established a controlled QA-to-production handoff with pipeline traceability."
+          ]
+        },
+        {
+          "name": "Procurement Data Collection Platform",
+          "bullets": [
+            "Developed a distributed procurement intelligence platform collecting tender information from multiple government procurement sources.",
+            "Implemented scalable distributed processing workflows for automated tender collection.",
+            "Built automated data collection and extraction workflows for tender information.",
+            "Implemented data storage, job tracking, and recovery workflows to support resumable processing."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Telehunt",
+      "description": "Hunting For The Best Of Overseas Talent.",
+      "location": "Remote",
+      "dates": "July 2025 - Present",
+      "type": "Contract",
+      "projects": [
+        {
+          "name": "AI-Powered Business Workflow Platform",
+          "bullets": [
+            "Built an AI-powered, multi-channel agent enabling users to execute business workflows through natural-language interactions.",
+            "Developed integrations with CRM, productivity, and third-party business services.",
+            "Implemented automated workflow orchestration with intelligent trigger matching and permission-based action controls.",
+            "Applied security and privacy controls to help protect integration credentials and tenant data."
+          ]
+        },
+        {
+          "name": "Real-Time Collaboration Platform",
+          "bullets": [
+            "Implemented a real-time presence system tracking employee availability states, with broadcast updates to connected clients.",
+            "Developed room-based access controls and state synchronization for virtual office spaces and collaborative interactions.",
+            "Integrated chat, video communication, and Kanban task management to support remote team collaboration and workflow tracking."
+          ]
+        },
+        {
+          "name": "Team Productivity Platform",
+          "bullets": [
+            "Architected a multi-tenant platform with organization-level data isolation.",
+            "Developed structured daily briefing workflows with submission tracking, completion verification, and progress monitoring.",
+            "Built centralized dashboards enabling team leads to monitor briefing submissions and team accountability."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "company": "Sofrix",
+      "description": "IT Services and IT Consulting - The smarter the software, the stronger the business.",
+      "location": "Faisalabad, Pakistan",
+      "dates": "September 2024 - July 2025",
+      "type": "Full-Time",
+      "bullets": [
+        "Developed frontend features for web and mobile application projects using React and React Native, including the Sloan Leaders application and other client applications.",
+        "Integrated frontend components with backend APIs and collaborated with engineering teammates on implementation, debugging, application functionality, user experience, and delivery."
+      ]
+    },
+    {
+      "title": "React Native Developer",
+      "company": "Nutrifactor",
+      "description": "Manufacturer of dietary supplements, vitamins, minerals, and natural healthcare products for over 10 years.",
+      "location": "Faisalabad, Pakistan",
+      "dates": "October 2023 - September 2024",
+      "type": "Full-Time",
+      "bullets": [
+        "Developed a React Native mobile commerce application using TypeScript, integrating with Shopify's headless commerce backend through GraphQL APIs.",
+        "Implemented optimistic UI updates, rollback mechanisms, cache invalidation, and session persistence to maintain consistent shopping state across user sessions.",
+        "Built product discovery, search, cart, and checkout workflows, alongside behavior-driven recommendations to personalize the shopping experience."
+      ]
+    },
+    {
+      "title": "MERN Stack Developer",
+      "company": "Ghanisoft",
+      "description": "Leading full stack development company specializing in e-commerce applications.",
+      "location": "Faisalabad, Pakistan",
+      "dates": "June 2023 - October 2023",
+      "type": "Full-Time",
+      "bullets": [
+        "Developed dashboard features for a tax rebate and refund management platform, supporting application tracking, document management, tax calculations, and approval workflows.",
+        "Developed restaurant e-commerce applications with centralized dashboard management for products, menus, deals, and website content, enabling customers to browse offerings, place orders, and complete checkout.",
+        "Built administrative interfaces using React, Material UI, and Tailwind CSS, implementing user management and role-based access functionality."
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Independent Freelance Developer",
+      "location": "Remote",
+      "dates": "July 2022 - Present",
+      "type": "Upwork and Fiverr",
+      "projects": [
+        {
+          "name": "Handyman Marketplace System (SaaS)",
+          "bullets": [
+            "Built a multi-actor state transition engine for service marketplace with state-driven workflow and rule-based matching.",
+            "Integrated real-time communication via Socket.io with event-driven updates scoped to job/offer context."
+          ]
+        },
+        {
+          "name": "News Chunk (Intelligent Content System)",
+          "bullets": [
+            "Developed AI-powered content aggregation system with multi-source web scraping and intelligent classification.",
+            "Built layered processing architecture with REST APIs and React-based unified timeline interface."
+          ]
+        },
+        {
+          "name": "Taylor CAD Property Automation",
+          "bullets": [
+            "Built browser-based property data extraction system using Playwright for dynamic portal navigation.",
+            "Implemented checkpoint system for state persistence and recovery during long-running extraction processes."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Electrical and Electronics Engineering",
+      "school": "National University of Computer and Emerging Sciences (FAST-NUCES)",
+      "dates": "2009 - 2013"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Front End Development (HTML, CSS, JavaScript & React)",
+      "provider": "Corvit Systems, Faisalabad"
+    },
+    {
+      "name": "Introduction to Front-End Development",
+      "provider": ""
+    },
+    {
+      "name": "MERN Stack Development",
+      "provider": "Udemy"
+    }
+  ],
+  "languages": "English - Professional Proficiency | Urdu - Native Proficiency"
+}

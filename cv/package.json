@@ -1,0 +1,17 @@
+{
+  "name": "ats-resume-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ATS-optimized resume generator: JSON data -> HTML, PDF, DOCX",
+  "scripts": {
+    "generate": "node resume-generator.js",
+    "pdf": "node resume-generator.js --pdf",
+    "docx": "node resume-generator.js --docx",
+    "html": "node resume-generator.js --html",
+    "keywords": "node resume-generator.js --keywords"
+  },
+  "dependencies": {
+    "docx": "^9.0.0",
+    "puppeteer": "^23.0.0"
+  }
+}
