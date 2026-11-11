@@ -37,7 +37,6 @@
       "PostgreSQL",
       "MongoDB",
       "MySQL",
-      "SQL Server",
       "DynamoDB",
       "Redis",
       "Prisma"
@@ -247,7 +246,7 @@
     },
     {
       "name": "Introduction to Front-End Development",
-      "provider": ""
+      "provider": "Coursera"
     },
     {
       "name": "MERN Stack Development",

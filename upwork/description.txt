@@ -1,12 +1,24 @@
-Full-Stack & DevOps Engineer with 4+ years of hands-on experience building SaaS platforms, web and mobile applications, backend systems, cloud infrastructure, and AI-powered workflows. Experienced in React, React Native, Node.js, Python, AWS, GCP, Docker, Terraform, and CI/CD pipelines. I deliver end-to-end solutions spanning application development, backend architecture, AI integrations, and cloud deployment.
+Full-Stack & DevOps Engineer with 4+ years of hands-on experience building SaaS platforms, web and mobile applications, backend systems, cloud infrastructure, and AI-powered solutions.
 
-I specialize in:
-- Full-stack development (React, Next.js, Node.js,Python, NestJS, PostgreSQL)
-- Mobile application development (React Native for Android and iOS)
-- AI-powered applications, LLM integrations, and workflow automation
-- Cloud infrastructure (AWS, GCP, Terraform, Docker)
-- CI/CD automation (GitHub Actions, GitLab CI/CD, Jenkins)
-- API integrations, event-driven architecture, and background processing
-- SaaS platforms, multi-tenant architecture, authentication, and authorization
+I help businesses design, develop, integrate, and deploy reliable software solutions — from frontend experiences and backend architecture to AI integrations and cloud infrastructure.
 
-Whether you need a complete web application, cross-platform mobile app, AI-powered workflow, scalable backend services, or cloud infrastructure, I can help deliver the solution from design through deployment.
+Core Areas of Expertise
+
+- Full-Stack Development: React, Next.js, Node.js, NestJS, Python, PostgreSQL
+- Mobile Development: React Native for Android and iOS
+- AI & Automation: LLM integrations, AI-powered applications, intelligent workflows, and process automation
+- Cloud & Infrastructure: AWS, GCP, Docker, Terraform
+- DevOps & CI/CD: GitHub Actions, GitLab CI/CD, Jenkins, automated deployments
+- Backend Engineering: REST APIs, third-party integrations, event-driven architecture, and background processing
+- SaaS Architecture: Multi-tenant applications, authentication, authorization, and scalable backend systems
+
+What I Can Help You Build
+
+- Full-stack web applications and SaaS platforms
+- Cross-platform mobile applications
+- AI-powered applications and workflow automation
+- Scalable backend services and API integrations
+- Cloud infrastructure and deployment pipelines
+- Existing application improvements, integrations, and technical maintenance
+
+I focus on delivering practical, maintainable solutions with attention to code quality, system architecture, scalability, and reliable deployment — helping take projects from initial development through production.
